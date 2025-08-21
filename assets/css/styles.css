@@ -1,0 +1,190 @@
+/* Mornington Peninsula Roofing Company - Main Stylesheet */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Styles */
+.header-top {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: #666;
+}
+
+/* Navigation Styles */
+.navigation {
+    background-color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #d4af37;
+}
+
+.phone-number {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.phone-number:hover {
+    background-color: #555;
+}
+
+/* Company Title Section */
+.company-title {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #f8f9fa;
+}
+
+.company-title h1 {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0icm9vZiIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjNjY2Ii8+PHBhdGggZD0iTTAgMGwxMDAgNTBMMCAxMDB6IiBmaWxsPSIjODg4Ii8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNyb29mKSIvPjwvc3ZnPg==');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-logo {
+    margin-bottom: 30px;
+}
+
+.hero-logo svg {
+    width: 80px;
+    height: 80px;
+    fill: white;
+}
+
+.hero-badge {
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.hero-badge::before {
+    content: "THE ROOFING SPECIALISTS";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px 15px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.hero-title {
+    text-align: center;
+}
+
+.hero-title h2 {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+/* Content Section */
+.content-section {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.content-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-menu {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-title h2 {
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    .company-title h1 {
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+}
