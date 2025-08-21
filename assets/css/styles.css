@@ -94,61 +94,12 @@ body {
 .hero-section {
     position: relative;
     height: 60vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0icm9vZiIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjNjY2Ii8+PHBhdGggZD0iTTAgMGwxMDAgNTBMMCAxMDB6IiBmaWxsPSIjODg4Ii8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNyb29mKSIvPjwvc3ZnPg==');
+    background: url('../img/Mornington_Peninsula_Roofing.png');
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    background-repeat: no-repeat;
 }
 
-.hero-logo {
-    margin-bottom: 30px;
-}
-
-.hero-logo svg {
-    width: 80px;
-    height: 80px;
-    fill: white;
-}
-
-.hero-badge {
-    background-color: rgba(255,255,255,0.1);
-    border: 2px solid white;
-    border-radius: 50%;
-    padding: 20px;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-.hero-badge::before {
-    content: "THE ROOFING SPECIALISTS";
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #333;
-    color: white;
-    padding: 5px 15px;
-    font-size: 10px;
-    letter-spacing: 2px;
-    white-space: nowrap;
-}
-
-.hero-title {
-    text-align: center;
-}
-
-.hero-title h2 {
-    font-size: 48px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    line-height: 1.2;
-}
 
 /* Content Section */
 .content-section {
