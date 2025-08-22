@@ -127,9 +127,154 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // Initialize contact form handling
+    initializeContactForm();
+    
     // Initialize any additional interactive features
     initializeInteractiveFeatures();
 });
+
+/**
+ * Initialize contact form with client-side validation and submission handling
+ */
+function initializeContactForm() {
+    const form = document.getElementById('contactForm');
+    const successMessage = document.getElementById('formSuccess');
+    
+    if (!form) return;
+    
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(form);
+        const name = formData.get('name').trim();
+        const email = formData.get('email').trim();
+        const phone = formData.get('phone').trim();
+        const message = formData.get('message').trim();
+        
+        // Validate required fields
+        let isValid = true;
+        const errors = [];
+        
+        if (!name) {
+            errors.push('Name is required');
+            isValid = false;
+        }
+        
+        if (!email) {
+            errors.push('Email is required');
+            isValid = false;
+        } else if (!isValidEmail(email)) {
+            errors.push('Please enter a valid email address');
+            isValid = false;
+        }
+        
+        // Clear previous error states
+        clearFormErrors();
+        
+        if (!isValid) {
+            // Display errors
+            displayFormErrors(errors);
+            return;
+        }
+        
+        // Simulate form submission (replace with actual backend integration)
+        submitForm(formData);
+    });
+}
+
+/**
+ * Validate email format
+ */
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+/**
+ * Clear form error states
+ */
+function clearFormErrors() {
+    const inputs = document.querySelectorAll('.form-group input, .form-group textarea');
+    inputs.forEach(input => {
+        input.style.borderColor = '';
+        const errorElement = input.parentNode.querySelector('.field-error');
+        if (errorElement) {
+            errorElement.remove();
+        }
+    });
+}
+
+/**
+ * Display form validation errors
+ */
+function displayFormErrors(errors) {
+    const nameField = document.getElementById('name');
+    const emailField = document.getElementById('email');
+    
+    errors.forEach(error => {
+        if (error.includes('Name')) {
+            highlightErrorField(nameField);
+        }
+        if (error.includes('Email') || error.includes('email')) {
+            highlightErrorField(emailField);
+        }
+    });
+}
+
+/**
+ * Highlight field with error
+ */
+function highlightErrorField(field) {
+    field.style.borderColor = '#ef4444';
+    field.focus();
+}
+
+/**
+ * Handle form submission
+ */
+function submitForm(formData) {
+    const submitButton = document.querySelector('.submit-button');
+    const successMessage = document.getElementById('formSuccess');
+    const form = document.getElementById('contactForm');
+    
+    // Disable submit button during processing
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
+    
+    // Simulate API call delay
+    setTimeout(() => {
+        // Reset button
+        submitButton.disabled = false;
+        submitButton.textContent = 'Send';
+        
+        // Show success message
+        successMessage.style.display = 'block';
+        successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        
+        // Clear form
+        form.reset();
+        
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+            successMessage.style.display = 'none';
+        }, 5000);
+        
+        // Log for analytics (replace with actual analytics tracking)
+        console.log('Form submitted:', Object.fromEntries(formData));
+        
+        // TODO: Replace with actual backend integration
+        // Example: 
+        // fetch('/api/contact', {
+        //     method: 'POST',
+        //     body: formData
+        // }).then(response => {
+        //     // Handle response
+        // });
+        
+    }, 1000); // Simulate 1 second processing time
+}
 
 /**
  * Initialize interactive features for enhanced user experience

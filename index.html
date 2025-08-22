@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mornington Peninsula Roofing Company - Professional roofing services for residential and commercial properties. Over 25 years of experience.">
-    <meta name="keywords" content="roofing, Mornington Peninsula, roof repairs, roof installation, commercial roofing, residential roofing">
-    <title>Mornington Peninsula Roofing Company - Professional Roofing Services</title>
+    <meta name="description" content="Mornington Peninsula Roofing - Quality roofers for 25+ years. Expert repairs, restorations, re-roofing and roof painting from Mount Eliza to Sorrento.">
+    <meta name="keywords" content="roofing, Mornington Peninsula, roof repairs, roof restoration, re-roofing, roof painting, Mount Eliza, Sorrento">
+    <title>Mornington Peninsula Roofing - Quality Roofers for 25+ Years</title>
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/styles.css">
-    
-    <!-- Preconnect for performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
     <!-- Header Section -->
@@ -23,10 +20,8 @@
         <nav class="navigation">
             <div class="nav-container">
                 <ul class="nav-menu">
-                    <li><a href="#home">HOME</a></li>
                     <li><a href="#about">ABOUT US</a></li>
                     <li><a href="#services">SERVICES</a></li>
-                    <li><a href="#blog">BLOG</a></li>
                     <li><a href="#contact">CONTACT US</a></li>
                 </ul>
                 <a href="tel:03-4162-7766" class="phone-number" aria-label="Call us at 03 4162 7766">03 4162 7766</a>
@@ -38,27 +33,124 @@
         </div>
     </header>
 
+    <!-- Hero Section -->
+    <section class="hero-section">
+    </section>
+
     <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
-        <section class="hero-section" id="home">
+        <!-- About Us Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-layout">
+                    <div class="about-label">
+                        <span class="section-label">ABOUT</span>
+                        <span class="section-label">US</span>
+                    </div>
+                    <div class="about-content">
+                        <h1>Mornington Peninsula Roofing — Quality Roofers for 25+ Years</h1>
+                        <p>We're local roofing specialists proudly servicing the Mornington Peninsula — from Mount Eliza to Sorrento. Our team delivers expert repairs, restorations, re-roofing and roof painting for homes and businesses.</p>
+                        <p>With decades of experience and a workmanship-first approach, we diagnose issues properly, quote transparently, and complete every job to Australian Standards.</p>
+                        <p>Talk to us about extending your roof's life, improving street appeal, and protecting your property for years to come.</p>
+                        <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Call us</button>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Content Section -->
-        <section class="content-section" id="about">
-            <p>
-                Mornington Peninsula Roofing Company has been in business for over 25 years, 
-                providing exceptional roofing services throughout the Mornington Peninsula region. 
-                We specialize in residential and commercial roofing solutions, from new installations 
-                to repairs and maintenance.
-            </p>
-            <p>
-                Our experienced team is committed to delivering quality workmanship and reliable service, 
-                ensuring your roof provides lasting protection for your property. Contact us today for 
-                a free consultation and quote.
-            </p>
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="services-header">
+                    <span class="section-overline">OUR</span>
+                    <h2 class="section-title">SERVICES</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Roof Repairs</h3>
+                        <p>From leak detection and flashing fixes to tile replacement and ridge re-pointing, we locate the root cause and repair it right the first time.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Roof Restoration</h3>
+                        <p>Full clean, re-bedding and re-pointing, repairs as needed, and premium membrane coatings to bring tired roofs back to life.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Re-Roofing</h3>
+                        <p>When it's beyond repair, we replace with modern, durable materials for longevity, insulation performance, and a fresh look.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Roof Painting</h3>
+                        <p>Professional preparation and high-build coatings designed for coastal conditions on the Peninsula — long-lasting colour and protection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-header">
+                    <h2 class="section-title">CONTACT US</h2>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your project"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-button">Send</button>
+                    <div class="form-success" id="formSuccess" aria-live="polite" style="display: none;">
+                        Thank you! Your message has been sent successfully.
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MENU</h4>
+                    <ul>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#contact">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>CONTACT</h4>
+                    <p><a href="tel:03-4162-7766">03 4162 7766</a></p>
+                    <p>Servicing Mornington Peninsula</p>
+                </div>
+                <div class="footer-section">
+                    <h4>LOCATIONS</h4>
+                    <ul>
+                        <li>MOUNT ELIZA</li>
+                        <li>MORNINGTON</li>
+                        <li>FRANKSTON</li>
+                        <li>SORRENTO</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- JavaScript -->
     <script src="assets/js/main.js"></script>
