@@ -55,11 +55,18 @@
         .site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);z-index:100}
         .nav-container{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:24px}
         .brand{font-weight:700;text-decoration:none;color:var(--ink)}
-        .site-menu{display:flex;gap:28px}
-        .nav-link{text-transform:uppercase;letter-spacing:.2em;font-size:.85rem;text-decoration:none;color:var(--ink)}
-        .nav-link:hover,.nav-link:focus-visible{text-decoration:underline}
-        .nav-link[aria-current="page"]{text-decoration:underline}
+        .site-menu{display:flex;gap:28px;align-items:center}
+        .nav-link,.nav-link-button{background:none;border:0;cursor:pointer;font:inherit;text-transform:uppercase;letter-spacing:.2em;font-size:.85rem;text-decoration:none;color:var(--ink);padding:0}
+        .nav-link:hover,.nav-link:focus-visible,.nav-link-button:hover,.nav-link-button:focus-visible{text-decoration:underline}
+        .nav-link[aria-current="page"], .nav-link-button[aria-current="page"]{text-decoration:underline}
         .nav-toggle{display:none}
+        
+        /* Dropdown */
+        .nav-dropdown{position:relative}
+        .dropdown-panel{position:absolute;top:100%;left:0;display:none;min-width:220px;background:#fff;border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,.06);padding:8px}
+        .nav-dropdown[aria-expanded="true"] .dropdown-panel{display:block}
+        .dropdown-link{display:block;padding:10px 12px;color:var(--ink);text-decoration:none}
+        .dropdown-link:hover,.dropdown-link:focus-visible{background:#f7f7f7}
         @media (max-width:820px){
           .nav-toggle{display:inline-block}
           .site-menu{display:none;flex-direction:column;gap:12px;padding:12px 0}
@@ -327,20 +334,35 @@
     </script>
 </head>
 <body>
-    <header class="site-header">
-        <div class="nav-container">
-            <a class="brand" href="/">Mornington Peninsula Roofing</a>
-            <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
-            <nav id="site-menu" class="site-menu" aria-expanded="false">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/about.html" class="nav-link">About Us</a>
-                <a href="/#services" class="nav-link">Services</a>
-                <a href="/#locations" class="nav-link">Locations</a>
-                <a href="/blog" class="nav-link">Blog</a>
-                <a href="/contact.html" class="nav-link" aria-current="page">Contact Us</a>
-            </nav>
+<header class="site-header">
+  <div class="nav-container">
+    <a class="brand" href="/">Mornington Peninsula Roofing</a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+
+    <nav id="site-menu" class="site-menu" aria-expanded="false">
+      <a href="/" class="nav-link" data-nav="home">Home</a>
+      <a href="/about.html" class="nav-link" data-nav="about">About Us</a>
+      <a href="/#services" class="nav-link" data-nav="services">Services</a>
+
+      <div class="nav-dropdown" data-nav="locations">
+        <button class="nav-link nav-link-button" aria-expanded="false" aria-haspopup="true">
+          Locations
+          <span class="caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="dropdown-panel" role="menu">
+          <a role="menuitem" class="dropdown-link" href="/locations/mount-eliza.html">Mount Eliza</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/mornington.html">Mornington</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/frankston.html">Frankston</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/sorrento.html">Sorrento</a>
         </div>
-    </header>
+      </div>
+
+      <a href="/blog" class="nav-link" data-nav="blog">Blog</a>
+      <a href="/contact.html" class="nav-link" data-nav="contact">Contact Us</a>
+    </nav>
+  </div>
+</header>
 
     <main>
         <section class="main-content">
@@ -441,11 +463,11 @@
                 </div>
                 <div class="footer-section" id="locations">
                     <h4>LOCATIONS</h4>
-                    <ul>
-                        <li>MOUNT ELIZA</li>
-                        <li>MORNINGTON</li>
-                        <li>FRANKSTON</li>
-                        <li>SORRENTO</li>
+                    <ul class="footer-links">
+                        <li><a href="/locations/mount-eliza.html">Mount Eliza</a></li>
+                        <li><a href="/locations/mornington.html">Mornington</a></li>
+                        <li><a href="/locations/frankston.html">Frankston</a></li>
+                        <li><a href="/locations/sorrento.html">Sorrento</a></li>
                     </ul>
                 </div>
             </div>
@@ -453,10 +475,42 @@
     </footer>
 
     <script>
-        // Mobile menu toggle
-        const t=document.querySelector('.nav-toggle');
-        const m=document.getElementById('site-menu');
-        if(t&&m){t.addEventListener('click',()=>{const x=t.getAttribute('aria-expanded')==='true';t.setAttribute('aria-expanded',String(!x));m.setAttribute('aria-expanded',String(!x));});}
+        // Mobile hamburger
+        (()=>{
+            const t=document.querySelector('.nav-toggle');
+            const m=document.getElementById('site-menu');
+            if(t&&m){t.addEventListener('click',()=>{const x=t.getAttribute('aria-expanded')==='true';t.setAttribute('aria-expanded',String(!x));m.setAttribute('aria-expanded',String(!x));});}
+        })();
+
+        // Dropdown (click + keyboard)
+        (()=>{
+            const dd=document.querySelector('.nav-dropdown');
+            if(!dd) return;
+            const btn=dd.querySelector('.nav-link-button');
+            const panel=dd.querySelector('.dropdown-panel');
+            function setOpen(open){
+            dd.setAttribute('aria-expanded', String(open));
+            btn.setAttribute('aria-expanded', String(open));
+            }
+            btn.addEventListener('click', (e)=>{ e.stopPropagation(); setOpen(dd.getAttribute('aria-expanded')!=='true'); });
+            document.addEventListener('click', ()=> setOpen(false));
+            btn.addEventListener('keydown', (e)=>{ if(e.key==='Escape') setOpen(false); });
+            panel.addEventListener('keydown',(e)=>{ if(e.key==='Escape') setOpen(false); });
+        })();
+
+        // Mark active nav item
+        (()=>{
+            const path = window.location.pathname;
+            const set = (key)=> {
+            const el = document.querySelector(`[data-nav="${key}"]`);
+            if(el) el.setAttribute('aria-current','page');
+            };
+            if (path === '/' || path === '/index.html') set('home');
+            else if (path.endsWith('/about.html')) set('about');
+            else if (path.endsWith('/contact.html')) set('contact');
+            else if (path.startsWith('/locations/')) set('locations');
+            else if (path.startsWith('/blog')) set('blog');
+        })();
         
         // Contact form handling
         document.getElementById('contactForm').addEventListener('submit', function(e) {
