@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Mornington Peninsula Roofing</title>
+    <meta name="description" content="Local roofing specialists on the Mornington Peninsula. Learn about our team, values, workmanship, and commitment to quality roofing services.">
+    
+    <style>
+        /* CSS Custom Properties (Color Tokens) */
+        :root {
+            --ink: #0f172a;
+            --muted: #475569;
+            --border: #e5e7eb;
+            --accent: #6b8e79;
+            --background: #ffffff;
+            
+            /* Typography */
+            --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            --line-height-base: 1.6;
+            --line-height-relaxed: 1.8;
+            --letter-spacing-wide: 0.1em;
+            --letter-spacing-wider: 0.15em;
+            
+            /* Container */
+            --container-max-width: 1200px;
+            --spacing-xs: 24px;
+            --spacing-sm: 32px;
+            --spacing-md: 48px;
+            --spacing-lg: 60px;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-system);
+            line-height: var(--line-height-base);
+            color: var(--muted);
+            background-color: var(--background);
+        }
+
+        /* Container */
+        .container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);z-index:100}
+        .nav-container{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+        .brand{font-weight:700;text-decoration:none;color:var(--ink)}
+        .site-menu{display:flex;gap:28px}
+        .nav-link{text-transform:uppercase;letter-spacing:.2em;font-size:.85rem;text-decoration:none;color:var(--ink)}
+        .nav-link:hover,.nav-link:focus-visible{text-decoration:underline}
+        .nav-link[aria-current="page"]{text-decoration:underline}
+        .nav-toggle{display:none}
+        @media (max-width:820px){
+          .nav-toggle{display:inline-block}
+          .site-menu{display:none;flex-direction:column;gap:12px;padding:12px 0}
+          .site-menu[aria-expanded="true"]{display:flex}
+        }
+        [id]{scroll-margin-top:80px} /* offset for sticky header */
+        html{scroll-behavior:smooth}
+
+        /* Main Content */
+        .main-content {
+            padding: var(--spacing-lg) 0;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            gap: 48px;
+            align-items: start;
+        }
+
+        .content-image {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/10;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .content-text h1 {
+            font-size: clamp(28px, 4vw, 44px);
+            line-height: 1.1;
+            color: var(--ink);
+            margin-bottom: 24px;
+        }
+
+        .content-text p {
+            font-size: 16px;
+            line-height: var(--line-height-relaxed);
+            color: var(--muted);
+            margin-bottom: 20px;
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+
+        .features-list {
+            list-style: none;
+            margin: 24px 0;
+        }
+
+        .features-list li {
+            font-size: 16px;
+            color: var(--muted);
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 24px;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-top: 32px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: filter 0.3s ease;
+        }
+
+        .btn:hover,
+        .btn:focus-visible {
+            filter: brightness(.95);
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--ink);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover,
+        .btn-secondary:focus-visible {
+            background: var(--accent);
+            color: #fff;
+            border-color: var(--accent);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #f8f9fa;
+            padding: var(--spacing-md) 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-sm);
+        }
+
+        .footer-section h4 {
+            font-size: 14px;
+            font-weight: bold;
+            color: var(--ink);
+            margin-bottom: 16px;
+            letter-spacing: var(--letter-spacing-wide);
+            text-transform: uppercase;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section a {
+            text-decoration: none;
+            color: var(--muted);
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover,
+        .footer-section a:focus {
+            color: var(--accent);
+        }
+
+        .footer-section p {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            
+            .content-text {
+                order: -1;
+            }
+            
+            .cta-buttons {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-sm);
+                text-align: center;
+            }
+        }
+    </style>
+    
+    <!-- JSON-LD LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Mornington Peninsula Roofing",
+        "description": "Quality roofing specialists serving the Mornington Peninsula for over 25 years",
+        "telephone": "03 4162 7766",
+        "email": "info@morningtonpeninsularoofing.com.au",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Victoria",
+            "addressCountry": "AU"
+        },
+        "areaServed": {
+            "@type": "Place",
+            "name": "Mornington Peninsula"
+        },
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": -38.3598,
+                "longitude": 145.0837
+            }
+        },
+        "services": [
+            "Roof Repairs",
+            "Roof Restoration", 
+            "Re-Roofing",
+            "Roof Painting"
+        ],
+        "foundingDate": "1998",
+        "url": "https://morningtonpeninsularoofing.com.au"
+    }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-container">
+            <a class="brand" href="/">Mornington Peninsula Roofing</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+            <nav id="site-menu" class="site-menu" aria-expanded="false">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about.html" class="nav-link" aria-current="page">About Us</a>
+                <a href="/#services" class="nav-link">Services</a>
+                <a href="/#locations" class="nav-link">Locations</a>
+                <a href="/blog" class="nav-link">Blog</a>
+                <a href="/contact.html" class="nav-link">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-content">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="content-image-wrapper">
+                        <img src="assets/img/About_Us.jpg" alt="Professional roofing team working on a Mornington Peninsula home, showcasing quality workmanship and attention to detail" class="content-image">
+                    </div>
+                    <div class="content-text">
+                        <h1>About Us</h1>
+                        <p>We're local roofing specialists proudly servicing the Mornington Peninsula — from Mount Eliza to Sorrento. For over 25 years, our team has delivered expert roof repairs, restorations, re-roofing and roof painting for homes and businesses.</p>
+                        <p>Our workmanship-first approach means clear diagnosis, transparent quoting and projects completed to Australian Standards. We use proven materials designed for coastal conditions and stand behind every job.</p>
+                        <p>We value honesty, reliability and care in the details—protecting your home, improving street appeal and extending roof life.</p>
+                        
+                        <ul class="features-list">
+                            <li>Licensed & insured</li>
+                            <li>Coastal-grade coatings</li>
+                            <li>Australian Standards</li>
+                            <li>Clean site handover</li>
+                        </ul>
+                        
+                        <div class="cta-buttons">
+                            <a href="/#services" class="btn">View Services</a>
+                            <a href="/contact.html" class="btn btn-secondary">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MENU</h4>
+                    <ul>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/about.html">ABOUT US</a></li>
+                        <li><a href="/#services">SERVICES</a></li>
+                        <li><a href="/contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>CONTACT</h4>
+                    <p><a href="tel:03-4162-7766">03 4162 7766</a></p>
+                    <p>Servicing Mornington Peninsula</p>
+                </div>
+                <div class="footer-section" id="locations">
+                    <h4>LOCATIONS</h4>
+                    <ul>
+                        <li>MOUNT ELIZA</li>
+                        <li>MORNINGTON</li>
+                        <li>FRANKSTON</li>
+                        <li>SORRENTO</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const t=document.querySelector('.nav-toggle');
+        const m=document.getElementById('site-menu');
+        if(t&&m){t.addEventListener('click',()=>{const x=t.getAttribute('aria-expanded')==='true';t.setAttribute('aria-expanded',String(!x));m.setAttribute('aria-expanded',String(!x));});}
+    </script>
+</body>
+</html>

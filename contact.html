@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Mornington Peninsula Roofing</title>
+    <meta name="description" content="Get in touch for roof repairs, restoration, re-roofing or roof painting across the Mornington Peninsula. Call, email or send a message.">
+    
+    <style>
+        /* CSS Custom Properties (Color Tokens) */
+        :root {
+            --ink: #0f172a;
+            --muted: #475569;
+            --border: #e5e7eb;
+            --accent: #6b8e79;
+            --background: #ffffff;
+            
+            /* Typography */
+            --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            --line-height-base: 1.6;
+            --line-height-relaxed: 1.8;
+            --letter-spacing-wide: 0.1em;
+            --letter-spacing-wider: 0.15em;
+            
+            /* Container */
+            --container-max-width: 1200px;
+            --spacing-xs: 24px;
+            --spacing-sm: 32px;
+            --spacing-md: 48px;
+            --spacing-lg: 60px;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-system);
+            line-height: var(--line-height-base);
+            color: var(--muted);
+            background-color: var(--background);
+        }
+
+        /* Container */
+        .container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);z-index:100}
+        .nav-container{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+        .brand{font-weight:700;text-decoration:none;color:var(--ink)}
+        .site-menu{display:flex;gap:28px}
+        .nav-link{text-transform:uppercase;letter-spacing:.2em;font-size:.85rem;text-decoration:none;color:var(--ink)}
+        .nav-link:hover,.nav-link:focus-visible{text-decoration:underline}
+        .nav-link[aria-current="page"]{text-decoration:underline}
+        .nav-toggle{display:none}
+        @media (max-width:820px){
+          .nav-toggle{display:inline-block}
+          .site-menu{display:none;flex-direction:column;gap:12px;padding:12px 0}
+          .site-menu[aria-expanded="true"]{display:flex}
+        }
+        [id]{scroll-margin-top:80px} /* offset for sticky header */
+        html{scroll-behavior:smooth}
+
+        /* Main Content */
+        .main-content {
+            padding: var(--spacing-lg) 0;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            gap: 48px;
+            align-items: start;
+        }
+
+        .content-image {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/10;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .content-text h1 {
+            font-size: clamp(28px, 4vw, 44px);
+            line-height: 1.1;
+            color: var(--ink);
+            margin-bottom: 24px;
+        }
+
+        .content-text p {
+            font-size: 16px;
+            line-height: var(--line-height-relaxed);
+            color: var(--muted);
+            margin-bottom: 20px;
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+
+        .contact-details {
+            margin: 24px 0;
+        }
+
+        .contact-item {
+            margin-bottom: 12px;
+        }
+
+        .contact-item strong {
+            color: var(--ink);
+            font-weight: 600;
+        }
+
+        .contact-item a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .contact-item a:hover,
+        .contact-item a:focus-visible {
+            text-decoration: underline;
+        }
+
+        /* Form Styles */
+        .contact-form {
+            margin-top: 32px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--ink);
+            margin-bottom: 6px;
+            letter-spacing: var(--letter-spacing-wide);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: var(--font-system);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(107, 142, 121, 0.1);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #9ca3af;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            cursor: pointer;
+            transition: filter 0.3s ease;
+            font-size: 16px;
+            font-family: var(--font-system);
+        }
+
+        .btn:hover,
+        .btn:focus-visible {
+            filter: brightness(.95);
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        .form-success {
+            background-color: #dcfce7;
+            color: #166534;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-top: 16px;
+            border: 1px solid #bbf7d0;
+            display: none;
+        }
+
+        .form-error {
+            background-color: #fef2f2;
+            color: #dc2626;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-top: 16px;
+            border: 1px solid #fecaca;
+            display: none;
+        }
+
+        .privacy-note {
+            font-size: 14px;
+            color: var(--muted);
+            margin-top: 16px;
+            font-style: italic;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #f8f9fa;
+            padding: var(--spacing-md) 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-sm);
+        }
+
+        .footer-section h4 {
+            font-size: 14px;
+            font-weight: bold;
+            color: var(--ink);
+            margin-bottom: 16px;
+            letter-spacing: var(--letter-spacing-wide);
+            text-transform: uppercase;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section a {
+            text-decoration: none;
+            color: var(--muted);
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover,
+        .footer-section a:focus {
+            color: var(--accent);
+        }
+
+        .footer-section p {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-sm);
+                text-align: center;
+            }
+        }
+    </style>
+    
+    <!-- JSON-LD LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Mornington Peninsula Roofing",
+        "description": "Quality roofing specialists serving the Mornington Peninsula for over 25 years",
+        "telephone": "03 4162 7766",
+        "email": "info@morningtonpeninsularoofing.com.au",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Victoria",
+            "addressCountry": "AU"
+        },
+        "areaServed": {
+            "@type": "Place",
+            "name": "Mornington Peninsula"
+        },
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": -38.3598,
+                "longitude": 145.0837
+            }
+        },
+        "services": [
+            "Roof Repairs",
+            "Roof Restoration", 
+            "Re-Roofing",
+            "Roof Painting"
+        ],
+        "foundingDate": "1998",
+        "url": "https://morningtonpeninsularoofing.com.au"
+    }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-container">
+            <a class="brand" href="/">Mornington Peninsula Roofing</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+            <nav id="site-menu" class="site-menu" aria-expanded="false">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about.html" class="nav-link">About Us</a>
+                <a href="/#services" class="nav-link">Services</a>
+                <a href="/#locations" class="nav-link">Locations</a>
+                <a href="/blog" class="nav-link">Blog</a>
+                <a href="/contact.html" class="nav-link" aria-current="page">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-content">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="content-image-wrapper">
+                        <img src="assets/img/About_Us.jpg" alt="Contact Mornington Peninsula Roofing for expert roof repairs, restoration, and painting services across the Peninsula" class="content-image">
+                    </div>
+                    <div class="content-text">
+                        <h1>Contact Us</h1>
+                        <p>Tell us about your roof. We'll respond quickly with helpful advice and next steps.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <strong>Phone:</strong> <a href="tel:0341627766">03 4162 7766</a>
+                            </div>
+                            <div class="contact-item">
+                                <strong>Email:</strong> <a href="mailto:info@morningtonpeninsularoofing.com.au">info@morningtonpeninsularoofing.com.au</a>
+                            </div>
+                            <div class="contact-item">
+                                <strong>Service Area:</strong> Mornington Peninsula & Bayside
+                            </div>
+                        </div>
+                        
+                        <!-- TODO: integrate Formspree / API endpoint
+                             <form action="https://formspree.io/f/XXXX" method="POST"> -->
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="suburb">Suburb</label>
+                                <input type="text" id="suburb" name="suburb">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Service</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="Roof Repairs">Roof Repairs</option>
+                                    <option value="Roof Restoration">Roof Restoration</option>
+                                    <option value="Re-Roofing">Re-Roofing</option>
+                                    <option value="Roof Painting">Roof Painting</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" required placeholder="Tell us about your roofing needs..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn">Send</button>
+                            
+                            <div class="form-success" id="formSuccess" aria-live="polite">
+                                Thank you! Your message has been sent successfully. We'll be in touch soon.
+                            </div>
+                            
+                            <div class="form-error" id="formError" aria-live="polite">
+                                Please fill in all required fields correctly.
+                            </div>
+                        </form>
+                        
+                        <p class="privacy-note">We'll never share your details. Used only to respond to your enquiry.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MENU</h4>
+                    <ul>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/about.html">ABOUT US</a></li>
+                        <li><a href="/#services">SERVICES</a></li>
+                        <li><a href="/contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>CONTACT</h4>
+                    <p><a href="tel:03-4162-7766">03 4162 7766</a></p>
+                    <p>Servicing Mornington Peninsula</p>
+                </div>
+                <div class="footer-section" id="locations">
+                    <h4>LOCATIONS</h4>
+                    <ul>
+                        <li>MOUNT ELIZA</li>
+                        <li>MORNINGTON</li>
+                        <li>FRANKSTON</li>
+                        <li>SORRENTO</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const t=document.querySelector('.nav-toggle');
+        const m=document.getElementById('site-menu');
+        if(t&&m){t.addEventListener('click',()=>{const x=t.getAttribute('aria-expanded')==='true';t.setAttribute('aria-expanded',String(!x));m.setAttribute('aria-expanded',String(!x));});}
+        
+        // Contact form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name').trim();
+            const email = formData.get('email').trim();
+            const message = formData.get('message').trim();
+            
+            // Simple validation
+            if (!name || !email || !message) {
+                showFormMessage('error', 'Please fill in all required fields correctly.');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showFormMessage('error', 'Please enter a valid email address.');
+                return;
+            }
+            
+            // Simulate form submission
+            const submitButton = this.querySelector('button[type="submit"]');
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+            
+            setTimeout(() => {
+                submitButton.disabled = false;
+                submitButton.textContent = 'Send';
+                showFormMessage('success', 'Thank you! Your message has been sent successfully. We\'ll be in touch soon.');
+                this.reset();
+            }, 1000);
+        });
+        
+        function showFormMessage(type, message) {
+            const successEl = document.getElementById('formSuccess');
+            const errorEl = document.getElementById('formError');
+            
+            // Hide both messages first
+            successEl.style.display = 'none';
+            errorEl.style.display = 'none';
+            
+            if (type === 'success') {
+                successEl.textContent = message;
+                successEl.style.display = 'block';
+            } else {
+                errorEl.textContent = message;
+                errorEl.style.display = 'block';
+            }
+            
+            // Auto-hide after 5 seconds
+            setTimeout(() => {
+                successEl.style.display = 'none';
+                errorEl.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
