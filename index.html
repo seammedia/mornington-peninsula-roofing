@@ -11,26 +11,19 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="header-top">
-            MORNINGTON PENINSULA ROOFING COMPANY
-        </div>
-
-        <nav class="navigation">
-            <div class="nav-container">
-                <ul class="nav-menu">
-                    <li><a href="#about">ABOUT US</a></li>
-                    <li><a href="#services">SERVICES</a></li>
-                    <li><a href="#contact">CONTACT US</a></li>
-                </ul>
-                <a href="tel:03-4162-7766" class="phone-number" aria-label="Call us at 03 4162 7766">03 4162 7766</a>
-            </div>
+    <header class="site-header">
+      <div class="nav-container">
+        <a class="brand" href="/">Mornington Peninsula Roofing</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+        <nav id="site-menu" class="site-menu" aria-expanded="false">
+          <a href="/" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About Us</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#locations" class="nav-link">Locations</a>
+          <a href="/blog" class="nav-link">Blog</a>
+          <a href="#contact" class="nav-link">Contact Us</a>
         </nav>
-
-        <div class="company-title">
-            <h1>THE ROOFING SPECIALISTS</h1>
-        </div>
+      </div>
     </header>
 
     <!-- Hero Section -->
@@ -39,23 +32,17 @@
 
     <!-- Main Content -->
     <main>
-        <!-- About Us Section -->
-        <section class="about-section" id="about">
-            <div class="container">
-                <div class="about-layout">
-                    <div class="about-label">
-                        <span class="section-label">ABOUT</span>
-                        <span class="section-label">US</span>
-                    </div>
-                    <div class="about-content">
-                        <h1>Mornington Peninsula Roofing — Quality Roofers for 25+ Years</h1>
-                        <p>We're local roofing specialists proudly servicing the Mornington Peninsula — from Mount Eliza to Sorrento. Our team delivers expert repairs, restorations, re-roofing and roof painting for homes and businesses.</p>
-                        <p>With decades of experience and a workmanship-first approach, we diagnose issues properly, quote transparently, and complete every job to Australian Standards.</p>
-                        <p>Talk to us about extending your roof's life, improving street appeal, and protecting your property for years to come.</p>
-                        <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Call us</button>
-                    </div>
-                </div>
+        <section id="about" class="about">
+          <div class="about-inner">
+            <div class="about-label">A B O U T<br>U S</div>
+            <div class="about-content">
+              <h1 class="about-title">Mornington Peninsula Roofing — Quality Roofers for 25+ Years</h1>
+              <p>We're local roofing specialists proudly servicing the Mornington Peninsula — from Mount Eliza to Sorrento. Our team delivers expert <strong>roof repairs, restorations, re-roofing and roof painting</strong> for homes and businesses.</p>
+              <p>With decades of experience and a workmanship-first approach, we diagnose issues properly, quote transparently, and complete every job to Australian Standards.</p>
+              <p>Talk to us about extending your roof's life, improving street appeal, and protecting your property for years to come.</p>
+              <p><a class="btn" href="#contact">Call or message us</a></p>
             </div>
+          </div>
         </section>
 
         <!-- Services Section -->
@@ -139,7 +126,7 @@
                     <p><a href="tel:03-4162-7766">03 4162 7766</a></p>
                     <p>Servicing Mornington Peninsula</p>
                 </div>
-                <div class="footer-section">
+                <div class="footer-section" id="locations">
                     <h4>LOCATIONS</h4>
                     <ul>
                         <li>MOUNT ELIZA</li>
@@ -154,5 +141,10 @@
 
     <!-- JavaScript -->
     <script src="assets/js/main.js"></script>
+    <script>
+      const t=document.querySelector('.nav-toggle');
+      const m=document.getElementById('site-menu');
+      if(t&&m){t.addEventListener('click',()=>{const x=t.getAttribute('aria-expanded')==='true';t.setAttribute('aria-expanded',String(!x));m.setAttribute('aria-expanded',String(!x));});}
+    </script>
 </body>
 </html>
