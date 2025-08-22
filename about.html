@@ -55,11 +55,14 @@
         .site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);z-index:100}
         .nav-container{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:24px}
         .brand{font-weight:700;text-decoration:none;color:var(--ink)}
-        .site-menu{display:flex;gap:28px;align-items:center}
+        .site-menu{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
         .nav-link,.nav-link-button{background:none;border:0;cursor:pointer;font:inherit;text-transform:uppercase;letter-spacing:.2em;font-size:.85rem;text-decoration:none;color:var(--ink);padding:0}
         .nav-link:hover,.nav-link:focus-visible,.nav-link-button:hover,.nav-link-button:focus-visible{text-decoration:underline}
-        .nav-link[aria-current="page"], .nav-link-button[aria-current="page"]{text-decoration:underline}
+        .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:500;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em}
+        .btn-ghost{background:transparent;border:1px solid var(--border);color:var(--ink)}
         .nav-toggle{display:none}
+        .hide-md{display:inline-block}
+        .nav-link[aria-current="page"], .nav-link-button[aria-current="page"]{text-decoration:underline}
         
         /* Dropdown */
         .nav-dropdown{position:relative}
@@ -67,6 +70,13 @@
         .nav-dropdown[aria-expanded="true"] .dropdown-panel{display:block}
         .dropdown-link{display:block;padding:10px 12px;color:var(--ink);text-decoration:none}
         .dropdown-link:hover,.dropdown-link:focus-visible{background:#f7f7f7}
+        /* Fit on medium screens */
+        @media (max-width:1024px){
+          .site-menu{gap:16px}
+          .nav-link,.nav-link-button{letter-spacing:.16em;font-size:.82rem}
+          .hide-md{display:none}
+        }
+        /* Mobile menu */
         @media (max-width:820px){
           .nav-toggle{display:inline-block}
           .site-menu{display:none;flex-direction:column;gap:12px;padding:12px 0}
@@ -289,13 +299,11 @@
 
     <nav id="site-menu" class="site-menu" aria-expanded="false">
       <a href="/" class="nav-link" data-nav="home">Home</a>
-      <a href="/about.html" class="nav-link" data-nav="about">About Us</a>
+      <a href="/about.html" class="nav-link" data-nav="about">About</a>
       <a href="/#services" class="nav-link" data-nav="services">Services</a>
-
       <div class="nav-dropdown" data-nav="locations">
         <button class="nav-link nav-link-button" aria-expanded="false" aria-haspopup="true">
-          Locations
-          <span class="caret" aria-hidden="true">▾</span>
+          Locations <span class="caret" aria-hidden="true">▾</span>
         </button>
         <div class="dropdown-panel" role="menu">
           <a role="menuitem" class="dropdown-link" href="/locations/mount-eliza.html">Mount Eliza</a>
@@ -304,9 +312,11 @@
           <a role="menuitem" class="dropdown-link" href="/locations/sorrento.html">Sorrento</a>
         </div>
       </div>
-
-      <a href="/blog" class="nav-link" data-nav="blog">Blog</a>
-      <a href="/contact.html" class="nav-link" data-nav="contact">Contact Us</a>
+      <a href="/blog/" class="nav-link" data-nav="blog">Blog</a>
+      <a href="/contact.html" class="nav-link" data-nav="contact">Contact</a>
+      <!-- Optional compact CTAs; hidden on medium screens to save space -->
+      <a href="tel:0341627766" class="btn btn-ghost hide-md">03 4162 7766</a>
+      <a href="/contact.html" class="btn hide-md">Get Quote</a>
     </nav>
   </div>
 </header>
@@ -347,10 +357,11 @@
                 <div class="footer-section">
                     <h4>MENU</h4>
                     <ul>
-                        <li><a href="/">HOME</a></li>
-                        <li><a href="/about.html">ABOUT US</a></li>
-                        <li><a href="/#services">SERVICES</a></li>
-                        <li><a href="/contact.html">CONTACT US</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -372,42 +383,36 @@
     </footer>
 
 <script>
-  // Mobile hamburger
-  (()=>{
-    const t=document.querySelector('.nav-toggle');
-    const m=document.getElementById('site-menu');
-    if(t&&m){t.addEventListener('click',()=>{const x=t.getAttribute('aria-expanded')==='true';t.setAttribute('aria-expanded',String(!x));m.setAttribute('aria-expanded',String(!x));});}
-  })();
-
-  // Dropdown (click + keyboard)
-  (()=>{
-    const dd=document.querySelector('.nav-dropdown');
-    if(!dd) return;
-    const btn=dd.querySelector('.nav-link-button');
-    const panel=dd.querySelector('.dropdown-panel');
-    function setOpen(open){
-      dd.setAttribute('aria-expanded', String(open));
-      btn.setAttribute('aria-expanded', String(open));
-    }
-    btn.addEventListener('click', (e)=>{ e.stopPropagation(); setOpen(dd.getAttribute('aria-expanded')!=='true'); });
-    document.addEventListener('click', ()=> setOpen(false));
-    btn.addEventListener('keydown', (e)=>{ if(e.key==='Escape') setOpen(false); });
-    panel.addEventListener('keydown',(e)=>{ if(e.key==='Escape') setOpen(false); });
-  })();
-
-  // Mark active nav item
-  (()=>{
-    const path = window.location.pathname;
-    const set = (key)=> {
-      const el = document.querySelector(`[data-nav="${key}"]`);
-      if(el) el.setAttribute('aria-current','page');
-    };
-    if (path === '/' || path === '/index.html') set('home');
-    else if (path.endsWith('/about.html')) set('about');
-    else if (path.endsWith('/contact.html')) set('contact');
-    else if (path.startsWith('/locations/')) set('locations');
-    else if (path.startsWith('/blog')) set('blog');
-  })();
+// Mobile hamburger
+(function(){
+const t=document.querySelector('.nav-toggle');
+const m=document.getElementById('site-menu');
+if(t&&m){t.addEventListener('click',()=>{
+const open=t.getAttribute('aria-expanded')==='true';
+t.setAttribute('aria-expanded', String(!open));
+m.setAttribute('aria-expanded', String(!open));
+});}
+})();
+// Dropdown open/close + Esc
+(function(){
+const dd=document.querySelector('.nav-dropdown'); if(!dd) return;
+const btn=dd.querySelector('.nav-link-button');
+const panel=dd.querySelector('.dropdown-panel');
+const setOpen=(o)=>{dd.setAttribute('aria-expanded', String(o)); btn.setAttribute('aria-expanded', String(o));};
+btn.addEventListener('click', e=>{e.stopPropagation(); setOpen(dd.getAttribute('aria-expanded')!=='true');});
+document.addEventListener('click', ()=> setOpen(false));
+[btn,panel].forEach(el=>el&&el.addEventListener('keydown', e=>{ if(e.key==='Escape') setOpen(false);}));
+})();
+// Active nav state
+(function(){
+const p = window.location.pathname.replace(/index\.html$/, '');
+const mark = (k)=>{ const el=document.querySelector(`[data-nav="${k}"]`); if(el) el.setAttribute('aria-current','page');};
+if(p==='/'||p==='') mark('home');
+else if(p.endsWith('/about.html')) mark('about');
+else if(p.startsWith('/blog')) mark('blog');
+else if(p.endsWith('/contact.html')) mark('contact');
+else if(p.startsWith('/locations/')) mark('locations');
+})();
 </script>
 </body>
 </html>

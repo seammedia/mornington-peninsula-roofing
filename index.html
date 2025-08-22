@@ -30,33 +30,28 @@
 <body>
 <header class="site-header">
   <div class="nav-container">
-    <a class="brand" href="https://mornington-peninsula-roofing.vercel.app/">Mornington Peninsula Roofing</a>
-
+    <a class="brand" href="/">Mornington Peninsula Roofing</a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
-
     <nav id="site-menu" class="site-menu" aria-expanded="false">
-      <a href="https://mornington-peninsula-roofing.vercel.app/" class="nav-link" data-nav="home">Home</a>
-      <a href="https://mornington-peninsula-roofing.vercel.app/about.html" class="nav-link" data-nav="about">About Us</a>
-      <a href="https://mornington-peninsula-roofing.vercel.app/#services" class="nav-link" data-nav="services">Services</a>
-
+      <a href="/" class="nav-link" data-nav="home">Home</a>
+      <a href="/about.html" class="nav-link" data-nav="about">About</a>
+      <a href="/#services" class="nav-link" data-nav="services">Services</a>
       <div class="nav-dropdown" data-nav="locations">
         <button class="nav-link nav-link-button" aria-expanded="false" aria-haspopup="true">
-          Locations
-          <span class="caret" aria-hidden="true">▾</span>
+          Locations <span class="caret" aria-hidden="true">▾</span>
         </button>
         <div class="dropdown-panel" role="menu">
-          <a role="menuitem" class="dropdown-link" href="https://mornington-peninsula-roofing.vercel.app/locations/mount-eliza.html">Mount Eliza</a>
-          <a role="menuitem" class="dropdown-link" href="https://mornington-peninsula-roofing.vercel.app/locations/mornington.html">Mornington</a>
-          <a role="menuitem" class="dropdown-link" href="https://mornington-peninsula-roofing.vercel.app/locations/frankston.html">Frankston</a>
-          <a role="menuitem" class="dropdown-link" href="https://mornington-peninsula-roofing.vercel.app/locations/sorrento.html">Sorrento</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/mount-eliza.html">Mount Eliza</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/mornington.html">Mornington</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/frankston.html">Frankston</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/sorrento.html">Sorrento</a>
         </div>
       </div>
-
-      <a href="https://mornington-peninsula-roofing.vercel.app/contact.html" class="nav-link" data-nav="contact">Contact Us</a>
-      <div class="nav-cta">
-        <a href="tel:03-4162-7766" class="cta-phone">03 4162 7766</a>
-        <a href="https://mornington-peninsula-roofing.vercel.app/contact.html" class="cta-quote">Get Quote</a>
-      </div>
+      <a href="/blog/" class="nav-link" data-nav="blog">Blog</a>
+      <a href="/contact.html" class="nav-link" data-nav="contact">Contact</a>
+      <!-- Optional compact CTAs; hidden on medium screens to save space -->
+      <a href="tel:0341627766" class="btn btn-ghost hide-md">03 4162 7766</a>
+      <a href="/contact.html" class="btn hide-md">Get Quote</a>
     </nav>
   </div>
 </header>
@@ -179,10 +174,11 @@
                 <div class="footer-section">
                     <h4>MENU</h4>
                     <ul>
-                        <li><a href="https://mornington-peninsula-roofing.vercel.app/">HOME</a></li>
-                        <li><a href="https://mornington-peninsula-roofing.vercel.app/about.html">ABOUT US</a></li>
-                        <li><a href="https://mornington-peninsula-roofing.vercel.app/#services">SERVICES</a></li>
-                        <li><a href="https://mornington-peninsula-roofing.vercel.app/contact.html">CONTACT US</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -193,10 +189,10 @@
                 <div class="footer-section" id="locations">
                     <h4>LOCATIONS</h4>
                     <ul class="footer-links">
-                        <li><a href="https://mornington-peninsula-roofing.vercel.app/locations/mount-eliza.html">Mount Eliza</a></li>
-                        <li><a href="https://mornington-peninsula-roofing.vercel.app/locations/mornington.html">Mornington</a></li>
-                        <li><a href="https://mornington-peninsula-roofing.vercel.app/locations/frankston.html">Frankston</a></li>
-                        <li><a href="https://mornington-peninsula-roofing.vercel.app/locations/sorrento.html">Sorrento</a></li>
+                        <li><a href="/locations/mount-eliza.html">Mount Eliza</a></li>
+                        <li><a href="/locations/mornington.html">Mornington</a></li>
+                        <li><a href="/locations/frankston.html">Frankston</a></li>
+                        <li><a href="/locations/sorrento.html">Sorrento</a></li>
                     </ul>
                 </div>
             </div>
@@ -249,42 +245,36 @@
     <!-- JavaScript -->
     <script src="assets/js/main.js"></script>
 <script>
-  // Mobile hamburger
-  (()=>{
-    const t=document.querySelector('.nav-toggle');
-    const m=document.getElementById('site-menu');
-    if(t&&m){t.addEventListener('click',()=>{const x=t.getAttribute('aria-expanded')==='true';t.setAttribute('aria-expanded',String(!x));m.setAttribute('aria-expanded',String(!x));});}
-  })();
-
-  // Dropdown (click + keyboard)
-  (()=>{
-    const dd=document.querySelector('.nav-dropdown');
-    if(!dd) return;
-    const btn=dd.querySelector('.nav-link-button');
-    const panel=dd.querySelector('.dropdown-panel');
-    function setOpen(open){
-      dd.setAttribute('aria-expanded', String(open));
-      btn.setAttribute('aria-expanded', String(open));
-    }
-    btn.addEventListener('click', (e)=>{ e.stopPropagation(); setOpen(dd.getAttribute('aria-expanded')!=='true'); });
-    document.addEventListener('click', ()=> setOpen(false));
-    btn.addEventListener('keydown', (e)=>{ if(e.key==='Escape') setOpen(false); });
-    panel.addEventListener('keydown',(e)=>{ if(e.key==='Escape') setOpen(false); });
-  })();
-
-  // Mark active nav item
-  (()=>{
-    const path = window.location.pathname;
-    const set = (key)=> {
-      const el = document.querySelector(`[data-nav="${key}"]`);
-      if(el) el.setAttribute('aria-current','page');
-    };
-    if (path === '/' || path === '/index.html') set('home');
-    else if (path.endsWith('/about.html')) set('about');
-    else if (path.endsWith('/contact.html')) set('contact');
-    else if (path.startsWith('/locations/')) set('locations');
-    else if (path.startsWith('/blog')) set('blog');
-  })();
+// Mobile hamburger
+(function(){
+const t=document.querySelector('.nav-toggle');
+const m=document.getElementById('site-menu');
+if(t&&m){t.addEventListener('click',()=>{
+const open=t.getAttribute('aria-expanded')==='true';
+t.setAttribute('aria-expanded', String(!open));
+m.setAttribute('aria-expanded', String(!open));
+});}
+})();
+// Dropdown open/close + Esc
+(function(){
+const dd=document.querySelector('.nav-dropdown'); if(!dd) return;
+const btn=dd.querySelector('.nav-link-button');
+const panel=dd.querySelector('.dropdown-panel');
+const setOpen=(o)=>{dd.setAttribute('aria-expanded', String(o)); btn.setAttribute('aria-expanded', String(o));};
+btn.addEventListener('click', e=>{e.stopPropagation(); setOpen(dd.getAttribute('aria-expanded')!=='true');});
+document.addEventListener('click', ()=> setOpen(false));
+[btn,panel].forEach(el=>el&&el.addEventListener('keydown', e=>{ if(e.key==='Escape') setOpen(false);}));
+})();
+// Active nav state
+(function(){
+const p = window.location.pathname.replace(/index\.html$/, '');
+const mark = (k)=>{ const el=document.querySelector(`[data-nav="${k}"]`); if(el) el.setAttribute('aria-current','page');};
+if(p==='/'||p==='') mark('home');
+else if(p.endsWith('/about.html')) mark('about');
+else if(p.startsWith('/blog')) mark('blog');
+else if(p.endsWith('/contact.html')) mark('contact');
+else if(p.startsWith('/locations/')) mark('locations');
+})();
 </script>
 </body>
 </html>
