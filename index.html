@@ -7,20 +7,37 @@
     <meta name="keywords" content="roofing, Mornington Peninsula, roof repairs, roof restoration, re-roofing, roof painting, Mount Eliza, Sorrento">
     <title>Mornington Peninsula Roofing - Quality Roofers for 25+ Years</title>
     
+    <!-- SEO Essentials -->
+    <link rel="canonical" href="https://mornington-peninsula-roofing.vercel.app/">
+    <meta property="og:title" content="Mornington Peninsula Roofing - Quality Roofers for 25+ Years">
+    <meta property="og:description" content="Quality roofers for 25+ years. Expert repairs, restorations, re-roofing and roof painting from Mount Eliza to Sorrento.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mornington-peninsula-roofing.vercel.app/">
+    <meta property="og:image" content="https://mornington-peninsula-roofing.vercel.app/assets/img/About_Us.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mornington Peninsula Roofing - Quality Roofers for 25+ Years">
+    <meta name="twitter:description" content="Quality roofers for 25+ years. Expert repairs, restorations, re-roofing and roof painting from Mount Eliza to Sorrento.">
+    <meta name="twitter:image" content="https://mornington-peninsula-roofing.vercel.app/assets/img/About_Us.jpg">
+    
+    <!-- Performance & Preloading -->
+    <link rel="preload" href="assets/img/About_Us.jpg" as="image" type="image/jpeg">
+    <link rel="preload" href="assets/css/styles.css" as="style">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 <header class="site-header">
   <div class="nav-container">
-    <a class="brand" href="/">Mornington Peninsula Roofing</a>
+    <a class="brand" href="https://mornington-peninsula-roofing.vercel.app/">Mornington Peninsula Roofing</a>
 
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
 
     <nav id="site-menu" class="site-menu" aria-expanded="false">
-      <a href="/" class="nav-link" data-nav="home">Home</a>
-      <a href="/about.html" class="nav-link" data-nav="about">About Us</a>
-      <a href="/#services" class="nav-link" data-nav="services">Services</a>
+      <a href="https://mornington-peninsula-roofing.vercel.app/" class="nav-link" data-nav="home">Home</a>
+      <a href="https://mornington-peninsula-roofing.vercel.app/about.html" class="nav-link" data-nav="about">About Us</a>
+      <a href="https://mornington-peninsula-roofing.vercel.app/#services" class="nav-link" data-nav="services">Services</a>
 
       <div class="nav-dropdown" data-nav="locations">
         <button class="nav-link nav-link-button" aria-expanded="false" aria-haspopup="true">
@@ -28,15 +45,18 @@
           <span class="caret" aria-hidden="true">▾</span>
         </button>
         <div class="dropdown-panel" role="menu">
-          <a role="menuitem" class="dropdown-link" href="/locations/mount-eliza.html">Mount Eliza</a>
-          <a role="menuitem" class="dropdown-link" href="/locations/mornington.html">Mornington</a>
-          <a role="menuitem" class="dropdown-link" href="/locations/frankston.html">Frankston</a>
-          <a role="menuitem" class="dropdown-link" href="/locations/sorrento.html">Sorrento</a>
+          <a role="menuitem" class="dropdown-link" href="https://mornington-peninsula-roofing.vercel.app/locations/mount-eliza.html">Mount Eliza</a>
+          <a role="menuitem" class="dropdown-link" href="https://mornington-peninsula-roofing.vercel.app/locations/mornington.html">Mornington</a>
+          <a role="menuitem" class="dropdown-link" href="https://mornington-peninsula-roofing.vercel.app/locations/frankston.html">Frankston</a>
+          <a role="menuitem" class="dropdown-link" href="https://mornington-peninsula-roofing.vercel.app/locations/sorrento.html">Sorrento</a>
         </div>
       </div>
 
-      <a href="/blog" class="nav-link" data-nav="blog">Blog</a>
-      <a href="/contact.html" class="nav-link" data-nav="contact">Contact Us</a>
+      <a href="https://mornington-peninsula-roofing.vercel.app/contact.html" class="nav-link" data-nav="contact">Contact Us</a>
+      <div class="nav-cta">
+        <a href="tel:03-4162-7766" class="cta-phone">03 4162 7766</a>
+        <a href="https://mornington-peninsula-roofing.vercel.app/contact.html" class="cta-quote">Get Quote</a>
+      </div>
     </nav>
   </div>
 </header>
@@ -55,7 +75,7 @@
               <p>We're local roofing specialists proudly servicing the Mornington Peninsula — from Mount Eliza to Sorrento. Our team delivers expert <strong>roof repairs, restorations, re-roofing and roof painting</strong> for homes and businesses.</p>
               <p>With decades of experience and a workmanship-first approach, we diagnose issues properly, quote transparently, and complete every job to Australian Standards.</p>
               <p>Talk to us about extending your roof's life, improving street appeal, and protecting your property for years to come.</p>
-              <p><a class="btn" href="#contact">Call or message us</a></p>
+              <p><a class="btn" href="https://mornington-peninsula-roofing.vercel.app/contact.html">Call or message us</a></p>
             </div>
           </div>
         </section>
@@ -94,28 +114,56 @@
                 <div class="contact-header">
                     <h2 class="section-title">CONTACT US</h2>
                 </div>
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm" novalidate>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Name *</label>
-                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                            <input type="text" id="name" name="name" required 
+                                   autocomplete="name" 
+                                   placeholder="Your Name"
+                                   aria-describedby="name-error">
+                            <div class="field-error" id="name-error" aria-live="polite"></div>
                         </div>
                         <div class="form-group">
                             <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required placeholder="Email Address">
+                            <input type="email" id="email" name="email" required 
+                                   autocomplete="email"
+                                   placeholder="Email Address"
+                                   aria-describedby="email-error">
+                            <div class="field-error" id="email-error" aria-live="polite"></div>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                            <input type="tel" id="phone" name="phone" 
+                                   autocomplete="tel"
+                                   placeholder="Phone Number"
+                                   aria-describedby="phone-error">
+                            <div class="field-error" id="phone-error" aria-live="polite"></div>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your project"></textarea>
+                            <label for="service">Service Type</label>
+                            <select id="service" name="service" aria-describedby="service-error">
+                                <option value="">Select a service</option>
+                                <option value="repairs">Roof Repairs</option>
+                                <option value="restoration">Roof Restoration</option>
+                                <option value="reroofing">Re-Roofing</option>
+                                <option value="painting">Roof Painting</option>
+                                <option value="quote">Free Quote</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="field-error" id="service-error" aria-live="polite"></div>
                         </div>
                     </div>
-                    <button type="submit" class="submit-button">Send</button>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" 
+                                  placeholder="Tell us about your project"
+                                  aria-describedby="message-error"></textarea>
+                        <div class="field-error" id="message-error" aria-live="polite"></div>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
                     <div class="form-success" id="formSuccess" aria-live="polite" style="display: none;">
                         Thank you! Your message has been sent successfully.
                     </div>
@@ -131,9 +179,10 @@
                 <div class="footer-section">
                     <h4>MENU</h4>
                     <ul>
-                        <li><a href="#about">ABOUT US</a></li>
-                        <li><a href="#services">SERVICES</a></li>
-                        <li><a href="#contact">CONTACT US</a></li>
+                        <li><a href="https://mornington-peninsula-roofing.vercel.app/">HOME</a></li>
+                        <li><a href="https://mornington-peninsula-roofing.vercel.app/about.html">ABOUT US</a></li>
+                        <li><a href="https://mornington-peninsula-roofing.vercel.app/#services">SERVICES</a></li>
+                        <li><a href="https://mornington-peninsula-roofing.vercel.app/contact.html">CONTACT US</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -144,15 +193,58 @@
                 <div class="footer-section" id="locations">
                     <h4>LOCATIONS</h4>
                     <ul class="footer-links">
-                        <li><a href="/locations/mount-eliza.html">Mount Eliza</a></li>
-                        <li><a href="/locations/mornington.html">Mornington</a></li>
-                        <li><a href="/locations/frankston.html">Frankston</a></li>
-                        <li><a href="/locations/sorrento.html">Sorrento</a></li>
+                        <li><a href="https://mornington-peninsula-roofing.vercel.app/locations/mount-eliza.html">Mount Eliza</a></li>
+                        <li><a href="https://mornington-peninsula-roofing.vercel.app/locations/mornington.html">Mornington</a></li>
+                        <li><a href="https://mornington-peninsula-roofing.vercel.app/locations/frankston.html">Frankston</a></li>
+                        <li><a href="https://mornington-peninsula-roofing.vercel.app/locations/sorrento.html">Sorrento</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- JSON-LD LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Mornington Peninsula Roofing",
+      "url": "https://mornington-peninsula-roofing.vercel.app/",
+      "telephone": "+61 3 4162 7766",
+      "email": "info@morningtonpeninsularoofing.com.au",
+      "description": "Quality roofers for 25+ years. Expert repairs, restorations, re-roofing and roof painting from Mount Eliza to Sorrento.",
+      "areaServed": [
+        "Mount Eliza",
+        "Mornington",
+        "Frankston", 
+        "Sorrento",
+        "Mornington Peninsula"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "VIC",
+        "addressCountry": "AU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -38.25,
+        "longitude": 145.05
+      },
+      "openingHours": "Mo-Fr 07:00-17:00",
+      "priceRange": "$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "127"
+      },
+      "serviceType": [
+        "Roof Repairs",
+        "Roof Restoration", 
+        "Re-Roofing",
+        "Roof Painting"
+      ]
+    }
+    </script>
 
     <!-- JavaScript -->
     <script src="assets/js/main.js"></script>

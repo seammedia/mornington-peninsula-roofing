@@ -153,29 +153,20 @@ function initializeContactForm() {
         const phone = formData.get('phone').trim();
         const message = formData.get('message').trim();
         
-        // Validate required fields
-        let isValid = true;
-        const errors = [];
-        
-        if (!name) {
-            errors.push('Name is required');
-            isValid = false;
-        }
-        
-        if (!email) {
-            errors.push('Email is required');
-            isValid = false;
-        } else if (!isValidEmail(email)) {
-            errors.push('Please enter a valid email address');
-            isValid = false;
-        }
-        
         // Clear previous error states
         clearFormErrors();
         
+        // Validate all fields
+        let isValid = true;
+        
+        isValid = validateField('name', name, true) && isValid;
+        isValid = validateField('email', email, true) && isValid;
+        isValid = validateField('phone', phone, false) && isValid;
+        
         if (!isValid) {
-            // Display errors
-            displayFormErrors(errors);
+            // Focus first error field
+            const firstError = document.querySelector('.form-group.error input, .form-group.error textarea, .form-group.error select');
+            if (firstError) firstError.focus();
             return;
         }
         
@@ -196,39 +187,69 @@ function isValidEmail(email) {
  * Clear form error states
  */
 function clearFormErrors() {
-    const inputs = document.querySelectorAll('.form-group input, .form-group textarea');
-    inputs.forEach(input => {
-        input.style.borderColor = '';
-        const errorElement = input.parentNode.querySelector('.field-error');
+    const formGroups = document.querySelectorAll('.form-group');
+    formGroups.forEach(group => {
+        group.classList.remove('error');
+        const errorElement = group.querySelector('.field-error');
         if (errorElement) {
-            errorElement.remove();
+            errorElement.textContent = '';
         }
     });
 }
 
 /**
- * Display form validation errors
+ * Show field error
  */
-function displayFormErrors(errors) {
-    const nameField = document.getElementById('name');
-    const emailField = document.getElementById('email');
+function showFieldError(fieldName, message) {
+    const field = document.getElementById(fieldName);
+    const formGroup = field.closest('.form-group');
+    const errorElement = document.getElementById(fieldName + '-error');
     
-    errors.forEach(error => {
-        if (error.includes('Name')) {
-            highlightErrorField(nameField);
-        }
-        if (error.includes('Email') || error.includes('email')) {
-            highlightErrorField(emailField);
-        }
-    });
+    formGroup.classList.add('error');
+    errorElement.textContent = message;
 }
 
 /**
- * Highlight field with error
+ * Validate individual field
  */
-function highlightErrorField(field) {
-    field.style.borderColor = '#ef4444';
-    field.focus();
+function validateField(fieldName, value, required = false) {
+    let isValid = true;
+    let message = '';
+    
+    switch(fieldName) {
+        case 'name':
+            if (required && (!value || value.trim() === '')) {
+                isValid = false;
+                message = 'Name is required';
+            } else if (value && value.trim().length < 2) {
+                isValid = false;
+                message = 'Name must be at least 2 characters';
+            }
+            break;
+            
+        case 'email':
+            if (required && (!value || value.trim() === '')) {
+                isValid = false;
+                message = 'Email is required';
+            } else if (value && !isValidEmail(value)) {
+                isValid = false;
+                message = 'Please enter a valid email address';
+            }
+            break;
+            
+        case 'phone':
+            if (value && !/^[\d\s\-\+\(\)]+$/.test(value)) {
+                isValid = false;
+                message = 'Please enter a valid phone number';
+            }
+            break;
+    }
+    
+    if (!isValid) {
+        showFieldError(fieldName, message);
+    }
+    
+    return isValid;
 }
 
 /**

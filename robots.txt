@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mornington-peninsula-roofing.vercel.app/sitemap.xml
+
+# Crawl-delay for politeness
+Crawl-delay: 1
