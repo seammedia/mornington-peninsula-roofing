@@ -90,4 +90,54 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  
+  <!-- New Blog Posts Added 2025-08-24 -->
+  <url>
+    <loc>https://morningtonpeninsularoofing.com.au/blog/roof-repairs-mornington-peninsula</loc>
+    <lastmod>2025-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://morningtonpeninsularoofing.com.au/blog/carport-roofing-mornington-peninsula</loc>
+    <lastmod>2025-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://morningtonpeninsularoofing.com.au/blog/gazebo-roofing-mornington-peninsula</loc>
+    <lastmod>2025-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://morningtonpeninsularoofing.com.au/blog/metal-roofing-mornington</loc>
+    <lastmod>2025-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://morningtonpeninsularoofing.com.au/blog/patio-roof-installation-mornington-peninsula</loc>
+    <lastmod>2025-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://morningtonpeninsularoofing.com.au/blog/roof-painting-mornington-peninsula</loc>
+    <lastmod>2025-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://morningtonpeninsularoofing.com.au/blog/roof-replacement-mornington</loc>
+    <lastmod>2025-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://morningtonpeninsularoofing.com.au/blog/roofing-contractors-mornington-peninsula</loc>
+    <lastmod>2025-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
