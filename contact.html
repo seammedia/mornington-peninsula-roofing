@@ -343,7 +343,17 @@
     <nav id="site-menu" class="site-menu" aria-expanded="false">
       <a href="/" class="nav-link" data-nav="home">Home</a>
       <a href="/about.html" class="nav-link" data-nav="about">About Us</a>
-      <a href="/#services" class="nav-link" data-nav="services">Services</a>
+      <div class="nav-dropdown" data-nav="services">
+        <button class="nav-link nav-link-button" aria-expanded="false" aria-haspopup="true">
+          Services <span class="caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="dropdown-panel" role="menu">
+          <a role="menuitem" class="dropdown-link" href="/services/roof-repairs.html">Roof Repairs</a>
+          <a role="menuitem" class="dropdown-link" href="/services/roof-restoration.html">Roof Restoration</a>
+          <a role="menuitem" class="dropdown-link" href="/services/re-roofing.html">Re-Roofing</a>
+          <a role="menuitem" class="dropdown-link" href="/services/roof-painting.html">Roof Painting</a>
+        </div>
+      </div>
 
       <div class="nav-dropdown" data-nav="locations">
         <button class="nav-link nav-link-button" aria-expanded="false" aria-haspopup="true">
@@ -482,20 +492,21 @@
             if(t&&m){t.addEventListener('click',()=>{const x=t.getAttribute('aria-expanded')==='true';t.setAttribute('aria-expanded',String(!x));m.setAttribute('aria-expanded',String(!x));});}
         })();
 
-        // Dropdown (click + keyboard)
+        // Dropdown (click + keyboard) - handle multiple dropdowns
         (()=>{
-            const dd=document.querySelector('.nav-dropdown');
-            if(!dd) return;
-            const btn=dd.querySelector('.nav-link-button');
-            const panel=dd.querySelector('.dropdown-panel');
-            function setOpen(open){
-            dd.setAttribute('aria-expanded', String(open));
-            btn.setAttribute('aria-expanded', String(open));
-            }
-            btn.addEventListener('click', (e)=>{ e.stopPropagation(); setOpen(dd.getAttribute('aria-expanded')!=='true'); });
-            document.addEventListener('click', ()=> setOpen(false));
-            btn.addEventListener('keydown', (e)=>{ if(e.key==='Escape') setOpen(false); });
-            panel.addEventListener('keydown',(e)=>{ if(e.key==='Escape') setOpen(false); });
+            const dropdowns = document.querySelectorAll('.nav-dropdown');
+            dropdowns.forEach(dd => {
+                const btn=dd.querySelector('.nav-link-button');
+                const panel=dd.querySelector('.dropdown-panel');
+                function setOpen(open){
+                    dd.setAttribute('aria-expanded', String(open));
+                    btn.setAttribute('aria-expanded', String(open));
+                }
+                btn.addEventListener('click', (e)=>{ e.stopPropagation(); setOpen(dd.getAttribute('aria-expanded')!=='true'); });
+                document.addEventListener('click', ()=> setOpen(false));
+                btn.addEventListener('keydown', (e)=>{ if(e.key==='Escape') setOpen(false); });
+                panel.addEventListener('keydown',(e)=>{ if(e.key==='Escape') setOpen(false); });
+            });
         })();
 
         // Mark active nav item
@@ -507,6 +518,7 @@
             };
             if (path === '/' || path === '/index.html') set('home');
             else if (path.endsWith('/about.html')) set('about');
+            else if (path.startsWith('/services/')) set('services');
             else if (path.endsWith('/contact.html')) set('contact');
             else if (path.startsWith('/locations/')) set('locations');
             else if (path.startsWith('/blog')) set('blog');

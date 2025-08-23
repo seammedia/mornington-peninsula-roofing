@@ -300,7 +300,17 @@
     <nav id="site-menu" class="site-menu" aria-expanded="false">
       <a href="/" class="nav-link" data-nav="home">Home</a>
       <a href="/about.html" class="nav-link" data-nav="about">About</a>
-      <a href="/#services" class="nav-link" data-nav="services">Services</a>
+      <div class="nav-dropdown" data-nav="services">
+        <button class="nav-link nav-link-button" aria-expanded="false" aria-haspopup="true">
+          Services <span class="caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="dropdown-panel" role="menu">
+          <a role="menuitem" class="dropdown-link" href="/services/roof-repairs.html">Roof Repairs</a>
+          <a role="menuitem" class="dropdown-link" href="/services/roof-restoration.html">Roof Restoration</a>
+          <a role="menuitem" class="dropdown-link" href="/services/re-roofing.html">Re-Roofing</a>
+          <a role="menuitem" class="dropdown-link" href="/services/roof-painting.html">Roof Painting</a>
+        </div>
+      </div>
       <div class="nav-dropdown" data-nav="locations">
         <button class="nav-link nav-link-button" aria-expanded="false" aria-haspopup="true">
           Locations <span class="caret" aria-hidden="true">▾</span>
@@ -393,15 +403,17 @@ t.setAttribute('aria-expanded', String(!open));
 m.setAttribute('aria-expanded', String(!open));
 });}
 })();
-// Dropdown open/close + Esc
+// Dropdown open/close + Esc (handle multiple dropdowns)
 (function(){
-const dd=document.querySelector('.nav-dropdown'); if(!dd) return;
-const btn=dd.querySelector('.nav-link-button');
-const panel=dd.querySelector('.dropdown-panel');
-const setOpen=(o)=>{dd.setAttribute('aria-expanded', String(o)); btn.setAttribute('aria-expanded', String(o));};
-btn.addEventListener('click', e=>{e.stopPropagation(); setOpen(dd.getAttribute('aria-expanded')!=='true');});
-document.addEventListener('click', ()=> setOpen(false));
-[btn,panel].forEach(el=>el&&el.addEventListener('keydown', e=>{ if(e.key==='Escape') setOpen(false);}));
+const dropdowns = document.querySelectorAll('.nav-dropdown');
+dropdowns.forEach(dd => {
+  const btn=dd.querySelector('.nav-link-button');
+  const panel=dd.querySelector('.dropdown-panel');
+  const setOpen=(o)=>{dd.setAttribute('aria-expanded', String(o)); btn.setAttribute('aria-expanded', String(o));};
+  btn.addEventListener('click', e=>{e.stopPropagation(); setOpen(dd.getAttribute('aria-expanded')!=='true');});
+  document.addEventListener('click', ()=> setOpen(false));
+  [btn,panel].forEach(el=>el&&el.addEventListener('keydown', e=>{ if(e.key==='Escape') setOpen(false);}));
+});
 })();
 // Active nav state
 (function(){
@@ -409,6 +421,7 @@ const p = window.location.pathname.replace(/index\.html$/, '');
 const mark = (k)=>{ const el=document.querySelector(`[data-nav="${k}"]`); if(el) el.setAttribute('aria-current','page');};
 if(p==='/'||p==='') mark('home');
 else if(p.endsWith('/about.html')) mark('about');
+else if(p.startsWith('/services/')) mark('services');
 else if(p.startsWith('/blog')) mark('blog');
 else if(p.endsWith('/contact.html')) mark('contact');
 else if(p.startsWith('/locations/')) mark('locations');
