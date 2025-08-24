@@ -119,7 +119,11 @@
                 <div class="contact-header">
                     <h2 class="section-title">CONTACT US</h2>
                 </div>
-                <form class="contact-form" id="contactForm" novalidate>
+                <form action="https://formspree.io/f/mjkebvdz" method="POST" class="contact-form" id="contactForm" data-formspree novalidate>
+                    <input type="hidden" name="_subject" value="New Roofing Enquiry — Website (Homepage)">
+                    <input type="hidden" name="_redirect" value="/thank-you.html">
+                    <!-- Honeypot -->
+                    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Name *</label>
@@ -288,6 +292,45 @@ else if(p.startsWith('/blog')) mark('blog');
 else if(p.endsWith('/contact.html')) mark('contact');
 else if(p.startsWith('/locations/')) mark('locations');
 })();
+
+// Formspree AJAX form handling
+document.addEventListener('submit', async (e) => {
+    const form = e.target.closest('form[data-formspree]');
+    if (!form) return;
+    
+    e.preventDefault();
+    
+    const btn = form.querySelector('.submit-button');
+    const successEl = form.querySelector('#formSuccess');
+    
+    // Disable button and show loading state
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    
+    try {
+        const res = await fetch(form.action, {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: new FormData(form)
+        });
+        
+        if (res.ok) {
+            form.reset();
+            if (successEl) {
+                successEl.style.display = 'block';
+                successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                setTimeout(() => successEl.style.display = 'none', 5000);
+            }
+        } else {
+            throw new Error('Form submission failed');
+        }
+    } catch (error) {
+        alert('Submission failed. Please try again or call us directly at 03 4162 7766.');
+    } finally {
+        btn.disabled = false;
+        btn.textContent = 'Send Message';
+    }
+});
 </script>
 </body>
 </html>
