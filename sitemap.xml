@@ -152,4 +152,60 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+  
+  <!-- New Location Pages Added 2025-08-25 -->
+  <url>
+    <loc>https://mornington-peninsula-roofing.vercel.app/locations/rosebud.html</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mornington-peninsula-roofing.vercel.app/locations/carrum.html</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mornington-peninsula-roofing.vercel.app/locations/carrum-downs.html</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mornington-peninsula-roofing.vercel.app/locations/seaford.html</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mornington-peninsula-roofing.vercel.app/locations/mount-martha.html</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mornington-peninsula-roofing.vercel.app/locations/cranbourne.html</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mornington-peninsula-roofing.vercel.app/locations/flinders.html</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mornington-peninsula-roofing.vercel.app/locations/dromana.html</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mornington-peninsula-roofing.vercel.app/locations/hampton.html</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
