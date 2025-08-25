@@ -360,6 +360,33 @@ html{scroll-behavior:smooth}
     margin-bottom: 8px;
 }
 
+/* Two-column layout for locations list in footer */
+.footer-links.loc-columns {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links.loc-columns li {
+    margin-bottom: 8px;
+    break-inside: avoid;
+}
+
+@media (min-width: 768px) {
+    .footer-links.loc-columns {
+        columns: 2;
+        column-gap: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-links.loc-columns {
+        columns: 1;
+    }
+}
+
+/* Optional progressive enhancement script can be added to ensure the class is present */
+
 /* Responsive Design */
 @media (max-width: 768px) {
     :root {
