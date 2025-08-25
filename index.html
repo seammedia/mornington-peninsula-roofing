@@ -26,6 +26,29 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- FAQ Styles -->
+    <style>
+        .faq-list{display:grid;gap:10px;margin-top:10px}
+        .faq-list details{border-top:1px solid #e7ecef;padding:8px 0}
+        .faq-list details:last-child{border-bottom:1px solid #e7ecef}
+        .faq-list summary{cursor:pointer;list-style:none;font-weight:700;color:#0e2233;display:flex;align-items:center;justify-content:space-between;padding:4px 0}
+        .faq-list summary::-webkit-details-marker{display:none}
+        .faq-list .answer{padding:8px 0 4px;color:#314656;line-height:1.55}
+        .faq-list .answer a{color:#0f766e;text-decoration:underline}
+        /* Optional chevron */
+        .faq-list summary::after{content:'▼';transition:transform .2s ease;opacity:.6;font-size:.8em}
+        .faq-list details[open] summary::after{transform:rotate(180deg)}
+        
+        /* FAQ section styling to match site design */
+        #faq{padding:48px 20px}
+        #faq h2{color:#0e2233;font-size:2rem;margin-bottom:24px;text-align:center}
+        
+        @media (max-width:768px){
+            #faq{padding:32px 20px}
+            #faq h2{font-size:1.5rem}
+        }
+    </style>
 </head>
 <body>
 <header class="site-header">
@@ -130,6 +153,63 @@
                 </a>
             </div>
         </section>
+
+        <!-- ===== FAQ (Insert above the contact/quote section) ===== -->
+        <section id="faq" class="wrap" aria-label="Common roofing questions">
+            <h2>Common Questions</h2>
+            <!-- Accessible, no-JS accordion using <details> -->
+            <div class="faq-list">
+                <details>
+                    <summary>How fast can you attend a roof leak?</summary>
+                    <div class="answer">
+                        We prioritise active leaks and storm damage. Same-week call-outs are common across the Peninsula — emergency tarping available within 24-48 hours when needed.
+                    </div>
+                </details>
+                <details>
+                    <summary>Should I repair, restore or re-roof?</summary>
+                    <div class="answer">
+                        It depends on roof age and condition. We'll inspect and price the best option. See <a href="/services/roof-repairs.html">roof repairs</a>, <a href="/services/roof-restoration.html">restoration</a> or <a href="/services/re-roofing.html">re-roofing</a> for details.
+                    </div>
+                </details>
+                <details>
+                    <summary>What is included in a roof restoration?</summary>
+                    <div class="answer">
+                        Typically: high-pressure clean, repairs, re-bedding/re-pointing and a premium membrane system. Full scope depends on your roof's condition and material type.
+                    </div>
+                </details>
+                <details>
+                    <summary>Do you paint roofs? Which colours suit coastal homes?</summary>
+                    <div class="answer">
+                        Yes — we prep and apply coatings suited to coastal conditions. Lighter greys help reduce summer heat, while darker tones suit heritage styles. See <a href="/services/roof-painting.html">roof painting</a> for details.
+                    </div>
+                </details>
+                <details>
+                    <summary>Can you work with both Colorbond® and tile roofs?</summary>
+                    <div class="answer">
+                        Absolutely. We repair, restore and replace both metal (including Colorbond®) and tiled roofs across the Peninsula, adapting techniques to each material's requirements.
+                    </div>
+                </details>
+                <details>
+                    <summary>How long does roof painting last near the coast?</summary>
+                    <div class="answer">
+                        With the right prep and membrane system, 8–12+ years is typical. Exposure varies by aspect and salt air proximity — we factor this into coating selection.
+                    </div>
+                </details>
+                <details>
+                    <summary>Do you repair gutters, valleys and flashing?</summary>
+                    <div class="answer">
+                        Yes — these are common leak sources. We handle flashing rebuilds, valley tray reseals and related waterproofing across all roof types.
+                    </div>
+                </details>
+                <details>
+                    <summary>Which suburbs do you cover?</summary>
+                    <div class="answer">
+                        All of the Mornington Peninsula, including <a href="/locations/mount-eliza.html">Mount Eliza</a>, <a href="/locations/mornington.html">Mornington</a>, <a href="/locations/frankston.html">Frankston</a>, <a href="/locations/sorrento.html">Sorrento</a> and surrounding areas.
+                    </div>
+                </details>
+            </div>
+        </section>
+        <!-- ===== End FAQ ===== -->
 
         <!-- Contact Section -->
         <section class="contact-section" id="contact">
@@ -239,6 +319,56 @@
             </div>
         </div>
     </footer>
+
+    <!-- FAQPage JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How fast can you attend a roof leak?",
+                "acceptedAnswer": {"@type": "Answer","text": "We prioritise active leaks and storm damage. Same-week call-outs are common across the Peninsula — emergency tarping available within 24-48 hours when needed."}
+            },
+            {
+                "@type": "Question",
+                "name": "Should I repair, restore or re-roof?",
+                "acceptedAnswer": {"@type": "Answer","text": "It depends on roof age and condition. We inspect and price the best option. We offer roof repairs, restoration and re-roofing services tailored to your needs."}
+            },
+            {
+                "@type": "Question",
+                "name": "What is included in a roof restoration?",
+                "acceptedAnswer": {"@type": "Answer","text": "Typically: high-pressure clean, repairs, re-bedding/re-pointing and a premium membrane system. Full scope depends on your roof's condition and material type."}
+            },
+            {
+                "@type": "Question",
+                "name": "Do you paint roofs? Which colours suit coastal homes?",
+                "acceptedAnswer": {"@type": "Answer","text": "Yes — we prep and apply coatings suited to coastal conditions. Lighter greys help reduce summer heat, while darker tones suit heritage styles."}
+            },
+            {
+                "@type": "Question",
+                "name": "Can you work with both Colorbond and tile roofs?",
+                "acceptedAnswer": {"@type": "Answer","text": "Yes — we repair, restore and replace both metal (including Colorbond®) and tiled roofs across the Peninsula, adapting techniques to each material's requirements."}
+            },
+            {
+                "@type": "Question",
+                "name": "How long does roof painting last near the coast?",
+                "acceptedAnswer": {"@type": "Answer","text": "With proper preparation and a membrane system, 8–12+ years is typical. Exposure varies by aspect and salt air proximity — we factor this into coating selection."}
+            },
+            {
+                "@type": "Question",
+                "name": "Do you repair gutters, valleys and flashing?",
+                "acceptedAnswer": {"@type": "Answer","text": "Yes — these are common leak sources. We handle flashing rebuilds, valley tray reseals and related waterproofing across all roof types."}
+            },
+            {
+                "@type": "Question",
+                "name": "Which suburbs do you cover?",
+                "acceptedAnswer": {"@type": "Answer","text": "All of the Mornington Peninsula, including Mount Eliza, Mornington, Frankston, Sorrento and surrounding areas."}
+            }
+        ]
+    }
+    </script>
 
     <!-- JSON-LD LocalBusiness Schema -->
     <script type="application/ld+json">
