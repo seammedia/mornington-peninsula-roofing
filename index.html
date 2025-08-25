@@ -20,7 +20,7 @@
     <meta name="twitter:image" content="https://mornington-peninsula-roofing.vercel.app/assets/img/About_Us.jpg">
     
     <!-- Performance & Preloading -->
-    <link rel="preload" href="assets/img/Mornington_Peninsula_Roofing_Hero.png" as="image" type="image/png">
+    <link rel="preload" as="image" href="assets/img/Mornington_Peninsula_Roofing_Hero.png" fetchpriority="high">
     <link rel="preload" href="assets/css/styles.css" as="style">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     
@@ -76,55 +76,62 @@
 </header>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-        <picture>
-            <img src="assets/img/Mornington_Peninsula_Roofing_Hero.png" 
-                 alt="Mornington Peninsula Roofing - Professional roofing services" 
-                 width="1200" 
-                 height="600">
-        </picture>
+    <section class="hero wrap" id="home-hero" aria-label="Mornington Peninsula Roofing hero">
+        <div class="media">
+            <picture>
+                <source type="image/avif" srcset="assets/img/Mornington_Peninsula_Roofing_Hero.avif">
+                <source type="image/webp" srcset="assets/img/Mornington_Peninsula_Roofing_Hero.webp">
+                <img src="assets/img/Mornington_Peninsula_Roofing_Hero.png"
+                     alt="Roofing work on the Mornington Peninsula" width="1600" height="900"
+                     loading="eager" decoding="async" fetchpriority="high">
+            </picture>
+        </div>
+        <div class="copy">
+            <h1>Mornington Peninsula Roofing — Quality Roofers for 25+ Years</h1>
+            <p class="lede">Local specialists in <a href="/services/roof-repairs.html">roof repairs</a>,
+            <a href="/services/roof-restoration.html">restoration</a>,
+            <a href="/services/re-roofing.html">re-roofing</a> and
+            <a href="/services/roof-painting.html">roof painting</a> across the Peninsula.</p>
+            <div class="cta-row">
+                <a class="btn" href="/contact.html">Get a fast quote</a>
+                <a class="btn-ghost" href="tel:+61341627766">03 4162 7766</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- USP/Trust Bar -->
+    <section class="usp wrap" aria-label="Key reasons">
+        <ul class="usp-list">
+            <li>25+ years local experience</li>
+            <li>Leak detection that fixes the root cause</li>
+            <li>Servicing the Mornington Peninsula</li>
+            <li><a class="btn-ghost" href="/contact.html">Get a quote</a></li>
+        </ul>
     </section>
 
     <!-- Main Content -->
     <main>
-        <section id="about" class="about">
-          <div class="about-inner">
-            <div class="about-label">A B O U T<br>U S</div>
-            <div class="about-content">
-              <h1 class="about-title">Mornington Peninsula Roofing — Quality Roofers for 25+ Years</h1>
-              <p>We're local roofing specialists proudly servicing the Mornington Peninsula — from Mount Eliza to Sorrento. Our team delivers expert <strong>roof repairs, restorations, re-roofing and roof painting</strong> for homes and businesses.</p>
-              <p>With decades of experience and a workmanship-first approach, we diagnose issues properly, quote transparently, and complete every job to Australian Standards.</p>
-              <p>Talk to us about extending your roof's life, improving street appeal, and protecting your property for years to come.</p>
-              <p><a class="btn" href="https://mornington-peninsula-roofing.vercel.app/contact.html">Call or message us</a></p>
-            </div>
-          </div>
-        </section>
 
         <!-- Services Section -->
-        <section class="services-section" id="services">
-            <div class="container">
-                <div class="services-header">
-                    <span class="section-overline">OUR</span>
-                    <h2 class="section-title">SERVICES</h2>
-                </div>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h3>Roof Repairs</h3>
-                        <p>From leak detection and flashing fixes to tile replacement and ridge re-pointing, we locate the root cause and repair it right the first time.</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Roof Restoration</h3>
-                        <p>Full clean, re-bedding and re-pointing, repairs as needed, and premium membrane coatings to bring tired roofs back to life.</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Re-Roofing</h3>
-                        <p>When it's beyond repair, we replace with modern, durable materials for longevity, insulation performance, and a fresh look.</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Roof Painting</h3>
-                        <p>Professional preparation and high-build coatings designed for coastal conditions on the Peninsula — long-lasting colour and protection.</p>
-                    </div>
-                </div>
+        <section id="services" class="wrap">
+            <h2>Roofing Services</h2>
+            <div class="card-grid">
+                <a class="card" href="/services/roof-repairs.html">
+                    <h3>Roof Repairs</h3>
+                    <p>Leak diagnosis, ridge repairs, flashing fixes and tile replacement. We locate the root cause and repair it right.</p>
+                </a>
+                <a class="card" href="/services/roof-restoration.html">
+                    <h3>Roof Restoration</h3>
+                    <p>Clean, re-bed/re-point, repairs and premium membrane coatings to bring tired roofs back to life.</p>
+                </a>
+                <a class="card" href="/services/re-roofing.html">
+                    <h3>Re-Roofing</h3>
+                    <p>Colorbond and tiles for longevity. Modern materials with proper insulation and ventilation.</p>
+                </a>
+                <a class="card" href="/services/roof-painting.html">
+                    <h3>Roof Painting</h3>
+                    <p>Coastal-ready professional preparation and high-build membrane coatings for lasting protection.</p>
+                </a>
             </div>
         </section>
 
