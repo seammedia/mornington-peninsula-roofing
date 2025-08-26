@@ -42,6 +42,57 @@
         .nav-container { max-width: 1200px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; height: 100%; }
         .brand { font-weight: 700; text-decoration: none; color: #0f172a; }
         
+        /* --- Fixed white header --- */
+        .navigation, .site-header, header[role="banner"] {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #ffffff;
+            border-bottom: 1px solid #E9EEF3;
+            box-shadow: 0 2px 8px rgba(0,0,0,.06);
+        }
+
+        /* Link colours inside header */
+        .navigation .nav-menu a,
+        .navigation a { color: #0E1B2B; }
+        .navigation .nav-menu a:hover,
+        .navigation a:hover { color: #2F6D58; }
+
+        /* Phone & CTA button colours in header */
+        .navigation .btn,
+        .navigation .phone-number {
+            color: #0E1B2B;
+            border-color: #CBD5DF;
+        }
+        .navigation .btn--primary,
+        .navigation .cta,
+        .navigation .get-quote {
+            background: #6F8F7C;
+            color: #fff;
+        }
+
+        /* Mobile hamburger icon colour */
+        .hamburger span,
+        .hamburger::before,
+        .hamburger::after { background: #0E1B2B; }
+
+        /* Make dropdowns match the white header */
+        .nav-dropdown,
+        .dropdown-menu {
+            background: #fff;
+            border: 1px solid #E9EEF3;
+            box-shadow: 0 8px 24px rgba(0,0,0,.08);
+        }
+        .nav-dropdown a { color: #0E1B2B; }
+        .nav-dropdown a:hover { background: #F6FAF8; }
+
+        /* If a dark strip with text (e.g., "THE ROOFING SPECIALISTS") appears below the nav, neutralize it */
+        .topline, .page-kicker, .hero-kicker {
+            background: #fff;
+            color: #0E1B2B;
+            border: 0;
+        }
+        
         /* Hero - optimized for LCP */
         .roofing-specialists-bar { background: #0e2233; color: #fff; text-align: center; padding: 12px 0; }
         .roofing-specialists-bar h2 { font-size: 1rem; letter-spacing: 2px; font-weight: 700; }
@@ -330,17 +381,15 @@
             <!-- Guarantee media: force PNG known to exist -->
             <div class="g-media">
                 <picture>
-                    <source type="image/avif" 
-                            srcset="/assets/img/roof-guarantee-home-800.avif 800w, /assets/img/roof-guarantee-home-1200.avif 1200w, /assets/img/roof-guarantee-home-1600.avif 1600w, /assets/img/roof-guarantee-home-2000.avif 2000w"
-                            sizes="(max-width: 768px) 100vw, 720px">
-                    <source type="image/webp" 
-                            srcset="/assets/img/roof-guarantee-home-800.webp 800w, /assets/img/roof-guarantee-home-1200.webp 1200w, /assets/img/roof-guarantee-home-1600.webp 1600w, /assets/img/roof-guarantee-home-2000.webp 2000w"
-                            sizes="(max-width: 768px) 100vw, 720px">
-                    <img src="/assets/img/roof-guarantee-home-1200.jpg"
-                         alt="Freshly restored roof showing premium membrane finish"
-                         width="1600" height="1000" loading="lazy" decoding="async"
-                         class="g-media-img"
-                         style="aspect-ratio:16/10;width:100%;height:auto;object-fit:cover;">
+                  <!-- Optional: serve WebP if you add it for performance -->
+                  <source srcset="/assets/img/roof-guarantee-home.webp" type="image/webp">
+                  <img
+                    src="/assets/img/roof-guarantee-home.png"
+                    alt="Freshly restored roof showing premium membrane finish"
+                    width="1200" height="800"
+                    loading="lazy" decoding="async" fetchpriority="low"
+                    style="width:100%;height:auto;border-radius:16px;display:block"
+                  >
                 </picture>
             </div>
         </section>
