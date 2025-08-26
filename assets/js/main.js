@@ -953,6 +953,21 @@ function initializeInteractiveFeatures() {
  * - Online quote calculator and cost estimation tools
  */
 
+// GA4 Event Tracking Helper
+document.addEventListener('click', function (e) {
+    const a = e.target.closest('a[href^="tel:"]');
+    if (a && typeof gtag === 'function') {
+        gtag('event', 'click_to_call', { link_url: a.getAttribute('href') });
+    }
+});
+
+document.addEventListener('submit', function (e) {
+    const form = e.target.closest('form');
+    if (form && (form.action || '').includes('formspree.io') && typeof gtag === 'function') {
+        gtag('event', 'generate_lead', { form_id: form.id || 'contact_form' });
+    }
+});
+
 // Export functions for testing or external use
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
