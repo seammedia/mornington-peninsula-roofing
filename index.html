@@ -72,6 +72,44 @@
             .guarantee .cta-row{flex-direction:column;gap:8px}
             .guarantee .cta-row .btn, .guarantee .cta-row .btn-ghost{text-align:center}
         }
+
+        /* Colorbond Colours Section Styles */
+        .cb{display:grid;gap:clamp(18px,2vw,28px);align-items:center;margin:28px auto;padding:48px 20px}
+        .cb-left h2{margin:0 0 6px;line-height:1.06;font-weight:800;color:#0e2233;font-size:2rem}
+        .cb-left .lede{font-size:1.1rem;margin:0 0 8px;color:#25323d;font-weight:500}
+        .cb-left p{color:#314656;line-height:1.6;margin:0 0 12px}
+        .cb-points{display:grid;gap:6px;margin:8px 0 0;padding-left:18px;color:#314656}
+        .cb-points li{margin-bottom:4px}
+        .cb-points a{color:#0f766e;text-decoration:underline}
+        
+        /* Black ribbon badge */
+        .cb-ribbon{display:grid;place-items:center}
+        .cb-ribbon .rb-in{background:#0e2233;color:#fff;text-align:center;padding:22px 22px 18px;border-radius:10px;
+        clip-path:polygon(0 0,100% 0,100% 80%,52% 80%,50% 100%,48% 80%,0 80%);
+        box-shadow:0 8px 24px rgba(0,0,0,.12);
+        min-width:190px}
+        .cb-ribbon strong{display:block;font-size:1.45rem;letter-spacing:.5px}
+        .cb-ribbon span{display:block;font-size:1.25rem;font-weight:800;margin-top:2px}
+        .cb-ribbon small{display:block;margin-top:4px;opacity:.8}
+        
+        /* Swatch card */
+        .cb-card{border:1px solid #e7ecef;border-radius:12px;padding:14px;background:#fff;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+        .cb-card h3{margin:0 0 10px;font-weight:800;color:#0e2233}
+        .swatches{display:grid;grid-template-columns:repeat(6,20px);gap:10px}
+        .sw{width:20px;height:20px;border-radius:3px;background:var(--c);box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}
+        .cb-card .fine{margin-top:10px;font-size:.88rem;color:#4b5a63}
+        
+        @media(min-width:1100px){
+            .cb{grid-template-columns:1.1fr 0.7fr 0.9fr}
+        }
+        @media(max-width:1099px){
+            .cb{grid-template-columns:1fr;padding:32px 20px}
+            .cb-ribbon{order:3}
+        }
+        @media(max-width:768px){
+            .cb-left h2{font-size:1.5rem}
+            .swatches{grid-template-columns:repeat(4,20px)}
+        }
     </style>
 </head>
 <body>
@@ -208,6 +246,55 @@
             </div>
         </section>
         <!-- ===== End Guarantee ===== -->
+
+        <!-- ===== Colorbond Colours (place above #faq) ===== -->
+        <section id="colourbond" class="wrap cb" aria-label="Colorbond colour options">
+            <div class="cb-left">
+                <h2>Give Your Home<br> a Makeover</h2>
+                <p class="lede">Restore your roof or refresh the look with Colorbond® colours chosen for Peninsula conditions.</p>
+                <p>We'll help you select shades that balance heat, acoustics and street appeal — from light coastal tones to classic heritage colours.</p>
+                <ul class="cb-points">
+                    <li>Advice on colour selection for your aspect and street</li>
+                    <li>Membrane systems designed for coastal durability</li>
+                    <li>Available with <a href="/services/roof-restoration.html">restoration</a> or <a href="/services/roof-painting.html">painting</a> services</li>
+                </ul>
+            </div>
+            <!-- Black badge (CSS ribbon, no image) -->
+            <div class="cb-ribbon" aria-label="10 year workmanship and labour guarantee">
+                <div class="rb-in">
+                    <strong>10 YEAR</strong>
+                    <span>GUARANTEE</span>
+                    <small>Workmanship &amp; Labour</small>
+                </div>
+            </div>
+            <!-- Swatch card -->
+            <aside class="cb-card" aria-label="Popular Colorbond colours">
+                <h3>Popular Colorbond® Colours</h3>
+                <div class="swatches">
+                    <!-- Each swatch has an accessible label -->
+                    <span class="sw" style="--c:#E8E9E4" aria-label="Surfmist"></span>
+                    <span class="sw" style="--c:#BFC4C4" aria-label="Shale Grey"></span>
+                    <span class="sw" style="--c:#78858B" aria-label="Windspray"></span>
+                    <span class="sw" style="--c:#4B5054" aria-label="Basalt"></span>
+                    <span class="sw" style="--c:#2F3033" aria-label="Monument"></span>
+                    <span class="sw" style="--c:#1B1D22" aria-label="Night Sky"></span>
+                    <span class="sw" style="--c:#CEC2AE" aria-label="Paperbark"></span>
+                    <span class="sw" style="--c:#CBB28A" aria-label="Classic Cream"></span>
+                    <span class="sw" style="--c:#9D8B76" aria-label="Dune"></span>
+                    <span class="sw" style="--c:#6E6255" aria-label="Gully"></span>
+                    <span class="sw" style="--c:#6C6F67" aria-label="Woodland Grey"></span>
+                    <span class="sw" style="--c:#38454F" aria-label="Ironstone"></span>
+                    <span class="sw" style="--c:#7E2B2A" aria-label="Manor Red"></span>
+                    <span class="sw" style="--c:#375343" aria-label="Cottage Green"></span>
+                    <span class="sw" style="--c:#2B4F73" aria-label="Deep Ocean"></span>
+                    <span class="sw" style="--c:#6F6256" aria-label="Jasper"></span>
+                    <span class="sw" style="--c:#5C6D6C" aria-label="Wallaby"></span>
+                    <span class="sw" style="--c:#8E9FA3" aria-label="Southerly"></span>
+                </div>
+                <p class="fine">Colours are indicative and vary by screen. We'll bring physical samples to confirm your selection.</p>
+            </aside>
+        </section>
+        <!-- ===== End Colorbond Colours ===== -->
 
         <!-- ===== FAQ (Insert above the contact/quote section) ===== -->
         <section id="faq" class="wrap" aria-label="Common roofing questions">
