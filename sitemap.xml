@@ -1,211 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Pages -->
   <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/</loc>
-    <lastmod>2024-08-22</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.morningtonpeninsularoofing.com.au/</loc>
+    <lastmod>2025-08-26</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/about.html</loc>
-    <lastmod>2024-08-22</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.morningtonpeninsularoofing.com.au/about.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/contact.html</loc>
+    <lastmod>2025-08-26</lastmod>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/contact.html</loc>
-    <lastmod>2024-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/locations/mount-eliza.html</loc>
-    <lastmod>2024-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/locations/mornington.html</loc>
-    <lastmod>2024-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/locations/frankston.html</loc>
-    <lastmod>2024-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/locations/sorrento.html</loc>
-    <lastmod>2024-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/blog/</loc>
-    <lastmod>2024-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/blog/roofing-repairs-mornington-peninsula.html</loc>
-    <lastmod>2024-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/blog/colorbond-roofing-frankston.html</loc>
-    <lastmod>2025-08-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/blog/metal-roofing-frankston.html</loc>
-    <lastmod>2025-08-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/services/roof-repairs.html</loc>
-    <lastmod>2025-08-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/services/roof-restoration.html</loc>
-    <lastmod>2025-08-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/services/re-roofing.html</loc>
-    <lastmod>2025-08-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/services/roof-painting.html</loc>
-    <lastmod>2025-08-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/blog/roof-repairs-chelsea.html</loc>
-    <lastmod>2025-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/blog/roofing-cranbourne.html</loc>
-    <lastmod>2025-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
-  <!-- Additional Blog Posts Added 2025-08-24 -->
+  <!-- Services -->
   <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/blog/roof-repairs-mornington-peninsula.html</loc>
-    <lastmod>2025-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://www.morningtonpeninsularoofing.com.au/services/roof-repairs.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/blog/carport-roofing-mornington-peninsula.html</loc>
-    <lastmod>2025-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://www.morningtonpeninsularoofing.com.au/services/roof-restoration.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/blog/gazebo-roofing-mornington-peninsula.html</loc>
-    <lastmod>2025-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://www.morningtonpeninsularoofing.com.au/services/re-roofing.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/blog/metal-roofing-mornington.html</loc>
-    <lastmod>2025-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/blog/patio-roof-installation-mornington-peninsula.html</loc>
-    <lastmod>2025-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/blog/roof-painting-mornington-peninsula.html</loc>
-    <lastmod>2025-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/blog/roof-replacement-mornington.html</loc>
-    <lastmod>2025-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/blog/roofing-contractors-mornington-peninsula.html</loc>
-    <lastmod>2025-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://www.morningtonpeninsularoofing.com.au/services/roof-painting.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.9</priority>
   </url>
   
-  <!-- New Location Pages Added 2025-08-25 -->
+  <!-- Locations -->
   <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/locations/rosebud.html</loc>
-    <lastmod>2025-08-25</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.morningtonpeninsularoofing.com.au/locations/mount-eliza.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/locations/mornington.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/locations/frankston.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/locations/sorrento.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/locations/rosebud.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/locations/carrum.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/locations/carrum-downs.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/locations/seaford.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/locations/mount-martha.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/locations/cranbourne.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/locations/flinders.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/locations/dromana.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/locations/hampton.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Blog -->
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/blog/</loc>
+    <lastmod>2025-08-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/locations/carrum.html</loc>
-    <lastmod>2025-08-25</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.morningtonpeninsularoofing.com.au/blog/colorbond-roof-painting-melbourne.html</loc>
+    <lastmod>2025-08-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/locations/carrum-downs.html</loc>
-    <lastmod>2025-08-25</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.morningtonpeninsularoofing.com.au/blog/roof-repairs-chelsea.html</loc>
+    <lastmod>2025-08-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/locations/seaford.html</loc>
-    <lastmod>2025-08-25</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.morningtonpeninsularoofing.com.au/blog/roofing-cranbourne.html</loc>
+    <lastmod>2025-08-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/locations/mount-martha.html</loc>
-    <lastmod>2025-08-25</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.morningtonpeninsularoofing.com.au/blog/roofing-contractors-mornington-peninsula.html</loc>
+    <lastmod>2025-08-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/locations/cranbourne.html</loc>
-    <lastmod>2025-08-25</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.morningtonpeninsularoofing.com.au/blog/roof-replacement-mornington.html</loc>
+    <lastmod>2025-08-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/locations/flinders.html</loc>
-    <lastmod>2025-08-25</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.morningtonpeninsularoofing.com.au/blog/roof-painting-mornington-peninsula.html</loc>
+    <lastmod>2025-08-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/locations/dromana.html</loc>
-    <lastmod>2025-08-25</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.morningtonpeninsularoofing.com.au/blog/patio-roof-installation-mornington-peninsula.html</loc>
+    <lastmod>2025-08-26</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mornington-peninsula-roofing.vercel.app/locations/hampton.html</loc>
-    <lastmod>2025-08-25</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.morningtonpeninsularoofing.com.au/blog/metal-roofing-mornington.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/blog/gazebo-roofing-mornington-peninsula.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/blog/carport-roofing-mornington-peninsula.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/blog/roof-repairs-mornington-peninsula.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/blog/roofing-repairs-mornington-peninsula.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/blog/colorbond-roofing-frankston.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/blog/metal-roofing-frankston.html</loc>
+    <lastmod>2025-08-26</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>
