@@ -21,13 +21,9 @@
     
     <!-- Critical LCP Hero Preload -->
     <link rel="preload" as="image"
-          href="/assets/img/hero/MPR-hero-1280.avif"
-          imagesrcset="/assets/img/hero/MPR-hero-640.avif 640w,
-                       /assets/img/hero/MPR-hero-960.avif 960w,
-                       /assets/img/hero/MPR-hero-1280.avif 1280w,
-                       /assets/img/hero/MPR-hero-1600.avif 1600w"
-          imagesizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1280px"
-          fetchpriority="high">
+          href="/assets/img/hero/mpr-hero-1600.avif"
+          imagesrcset="/assets/img/hero/mpr-hero-800.avif 800w, /assets/img/hero/mpr-hero-1200.avif 1200w, /assets/img/hero/mpr-hero-1600.avif 1600w, /assets/img/hero/mpr-hero-2000.avif 2000w"
+          imagesizes="(max-width: 768px) 100vw, 1200px" fetchpriority="high">
     
     <!-- Optimized CSS Loading -->
     <link rel="preload" as="style" href="/assets/css/styles.css">
@@ -41,7 +37,8 @@
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
         
         /* Header - fixed height to prevent CLS */
-        .site-header { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #e5e7eb; z-index: 100; height: 70px; }
+        .site-header { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #e5e7eb; z-index: 100; height: 70px; transition: box-shadow 0.3s ease; }
+        .navigation.scrolled { box-shadow: 0 4px 8px rgba(0,0,0,0.15) !important; }
         .nav-container { max-width: 1200px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; height: 100%; }
         .brand { font-weight: 700; text-decoration: none; color: #0f172a; }
         
@@ -179,6 +176,11 @@
             .swatches{grid-template-columns:repeat(4,20px)}
         }
         
+        /* Prevent layout shifts / forced reflow around images */
+        img { height: auto !important; }
+        .hero img { aspect-ratio: 16/9 !important; display: block !important; }
+        section[loading="lazy"], .lazy-section { content-visibility: auto; contain-intrinsic-size: 1px 800px; }
+
         /* Accessibility utilities */
         .visually-hidden {
             position: absolute !important;
@@ -193,12 +195,12 @@
         }
     </style>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QFTWK45LJZ"></script>
+<script defer src="https://www.googletagmanager.com/gtag/js?id=G-QFTWK45LJZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-QFTWK45LJZ', { anonymize_ip: true, transport_type: 'beacon' });
+  gtag('js', new Date()); 
+  gtag('config', 'G-QFTWK45LJZ', { page_path: location.pathname });
 </script>
 </head>
 <body>
@@ -260,27 +262,14 @@
     <!-- Optimized LCP Hero Section -->
     <section class="hero-fullwidth" id="home-hero" aria-label="Mornington Peninsula Roofing hero">
         <picture>
-            <source type="image/avif"
-                    srcset="/assets/img/hero/MPR-hero-640.avif 640w,
-                            /assets/img/hero/MPR-hero-960.avif 960w,
-                            /assets/img/hero/MPR-hero-1280.avif 1280w,
-                            /assets/img/hero/MPR-hero-1600.avif 1600w"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1280px">
-            <source type="image/webp"
-                    srcset="/assets/img/hero/MPR-hero-640.webp 640w,
-                            /assets/img/hero/MPR-hero-960.webp 960w,
-                            /assets/img/hero/MPR-hero-1280.webp 1280w,
-                            /assets/img/hero/MPR-hero-1600.webp 1600w"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1280px">
-            <img src="/assets/img/hero/MPR-hero-1280.jpg"
-                 srcset="/assets/img/hero/MPR-hero-640.jpg 640w,
-                         /assets/img/hero/MPR-hero-960.jpg 960w,
-                         /assets/img/hero/MPR-hero-1280.jpg 1280w,
-                         /assets/img/hero/MPR-hero-1600.jpg 1600w"
-                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1280px"
-                 alt="Mornington Peninsula Roofing — tiled roof hero"
-                 width="1280" height="720"
-                 decoding="async" fetchpriority="high">
+          <source type="image/avif"
+                  srcset="/assets/img/hero/mpr-hero-800.avif 800w, /assets/img/hero/mpr-hero-1200.avif 1200w, /assets/img/hero/mpr-hero-1600.avif 1600w, /assets/img/hero/mpr-hero-2000.avif 2000w"
+                  sizes="(max-width: 768px) 100vw, 1200px">
+          <source type="image/webp"
+                  srcset="/assets/img/hero/mpr-hero-800.webp 800w, /assets/img/hero/mpr-hero-1200.webp 1200w, /assets/img/hero/mpr-hero-1600.webp 1600w, /assets/img/hero/mpr-hero-2000.webp 2000w"
+                  sizes="(max-width: 768px) 100vw, 1200px">
+          <img src="/assets/img/hero/mpr-hero-1600.jpg" alt="Mornington Peninsula Roofing"
+               width="1600" height="900" decoding="async" fetchpriority="high">
         </picture>
     </section>
 
@@ -342,12 +331,12 @@
             <div class="g-media">
                 <picture>
                     <source type="image/avif" 
-                            srcset="/assets/img/roof-guarantee-home.png"
-                            sizes="(max-width:768px) 100vw, 600px">
+                            srcset="/assets/img/roof-guarantee-home-800.avif 800w, /assets/img/roof-guarantee-home-1200.avif 1200w, /assets/img/roof-guarantee-home-1600.avif 1600w, /assets/img/roof-guarantee-home-2000.avif 2000w"
+                            sizes="(max-width: 768px) 100vw, 720px">
                     <source type="image/webp" 
-                            srcset="/assets/img/roof-guarantee-home.png"
-                            sizes="(max-width:768px) 100vw, 600px">
-                    <img src="/assets/img/roof-guarantee-home.png"
+                            srcset="/assets/img/roof-guarantee-home-800.webp 800w, /assets/img/roof-guarantee-home-1200.webp 1200w, /assets/img/roof-guarantee-home-1600.webp 1600w, /assets/img/roof-guarantee-home-2000.webp 2000w"
+                            sizes="(max-width: 768px) 100vw, 720px">
+                    <img src="/assets/img/roof-guarantee-home-1200.jpg"
                          alt="Freshly restored roof showing premium membrane finish"
                          width="1600" height="1000" loading="lazy" decoding="async"
                          class="g-media-img"

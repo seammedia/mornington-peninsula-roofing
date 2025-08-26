@@ -226,15 +226,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Add scroll effect to navigation
-    window.addEventListener('scroll', function() {
-        const navigation = document.querySelector('.navigation');
-        if (window.scrollY > 100) {
-            navigation.style.boxShadow = '0 4px 8px rgba(0,0,0,0.15)';
-        } else {
-            navigation.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
-        }
-    });
+    // Add scroll effect to navigation with passive listeners and rAF
+    const nav = document.querySelector('.navigation');
+    let scrolling = false;
+    window.addEventListener('scroll', () => {
+        if (scrolling) return;
+        scrolling = true;
+        requestAnimationFrame(() => {
+            if (nav) nav.classList.toggle('scrolled', window.scrollY > 100);
+            scrolling = false;
+        });
+    }, { passive: true });
     
     // Track phone number clicks for analytics
     const phoneLinks = document.querySelectorAll('a[href^="tel:"]');

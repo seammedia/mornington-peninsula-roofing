@@ -2,7 +2,7 @@
   "version": 2,
   "headers": [
     {
-      "source": "/assets/(.*)\\.(avif|webp|jpg|jpeg|png|gif|svg)$",
+      "source": "/assets/(.*)\\.(avif|webp|jpg|png|svg|css|js|woff2)$",
       "headers": [
         {
           "key": "Cache-Control",
