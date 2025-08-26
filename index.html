@@ -20,8 +20,9 @@
     <meta name="twitter:image" content="https://www.morningtonpeninsularoofing.com.au/assets/img/About_Us.jpg">
     
     <!-- Performance & Preloading -->
-    <link rel="preload" as="image" href="assets/img/Mornington_Peninsula_Roofing_Hero.png" fetchpriority="high">
-    <link rel="preload" as="image" href="/assets/img/roof-guarantee-home.png">
+    <link rel="preload" as="image" href="/assets/img/Mornington_Peninsula_Roofing_Hero.png" 
+          imagesrcset="/assets/img/Mornington_Peninsula_Roofing_Hero.png"
+          imagesizes="(max-width:768px) 100vw, 1200px" fetchpriority="high">
     <link rel="preload" href="assets/css/styles.css" as="style">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     
@@ -120,6 +121,19 @@
             .cb-left h2{font-size:1.5rem}
             .swatches{grid-template-columns:repeat(4,20px)}
         }
+        
+        /* Accessibility utilities */
+        .visually-hidden {
+            position: absolute !important;
+            width: 1px !important;
+            height: 1px !important;
+            padding: 0 !important;
+            margin: -1px !important;
+            overflow: hidden !important;
+            clip: rect(0, 0, 0, 0) !important;
+            white-space: nowrap !important;
+            border: 0 !important;
+        }
     </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFTWK45LJZ"></script>
@@ -181,6 +195,7 @@
     <!-- Header Bar -->
     <section class="roofing-specialists-bar">
         <div class="container">
+            <h1 class="visually-hidden">Mornington Peninsula Roofing - Expert Roofing Services for 25+ Years</h1>
             <h2>THE ROOFING SPECIALISTS</h2>
         </div>
     </section>
@@ -189,11 +204,19 @@
     <section class="hero-fullwidth" id="home-hero" aria-label="Mornington Peninsula Roofing hero">
         <div class="hero-background">
             <picture>
-                <source type="image/avif" srcset="assets/img/Mornington_Peninsula_Roofing_Hero.avif">
-                <source type="image/webp" srcset="assets/img/Mornington_Peninsula_Roofing_Hero.webp">
-                <img src="assets/img/Mornington_Peninsula_Roofing_Hero.png"
-                     alt="Roofing work on the Mornington Peninsula" width="1600" height="900"
-                     loading="eager" decoding="async" fetchpriority="high">
+                <source type="image/avif" 
+                        srcset="/assets/img/Mornington_Peninsula_Roofing_Hero.png 1600w"
+                        sizes="(max-width:768px) 100vw, 1200px">
+                <source type="image/webp" 
+                        srcset="/assets/img/Mornington_Peninsula_Roofing_Hero.png 1600w"
+                        sizes="(max-width:768px) 100vw, 1200px">
+                <img src="/assets/img/Mornington_Peninsula_Roofing_Hero.png"
+                     srcset="/assets/img/Mornington_Peninsula_Roofing_Hero.png 1600w"
+                     sizes="(max-width:768px) 100vw, 1200px"
+                     alt="Professional roofing work on the Mornington Peninsula - tiled roof close-up" 
+                     width="1600" height="900"
+                     fetchpriority="high" decoding="async"
+                     style="aspect-ratio:16/9;width:100%;height:auto;object-fit:cover;">
             </picture>
         </div>
     </section>
@@ -254,11 +277,19 @@
             </div>
             <!-- Guarantee media: force PNG known to exist -->
             <div class="g-media">
-                <img
-                    src="/assets/img/roof-guarantee-home.png"
-                    alt="Freshly restored roof showing premium membrane finish"
-                    width="1600" height="1000" loading="lazy" decoding="async"
-                    class="g-media-img">
+                <picture>
+                    <source type="image/avif" 
+                            srcset="/assets/img/roof-guarantee-home.png"
+                            sizes="(max-width:768px) 100vw, 600px">
+                    <source type="image/webp" 
+                            srcset="/assets/img/roof-guarantee-home.png"
+                            sizes="(max-width:768px) 100vw, 600px">
+                    <img src="/assets/img/roof-guarantee-home.png"
+                         alt="Freshly restored roof showing premium membrane finish"
+                         width="1600" height="1000" loading="lazy" decoding="async"
+                         class="g-media-img"
+                         style="aspect-ratio:16/10;width:100%;height:auto;object-fit:cover;">
+                </picture>
             </div>
         </section>
         <!-- ===== End Guarantee ===== -->
