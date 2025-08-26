@@ -21,7 +21,7 @@
     
     <!-- Performance & Preloading -->
     <link rel="preload" as="image" href="assets/img/Mornington_Peninsula_Roofing_Hero.png" fetchpriority="high">
-    <link rel="preload" as="image" href="/assets/img/roof-restoration-guarentee.png">
+    <link rel="preload" as="image" href="/assets/img/roof-guarantee-home.png">
     <link rel="preload" href="assets/css/styles.css" as="style">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     
@@ -244,17 +244,13 @@
                     <a href="tel:+61341627766" class="btn-ghost">03 4162 7766</a>
                 </div>
             </div>
+            <!-- Guarantee media: force PNG known to exist -->
             <div class="g-media">
-                <picture>
-                    <!-- Keep AVIF/WEBP if present; the PNG/JPG fallback guarantees render -->
-                    <source type="image/avif" srcset="/assets/img/roof-restoration-guarentee.avif">
-                    <source type="image/webp" srcset="/assets/img/roof-restoration-guarentee.webp">
-                    <img
-                        src="/assets/img/roof-restoration-guarentee.png"
-                        alt="Freshly restored roof showing premium membrane finish"
-                        width="1600" height="1000" loading="lazy" decoding="async"
-                        class="g-media-img">
-                </picture>
+                <img
+                    src="/assets/img/roof-guarantee-home.png"
+                    alt="Freshly restored roof showing premium membrane finish"
+                    width="1600" height="1000" loading="lazy" decoding="async"
+                    class="g-media-img">
             </div>
         </section>
         <!-- ===== End Guarantee ===== -->
