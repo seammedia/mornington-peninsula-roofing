@@ -1,0 +1,12 @@
+{
+  "name": "mornington-peninsula-roofing",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "sharp": "^0.33.0"
+  },
+  "scripts": {
+    "build:images": "node tools/build-images.mjs"
+  }
+}

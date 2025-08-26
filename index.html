@@ -19,18 +19,75 @@
     <meta name="twitter:description" content="Quality roofers for 25+ years. Expert repairs, restorations, re-roofing and roof painting from Mount Eliza to Sorrento.">
     <meta name="twitter:image" content="https://www.morningtonpeninsularoofing.com.au/assets/img/About_Us.jpg">
     
-    <!-- Performance & Preloading -->
-    <link rel="preload" as="image" href="/assets/img/Mornington_Peninsula_Roofing_Hero.png" 
-          imagesrcset="/assets/img/Mornington_Peninsula_Roofing_Hero.png"
-          imagesizes="(max-width:768px) 100vw, 1200px" fetchpriority="high">
-    <link rel="preload" href="/assets/css/styles.css" as="style">
+    <!-- Critical LCP Hero Preload -->
+    <link rel="preload" as="image"
+          href="/assets/img/hero/MPR-hero-1280.avif"
+          imagesrcset="/assets/img/hero/MPR-hero-640.avif 640w,
+                       /assets/img/hero/MPR-hero-960.avif 960w,
+                       /assets/img/hero/MPR-hero-1280.avif 1280w,
+                       /assets/img/hero/MPR-hero-1600.avif 1600w"
+          imagesizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1280px"
+          fetchpriority="high">
+    
+    <!-- Optimized CSS Loading -->
+    <link rel="preload" as="style" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    
-    <!-- FAQ Styles -->
+    <!-- Critical CSS for LCP/Header -->
     <style>
+        /* Critical above-the-fold CSS */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        
+        /* Header - fixed height to prevent CLS */
+        .site-header { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #e5e7eb; z-index: 100; height: 70px; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; height: 100%; }
+        .brand { font-weight: 700; text-decoration: none; color: #0f172a; }
+        
+        /* Hero - optimized for LCP */
+        .roofing-specialists-bar { background: #0e2233; color: #fff; text-align: center; padding: 12px 0; }
+        .roofing-specialists-bar h2 { font-size: 1rem; letter-spacing: 2px; font-weight: 700; }
+        
+        .hero-fullwidth { 
+            position: relative; 
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .hero-fullwidth picture { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            z-index: 1;
+        }
+        
+        .hero-fullwidth img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            display: block;
+        }
+        
+        /* Accessibility */
+        .visually-hidden { 
+            position: absolute !important; 
+            width: 1px !important; 
+            height: 1px !important; 
+            padding: 0 !important; 
+            margin: -1px !important; 
+            overflow: hidden !important; 
+            clip: rect(0, 0, 0, 0) !important; 
+            white-space: nowrap !important; 
+            border: 0 !important; 
+        }
+        
+        /* FAQ Styles */
         .faq-list{display:grid;gap:10px;margin-top:10px}
         .faq-list details{border-top:1px solid #e7ecef;padding:8px 0}
         .faq-list details:last-child{border-bottom:1px solid #e7ecef}
@@ -200,25 +257,31 @@
         </div>
     </section>
 
-    <!-- Hero Section -->
+    <!-- Optimized LCP Hero Section -->
     <section class="hero-fullwidth" id="home-hero" aria-label="Mornington Peninsula Roofing hero">
-        <div class="hero-background">
-            <picture>
-                <source type="image/avif" 
-                        srcset="/assets/img/Mornington_Peninsula_Roofing_Hero.png 1600w"
-                        sizes="(max-width:768px) 100vw, 1200px">
-                <source type="image/webp" 
-                        srcset="/assets/img/Mornington_Peninsula_Roofing_Hero.png 1600w"
-                        sizes="(max-width:768px) 100vw, 1200px">
-                <img src="/assets/img/Mornington_Peninsula_Roofing_Hero.png"
-                     srcset="/assets/img/Mornington_Peninsula_Roofing_Hero.png 1600w"
-                     sizes="(max-width:768px) 100vw, 1200px"
-                     alt="Professional roofing work on the Mornington Peninsula - tiled roof close-up" 
-                     width="1600" height="900"
-                     fetchpriority="high" decoding="async"
-                     style="aspect-ratio:16/9;width:100%;height:auto;object-fit:cover;">
-            </picture>
-        </div>
+        <picture>
+            <source type="image/avif"
+                    srcset="/assets/img/hero/MPR-hero-640.avif 640w,
+                            /assets/img/hero/MPR-hero-960.avif 960w,
+                            /assets/img/hero/MPR-hero-1280.avif 1280w,
+                            /assets/img/hero/MPR-hero-1600.avif 1600w"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1280px">
+            <source type="image/webp"
+                    srcset="/assets/img/hero/MPR-hero-640.webp 640w,
+                            /assets/img/hero/MPR-hero-960.webp 960w,
+                            /assets/img/hero/MPR-hero-1280.webp 1280w,
+                            /assets/img/hero/MPR-hero-1600.webp 1600w"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1280px">
+            <img src="/assets/img/hero/MPR-hero-1280.jpg"
+                 srcset="/assets/img/hero/MPR-hero-640.jpg 640w,
+                         /assets/img/hero/MPR-hero-960.jpg 960w,
+                         /assets/img/hero/MPR-hero-1280.jpg 1280w,
+                         /assets/img/hero/MPR-hero-1600.jpg 1600w"
+                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1280px"
+                 alt="Mornington Peninsula Roofing — tiled roof hero"
+                 width="1280" height="720"
+                 decoding="async" fetchpriority="high">
+        </picture>
     </section>
 
     <!-- USP/Trust Bar -->
@@ -603,8 +666,8 @@
     </script>
 
     <!-- JavaScript -->
-    <script src="/assets/js/main.js"></script>
-<script>
+    <script src="/assets/js/main.js" defer></script>
+<script defer>
 // Mobile hamburger
 (function(){
 const t=document.querySelector('.nav-toggle');
