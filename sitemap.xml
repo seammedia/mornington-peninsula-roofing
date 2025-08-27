@@ -109,7 +109,12 @@
   <!-- Blog -->
   <url>
     <loc>https://www.morningtonpeninsularoofing.com.au/blog/</loc>
-    <lastmod>2025-08-26</lastmod>
+    <lastmod>2025-08-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/blog/colorbond-or-roof-tiles.html</loc>
+    <lastmod>2025-08-27</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
