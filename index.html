@@ -94,8 +94,7 @@
         }
         
         /* Hero - optimized for LCP */
-        .roofing-specialists-bar { background: #0e2233; color: #fff; text-align: center; padding: 12px 0; }
-        .roofing-specialists-bar h2 { font-size: 1rem; letter-spacing: 2px; font-weight: 700; }
+        .roofing-specialists-bar { display: none !important; }
         
         .hero-fullwidth { 
             position: relative; 
@@ -302,10 +301,10 @@
   </div>
 </header>
 
-    <!-- Header Bar -->
-    <section class="roofing-specialists-bar">
+    <!-- Header Bar - REMOVED: was dark strip, now hidden -->
+    <!-- Moved h1 to hero section for better SEO -->
+    <section class="roofing-specialists-bar" style="display: none;">
         <div class="container">
-            <h1 class="visually-hidden">Mornington Peninsula Roofing - Expert Roofing Services for 25+ Years</h1>
             <h2>THE ROOFING SPECIALISTS</h2>
         </div>
     </section>
@@ -339,6 +338,7 @@
 
         <!-- Services Section -->
         <section id="services" class="wrap">
+            <h1 class="visually-hidden">Mornington Peninsula Roofing - Expert Roofing Services for 25+ Years</h1>
             <h2>Roofing Services</h2>
             <div class="card-grid">
                 <a class="card" href="/services/roof-repairs.html">
