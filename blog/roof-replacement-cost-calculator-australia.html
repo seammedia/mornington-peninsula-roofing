@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Roof Replacement Cost Calculator (Australia) | Mornington Peninsula Roofing</title>
+  <meta name="description" content="Instant ball-park roof replacement cost estimate for Colorbond or tiles. Adjust area, pitch, complexity, insulation and more. Mornington Peninsula & surrounds.">
+  <meta property="og:title" content="Roof Replacement Cost Calculator (Australia)">
+  <meta property="og:description" content="Instant ball-park roof replacement cost estimate for Colorbond or tiles. Get planning figures for your Peninsula roof replacement project.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.morningtonpeninsularoofing.com.au/blog/roof-replacement-cost-calculator-australia.html">
+  <meta property="og:image" content="https://www.morningtonpeninsularoofing.com.au/assets/img/Mornington_Peninsula_Roofing_Hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Roof Replacement Cost Calculator (Australia)">
+  <meta name="twitter:description" content="Instant ball-park roof replacement cost estimate for Colorbond or tiles. Peninsula roofing specialists.">
+  <meta name="twitter:image" content="https://www.morningtonpeninsularoofing.com.au/assets/img/Mornington_Peninsula_Roofing_Hero.jpg">
+  <link rel="canonical" href="https://www.morningtonpeninsularoofing.com.au/blog/roof-replacement-cost-calculator-australia.html">
+  <link rel="preload" as="image" href="/assets/img/Mornington_Peninsula_Roofing_Hero.jpg" fetchpriority="high">
+  
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #475569;
+      --border: #e5e7eb;
+      --accent: #6b8e79;
+      --mpr-green: #5f806e;
+    }
+
+    /* Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);z-index:100}
+    .nav-container{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-weight:700;text-decoration:none;color:var(--ink)}
+    .site-menu{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+    .nav-link,.nav-link-button{background:none;border:0;cursor:pointer;font:inherit;text-transform:uppercase;letter-spacing:.2em;font-size:.85rem;text-decoration:none;color:var(--ink);padding:0}
+    .nav-link:hover,.nav-link:focus-visible,.nav-link-button:hover,.nav-link-button:focus-visible{text-decoration:underline}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:500;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em}
+    .btn-ghost{background:transparent;border:1px solid var(--border);color:var(--ink)}
+    .nav-toggle{display:none}
+    .hide-md{display:inline-block}
+    /* Dropdown */
+    .nav-dropdown{position:relative}
+    .dropdown-panel{position:absolute;top:100%;left:0;display:none;min-width:220px;background:#fff;border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,.06);padding:8px}
+    .nav-dropdown[aria-expanded="true"] .dropdown-panel{display:block}
+    .dropdown-link{display:block;padding:10px 12px;color:var(--ink);text-decoration:none}
+    .dropdown-link:hover,.dropdown-link:focus-visible{background:#f7f7f7}
+    /* Active state */
+    .nav-link[aria-current="page"], .nav-link-button[aria-current="page"]{text-decoration:underline}
+    /* Mobile */
+    @media (max-width:1024px){
+      .site-menu{gap:16px}
+      .nav-link,.nav-link-button{letter-spacing:.16em;font-size:.82rem}
+      .hide-md{display:none}
+    }
+    @media (max-width:820px){
+      .nav-toggle{display:inline-block}
+      .site-menu{display:none;flex-direction:column;gap:12px;padding:12px 0}
+      .site-menu[aria-expanded="true"]{display:flex}
+    }
+    /* Anchor offset + smooth scroll */
+    [id]{scroll-margin-top:80px}
+    html{scroll-behavior:smooth}
+
+    /* Hero Section */
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 36px;
+      align-items: center;
+      padding: 48px 20px;
+    }
+
+    .hero .media img {
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      display: block;
+    }
+
+    .hero .meta {
+      color: #64748b;
+      font-size: .9rem;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.1;
+      color: var(--ink);
+      margin: 6px 0 10px;
+    }
+
+    .hero p.lede {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 60ch;
+    }
+
+    .cta {
+      display: flex;
+      gap: 10px;
+      margin: 24px 0 8px;
+    }
+
+    @media (max-width: 980px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+
+    /* Article Content */
+    .article {
+      padding: 28px 20px 64px;
+    }
+
+    .article .content {
+      max-width: 850px;
+      color: var(--muted);
+      font-size: 1.02rem;
+      line-height: 1.7;
+    }
+
+    .article h2 {
+      color: var(--ink);
+      margin: 28px 0 10px;
+      font-size: 1.6rem;
+      line-height: 1.3;
+    }
+
+    .article h3 {
+      color: var(--ink);
+      margin: 20px 0 8px;
+      font-size: 1.25rem;
+    }
+
+    .article ul, .article ol {
+      margin: 16px 0;
+      padding-left: 24px;
+    }
+
+    .article li {
+      margin-bottom: 8px;
+    }
+
+    .article a {
+      color: #0f766e;
+      text-decoration: underline;
+    }
+
+    .note {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 20px 0;
+    }
+
+    /* FAQ Styles */
+    .faq-section {
+      margin: 40px 0;
+    }
+
+    .faq-section details {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin: 8px 0;
+      padding: 0;
+    }
+
+    .faq-section summary {
+      padding: 16px 20px;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--ink);
+      border-radius: 10px;
+    }
+
+    .faq-section summary:hover {
+      background: #f8fafc;
+    }
+
+    .faq-section details[open] summary {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-section .faq-answer {
+      padding: 16px 20px;
+      color: var(--muted);
+    }
+
+    /* Footer */
+    .footer {
+        background-color: #f8f9fa;
+        padding: 48px 0;
+        border-top: 1px solid var(--border);
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 32px;
+    }
+
+    .footer-section h4 {
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--ink);
+        margin-bottom: 16px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    .footer-section ul {
+        list-style: none;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 8px;
+    }
+
+    .footer-section a {
+        text-decoration: none;
+        color: var(--muted);
+        font-size: 14px;
+        transition: color 0.3s ease;
+    }
+
+    .footer-section a:hover,
+    .footer-section a:focus {
+        color: var(--accent);
+    }
+
+    .footer-section p {
+        color: var(--muted);
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    @media (max-width: 768px) {
+        .footer-content {
+            grid-template-columns: 1fr;
+            gap: 32px;
+            text-align: center;
+        }
+    }
+
+    .footer-links.loc-columns {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-links.loc-columns li {
+        margin-bottom: 8px;
+        break-inside: avoid;
+    }
+
+    @media (min-width: 768px) {
+        .footer-links.loc-columns {
+            columns: 2;
+            column-gap: 24px;
+        }
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .disclaimer {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 24px 0;
+      color: #991b1b;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Roof Replacement Cost Calculator (Australia)",
+    "description": "Instant ball-park roof replacement cost estimate for Colorbond or tiles. Adjust area, pitch, complexity, insulation and more.",
+    "image": "https://www.morningtonpeninsularoofing.com.au/assets/img/Mornington_Peninsula_Roofing_Hero.jpg",
+    "author": {"@type":"Organization","name":"Mornington Peninsula Roofing"},
+    "publisher": {"@type":"Organization","name":"Mornington Peninsula Roofing"},
+    "datePublished": "2025-08-27",
+    "mainEntityOfPage": {"@type":"WebPage","@id":"https://www.morningtonpeninsularoofing.com.au/blog/roof-replacement-cost-calculator-australia.html"}
+  }
+  </script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QFTWK45LJZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QFTWK45LJZ', { anonymize_ip: true, transport_type: 'beacon' });
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-container">
+    <a class="brand" href="/">Mornington Peninsula Roofing</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+    <nav id="site-menu" class="site-menu" aria-expanded="false">
+      <a href="/" class="nav-link" data-nav="home">Home</a>
+      <a href="/about.html" class="nav-link" data-nav="about">About</a>
+      <div class="nav-dropdown" data-nav="services">
+        <button class="nav-link nav-link-button" aria-expanded="false" aria-haspopup="true">
+          Services <span class="caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="dropdown-panel" role="menu">
+          <a role="menuitem" class="dropdown-link" href="/services/roof-repairs.html">Roof Repairs</a>
+          <a role="menuitem" class="dropdown-link" href="/services/roof-restoration.html">Roof Restoration</a>
+          <a role="menuitem" class="dropdown-link" href="/services/re-roofing.html">Re-Roofing</a>
+          <a role="menuitem" class="dropdown-link" href="/services/roof-painting.html">Roof Painting</a>
+        </div>
+      </div>
+      <div class="nav-dropdown" data-nav="locations">
+        <button class="nav-link nav-link-button" aria-expanded="false" aria-haspopup="true">
+          Locations <span class="caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="dropdown-panel" role="menu">
+          <a role="menuitem" class="dropdown-link" href="/locations/mount-eliza.html">Mount Eliza</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/mornington.html">Mornington</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/frankston.html">Frankston</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/sorrento.html">Sorrento</a>
+        </div>
+      </div>
+      <a href="/blog/" class="nav-link" data-nav="blog">Blog</a>
+      <a href="/contact.html" class="nav-link" data-nav="contact">Contact</a>
+      <a href="tel:0341627766" class="btn btn-ghost hide-md">03 4162 7766</a>
+      <a href="/contact.html" class="btn hide-md">Get Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="content">
+      <p class="meta">By MPR • 27 Aug 2025 • 5–8 min read</p>
+      <h1>Roof Replacement Cost Calculator (Australia)</h1>
+      <p class="lede">Get instant planning estimates for Colorbond or tile roof replacement. Adjust for Peninsula conditions, material choice, complexity and extras.</p>
+      <div class="cta">
+        <a href="#roof-cost-calculator" class="btn">Use Calculator</a>
+        <a href="/contact.html" class="btn btn-ghost">Get Firm Quote</a>
+      </div>
+    </div>
+    <div class="media">
+      <picture>
+        <source srcset="/assets/img/Mornington_Peninsula_Roofing_Hero.webp" type="image/webp">
+        <img src="/assets/img/Mornington_Peninsula_Roofing_Hero.jpg" alt="Professional roof replacement showing modern roofing materials for Peninsula homes" width="600" height="400" fetchpriority="high" decoding="async">
+      </picture>
+    </div>
+  </section>
+
+  <article class="article">
+    <div class="content">
+
+      <!-- === BEGIN: Roof Replacement Cost Calculator (MPR) === -->
+      <section id="roof-cost-calculator" class="container" aria-labelledby="calcTitle" style="max-width:980px;margin:0 auto">
+        <style>
+          #roof-cost-calculator .card{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:14px;box-shadow:0 6px 24px rgba(0,0,0,.06)}
+          #roof-cost-calculator .grid{display:grid;gap:16px}
+          @media(min-width:860px){#roof-cost-calculator .grid{grid-template-columns:1fr 1fr}}
+          #roof-cost-calculator h1,#roof-cost-calculator h2{line-height:1.2;margin:0 0 10px}
+          #roof-cost-calculator h1{font-size:clamp(28px,3.2vw,40px)}
+          #roof-cost-calculator h2{font-size:clamp(18px,2vw,22px)}
+          #roof-cost-calculator .field{display:flex;flex-direction:column;gap:6px}
+          #roof-cost-calculator label{font-weight:600}
+          #roof-cost-calculator input[type="number"],
+          #roof-cost-calculator select{appearance:none;width:100%;border:1px solid rgba(0,0,0,.15);border-radius:10px;padding:.8rem .9rem;font:inherit;background:#fff}
+          #roof-cost-calculator input[type="checkbox"]{transform:translateY(1px)}
+          #roof-cost-calculator .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:999px;padding:.9rem 1.2rem;border:0;cursor:pointer;font-weight:700;background:var(--mpr-green,#5f806e);color:#fff}
+          #roof-cost-calculator .btn.secondary{background:transparent;color:inherit;border:1px solid rgba(0,0,0,.15)}
+          #roof-cost-calculator .pill{display:inline-block;background:rgba(0,0,0,.06);border-radius:999px;padding:.25rem .6rem;font-size:.85rem}
+          #roof-cost-calculator .result{padding:18px;border-radius:12px;background:#f7faf9; border:1px solid rgba(0,0,0,.06)}
+          #roof-cost-calculator table{width:100%;border-collapse:collapse}
+          #roof-cost-calculator th, #roof-cost-calculator td{padding:10px;border-bottom:1px dashed rgba(0,0,0,.1);text-align:left}
+          #roof-cost-calculator tfoot td{font-weight:800;border-top:2px solid rgba(0,0,0,.2)}
+          #roof-cost-calculator small.muted{opacity:.7}
+        </style>
+
+        <header style="margin-bottom:18px">
+          <h1 id="calcTitle">Roof Replacement Cost Calculator (Australia)</h1>
+          <p class="muted">Indicative supply &amp; install pricing only — real quotes depend on site inspection, materials, access and scope. Use this tool to get a fast ball-park figure, then <a href="/contact.html">book a site visit</a> for an exact quote.</p>
+        </header>
+
+        <div class="card" style="padding:20px">
+          <div class="grid" role="group" aria-label="Input fields">
+            <div class="field">
+              <label for="roofArea">Roof Area (m²)</label>
+              <input id="roofArea" type="number" min="30" step="1" value="150" inputmode="numeric" required>
+              <small class="muted">Total surface area including pitch. If unsure, use your floor area × 1.1–1.4 depending on pitch/overhangs.</small>
+            </div>
+
+            <div class="field">
+              <label for="region">Region</label>
+              <select id="region">
+                <option value="VIC">Melbourne / VIC</option>
+                <option value="NSW">Sydney / NSW</option>
+                <option value="QLD">Brisbane / QLD</option>
+                <option value="SA">Adelaide / SA</option>
+                <option value="WA">Perth / WA</option>
+                <option value="TAS">Hobart / TAS</option>
+                <option value="ACT">Canberra / ACT</option>
+                <option value="NT">Darwin / NT</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="material">Material</label>
+              <select id="material">
+                <option value="colorbond">Colorbond / Metal</option>
+                <option value="tile_concrete">Tile — Concrete</option>
+                <option value="tile_terracotta">Tile — Terracotta</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="pitch">Roof Pitch</label>
+              <select id="pitch">
+                <option value="low">&lt;15°</option>
+                <option value="med" selected>15–30°</option>
+                <option value="steep">&gt;30°</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="complexity">Roof Type / Complexity</label>
+              <select id="complexity">
+                <option value="gable">Gable (simple)</option>
+                <option value="hip">Hip (standard)</option>
+                <option value="complex">Complex / multi-valley</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="storeys">Storeys</label>
+              <select id="storeys">
+                <option value="1">Single</option>
+                <option value="2">Double</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="access">Site Access</label>
+              <select id="access">
+                <option value="easy">Easy</option>
+                <option value="std" selected>Standard</option>
+                <option value="difficult">Difficult</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="skylights"># Skylights</label>
+              <input id="skylights" type="number" min="0" step="1" value="0">
+            </div>
+
+            <div class="field">
+              <label for="gutters">Gutter length (m)</label>
+              <input id="gutters" type="number" min="0" step="1" value="0">
+              <small class="muted">Optional new gutters/downpipes linear metres.</small>
+            </div>
+
+            <div class="field">
+              <label for="insul">Insulation / Sarking</label>
+              <select id="insul">
+                <option value="none" selected>None</option>
+                <option value="sarking">Sarking only</option>
+                <option value="sarking_batts">Sarking + R3.5 Batts</option>
+              </select>
+            </div>
+
+            <div class="field" style="display:flex;gap:10px;align-items:center">
+              <input id="removeOld" type="checkbox" checked>
+              <label for="removeOld">Include removal &amp; disposal of existing roof</label>
+            </div>
+
+            <div class="field" style="display:flex;gap:10px;align-items:center">
+              <input id="includeGST" type="checkbox" checked>
+              <label for="includeGST">Include 10% GST</label>
+            </div>
+          </div>
+
+          <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+            <button class="btn" id="calcBtn" type="button">Calculate Total Cost</button>
+            <button class="btn secondary" id="resetBtn" type="button" aria-label="Reset form">Reset</button>
+            <span class="pill" id="assumptionPill" title="Default rates & multipliers can be fine-tuned in code.">Indicative only</span>
+          </div>
+
+          <div class="result" style="margin-top:18px" aria-live="polite">
+            <h2 style="margin:0 0 6px">Estimated Roof Replacement Cost</h2>
+            <div id="totalDisplay" style="font-size:clamp(24px,3vw,32px);font-weight:800">–</div>
+            <small class="muted" id="rangeNote"></small>
+
+            <details style="margin-top:10px">
+              <summary><strong>View detailed breakdown</strong></summary>
+              <div style="overflow:auto;margin-top:8px">
+                <table>
+                  <tbody id="breakdown"></tbody>
+                  <tfoot id="summaryFoot"></tfoot>
+                </table>
+              </div>
+              <small class="muted">Numbers are ball-park and exclude structural carpentry, asbestos, framing repairs, custom flashings beyond norm, stormwater upgrades or council/engineering items unless selected above.</small>
+            </details>
+          </div>
+        </div>
+
+        <script>
+          // --- Indicative base supply+install rates per m² (editable) ---
+          const BASE = {
+            VIC:{colorbond:145, tile_concrete:160, tile_terracotta:190},
+            NSW:{colorbond:150, tile_concrete:165, tile_terracotta:195},
+            QLD:{colorbond:140, tile_concrete:155, tile_terracotta:185},
+            SA:{colorbond:135, tile_concrete:150, tile_terracotta:180},
+            WA:{colorbond:150, tile_concrete:165, tile_terracotta:195},
+            TAS:{colorbond:150, tile_concrete:165, tile_terracotta:195},
+            ACT:{colorbond:150, tile_concrete:165, tile_terracotta:195},
+            NT:{colorbond:145, tile_concrete:160, tile_terracotta:190}
+          };
+
+          // Multipliers (editable)
+          const PITCH_MULT = { low:1.00, med:1.08, steep:1.15 };
+          const TYPE_MULT  = { gable:1.00, hip:1.06, complex:1.12 };
+          const STOREY_MULT= { "1":1.00, "2":1.08 };
+          const ACCESS_MULT= { easy:1.00, std:1.05, difficult:1.12 };
+
+          // Line items (editable)
+          const REMOVAL_PER_M2 = { colorbond:12, tile_concrete:18, tile_terracotta:22 };
+          const INSUL_PER_M2   = { none:0, sarking:8, sarking_batts:25 };
+          const SKYLIGHT_EACH  = 950;
+          const GUTTER_PER_M   = 38;
+
+          // Helpers
+          const fmt = v => v.toLocaleString('en-AU',{style:'currency',currency:'AUD',maximumFractionDigits:0});
+
+          const $ = id => document.getElementById(id);
+
+          function calc() {
+            const m2 = Math.max(0, +$('roofArea').value||0);
+            const region = $('region').value;
+            const mat = $('material').value;
+            const pitch = $('pitch').value;
+            const typ = $('complexity').value;
+            const storeys = $('storeys').value;
+            const access = $('access').value;
+            const skylights = Math.max(0, +$('skylights').value||0);
+            const gutters = Math.max(0, +$('gutters').value||0);
+            const insul = $('insul').value;
+            const removeOld = $('removeOld').checked;
+            const includeGST = $('includeGST').checked;
+
+            if(!m2){ $('totalDisplay').textContent = '–'; $('breakdown').innerHTML=''; return;}
+
+            // Base
+            const baseRate = BASE[region][mat];
+            const base = m2 * baseRate;
+
+            // Multipliers combined
+            const mult = PITCH_MULT[pitch] * TYPE_MULT[typ] * STOREY_MULT[storeys] * ACCESS_MULT[access];
+            const multFactor = (mult - 1);
+
+            // Extras
+            const removal = removeOld ? (m2 * REMOVAL_PER_M2[mat]) : 0;
+            const insulation = m2 * INSUL_PER_M2[insul];
+            const skylightCost = skylights * SKYLIGHT_EACH;
+            const gutterCost = gutters * GUTTER_PER_M;
+
+            // Subtotal before GST
+            const adj = base * multFactor;
+            let subtotal = base + adj + removal + insulation + skylightCost + gutterCost;
+
+            // GST
+            const gst = includeGST ? subtotal * 0.10 : 0;
+            const total = subtotal + gst;
+
+            // Range (+/- 10% contingency)
+            const lo = total * 0.9;
+            const hi = total * 1.1;
+
+            // Render
+            $('totalDisplay').textContent = fmt(total);
+            $('rangeNote').textContent = `Typical range ${fmt(lo)} – ${fmt(hi)} (incl. ${includeGST?'':'no '}GST).`;
+
+            const rows = [
+              ['Base supply + install', fmt(base), `${m2} m² × ${fmt(baseRate)}/m²`],
+              ['Pitch/complexity/access uplift', (adj>0?'+ ':'') + fmt(adj), `${((multFactor)*100).toFixed(0)}%`],
+              removeOld && ['Removal & disposal', fmt(removal), `${fmt(REMOVAL_PER_M2[mat])}/m²`],
+              insul!=='none' && ['Insulation / sarking', fmt(insulation), `${fmt(INSUL_PER_M2[insul])}/m²`],
+              skylights>0 && ['Skylights', fmt(skylightCost), `${skylights} × ${fmt(SKYLIGHT_EACH)}`],
+              gutters>0 && ['Gutters & downpipes', fmt(gutterCost), `${gutters} m × ${fmt(GUTTER_PER_M)}`],
+            ].filter(Boolean);
+
+            $('breakdown').innerHTML = rows.map(r=>`
+              <tr><td>${r[0]}</td><td>${r[1]}</td><td><small class="muted">${r[2]}</small></td></tr>
+            `).join('');
+
+            $('summaryFoot').innerHTML = `
+              <tr><td>Subtotal</td><td>${fmt(subtotal)}</td><td></td></tr>
+              <tr><td>GST (10%)</td><td>${fmt(gst)}</td><td></td></tr>
+              <tr><td>Total</td><td>${fmt(total)}</td><td></td></tr>
+            `;
+          }
+
+          $('calcBtn').addEventListener('click', () => {
+            calc();
+            if (window.gtag) gtag('event','calculate_roof_cost',{page_location:location.href});
+          });
+          $('resetBtn').addEventListener('click', () => {
+            document.querySelectorAll('#roof-cost-calculator input, #roof-cost-calculator select').forEach(el=>{
+              if(el.type==='checkbox'){ if(el.id==='removeOld'||el.id==='includeGST') el.checked=true; else el.checked=false; }
+            });
+            $('roofArea').value=150; $('region').value='VIC'; $('material').value='colorbond';
+            $('pitch').value='med'; $('complexity').value='hip'; $('storeys').value='1';
+            $('access').value='std'; $('skylights').value='0'; $('gutters').value='0'; $('insul').value='none';
+            calc();
+          });
+
+          // Auto-calc on first paint
+          window.addEventListener('DOMContentLoaded', calc);
+        </script>
+      </section>
+      <!-- === END: Roof Replacement Cost Calculator (MPR) === -->
+
+      <h2>What drives roof replacement costs in Australia?</h2>
+      <p>Peninsula roofing costs depend on five key factors:</p>
+      <ul>
+        <li><strong>Total roof area:</strong> Measured including pitch and overhangs—typically 1.1–1.4× your floor area</li>
+        <li><strong>Material and profile:</strong> Colorbond steel vs concrete/terracotta tiles, with profile affecting labour time</li>
+        <li><strong>Pitch and complexity:</strong> Steep roofs and multi-valley designs require more safety equipment and skilled labour</li>
+        <li><strong>Access and storeys:</strong> Difficult sites with narrow access or double-storey heights increase setup costs</li>
+        <li><strong>Scope additions:</strong> Insulation, sarking, skylights, and new gutters significantly impact total cost</li>
+      </ul>
+
+      <h2>Colorbond vs tiles: Peninsula pricing realities</h2>
+      <p>Material choice affects both supply and installation costs on the Peninsula:</p>
+      
+      <h3>Colorbond steel advantages</h3>
+      <ul>
+        <li><strong>Faster installation:</strong> Lighter sheets mean quicker progress, reducing labour costs</li>
+        <li><strong>Lower structural load:</strong> Existing frames rarely need strengthening</li>
+        <li><strong>Coastal performance:</strong> COLORBOND Ultra resists salt air corrosion better than standard steel</li>
+        <li><strong>Easier removal:</strong> Less disposal weight and time compared to tiles</li>
+      </ul>
+
+      <h3>Tile considerations</h3>
+      <ul>
+        <li><strong>Higher material cost:</strong> Concrete and terracotta tiles carry premium pricing</li>
+        <li><strong>Slower installation:</strong> Individual tile placement takes more time than sheet roofing</li>
+        <li><strong>Weight factors:</strong> May require structural assessment or beam upgrades</li>
+        <li><strong>Coastal durability:</strong> Salt spray can cause tile surface degradation over time</li>
+      </ul>
+
+      <h2>Peninsula conditions affecting your roof choice</h2>
+      <p>Local weather patterns influence both performance and maintenance costs:</p>
+      
+      <h3>Coastal exposure</h3>
+      <p>Properties within 1km of Port Phillip Bay face increased salt air exposure. <a href="/services/re-roofing.html">COLORBOND Ultra</a> performs better than standard steel in these conditions, while tiles may show surface erosion over 15–20 years.</p>
+
+      <h3>Wind and weather</h3>
+      <p>Peninsula southerlies and storm activity favour well-fastened metal roofing. Our installations exceed minimum fixing requirements for improved wind resistance.</p>
+
+      <h3>Thermal performance</h3>
+      <p>Both Colorbond and tiles benefit from proper sarking and insulation. The calculator includes <a href="/services/roof-restoration.html">sarking and bulk insulation options</a> that significantly improve comfort and energy efficiency.</p>
+
+      <h2>When restoration beats replacement</h2>
+      <p>Not every roof needs full replacement. Consider <a href="/services/roof-restoration.html">roof restoration</a> if:</p>
+      <ul>
+        <li>Structure and sarking are sound (under 25 years old)</li>
+        <li>Only surface coating or minor repairs are needed</li>
+        <li>Budget constraints make staged works preferable</li>
+        <li>Council approval timeframes favour restoration scope</li>
+      </ul>
+      
+      <p>Our <a href="/locations/mornington.html">Peninsula specialists</a> can assess whether restoration or replacement offers better value for your specific situation.</p>
+
+      <div class="disclaimer">
+        <strong>Disclaimer:</strong> This calculator provides indicative planning figures only and is not a formal quote. Pricing varies by site conditions, scope, specifications and market rates. A site inspection is required for a fixed price.
+      </div>
+
+      <!-- FAQ Section -->
+      <section aria-labelledby="faqCalc" class="faq-section">
+        <h2 id="faqCalc">Roof replacement cost – FAQs</h2>
+        <details>
+          <summary>What's included in the calculator?</summary>
+          <div class="faq-answer">
+            <p>Supply & install of the chosen roofing, standard flashings, fixings, and any options you select such as sarking or gutters. Structural works and asbestos are excluded.</p>
+          </div>
+        </details>
+        <details>
+          <summary>How accurate is the estimate?</summary>
+          <div class="faq-answer">
+            <p>It's a planning-level guide (±10–20%). We'll confirm after site inspection.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Colorbond or tiles — which costs more?</summary>
+          <div class="faq-answer">
+            <p>Material rates differ by region and profile. Colorbond is often lighter and faster to install; tiles can carry higher material cost and removal.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Do you service my suburb?</summary>
+          <div class="faq-answer">
+            <p>We cover the Mornington Peninsula & bayside — see <a href="/locations/mount-eliza.html">locations</a>.</p>
+          </div>
+        </details>
+      </section>
+
+      <h2>Get a firm quote</h2>
+      <p>Ready for precise pricing? <a href="/contact.html">Book a roof inspection</a> or call <a href="tel:0341627766">03 4162 7766</a>. We service the <a href="/locations/mornington.html">Mornington Peninsula & bayside suburbs</a>.</p>
+
+      <div class="cta" style="margin: 32px 0;">
+        <a href="/contact.html" class="btn">Get Expert Advice</a>
+        <a href="/services/re-roofing.html" class="btn btn-ghost">Re-roofing Services</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div itemscope itemtype="http://schema.org/BlogPosting">
+        <meta itemprop="headline" content="Roof Replacement Cost Calculator (Australia)">
+        <meta itemprop="description" content="Instant ball-park roof replacement cost estimate for Colorbond or tiles. Peninsula roofing specialists.">
+        <meta itemprop="image" content="https://www.morningtonpeninsularoofing.com.au/assets/img/Mornington_Peninsula_Roofing_Hero.jpg">
+        <meta itemprop="author" content="Mornington Peninsula Roofing">
+        <meta itemprop="datePublished" content="2025-08-27">
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>MENU</h4>
+                <ul class="footer-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/#services">Services</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>CONTACT</h4>
+                <p><a href="tel:03-4162-7766">03 4162 7766</a></p>
+                <p>Servicing Mornington Peninsula</p>
+            </div>
+            <div class="footer-section" id="locations">
+                <h4>LOCATIONS</h4>
+                <ul class="footer-links loc-columns">
+                    <li><a href="/locations/mount-eliza.html">Mount Eliza</a></li>
+                    <li><a href="/locations/mornington.html">Mornington</a></li>
+                    <li><a href="/locations/frankston.html">Frankston</a></li>
+                    <li><a href="/locations/sorrento.html">Sorrento</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {"@type": "Question","name": "What's included in the calculator?","acceptedAnswer": {"@type": "Answer","text": "Supply & install of the chosen roofing, standard flashings, fixings, and any options you select such as sarking or gutters. Structural works and asbestos are excluded."}},
+  {"@type": "Question","name": "How accurate is the estimate?","acceptedAnswer": {"@type": "Answer","text": "It's a planning-level guide (±10–20%). We'll confirm after site inspection."}},
+  {"@type": "Question","name": "Colorbond or tiles — which costs more?","acceptedAnswer": {"@type": "Answer","text": "Material rates differ by region and profile. Colorbond is often lighter and faster to install; tiles can carry higher material cost and removal."}},
+  {"@type": "Question","name": "Do you service my suburb?","acceptedAnswer": {"@type": "Answer","text": "We cover the Mornington Peninsula & bayside suburbs."}}
+ ]
+}
+</script>
+
+<script>
+// Mobile hamburger
+(function(){
+const t=document.querySelector('.nav-toggle');
+const m=document.getElementById('site-menu');
+if(t&&m){t.addEventListener('click',()=>{
+const open=t.getAttribute('aria-expanded')==='true';
+t.setAttribute('aria-expanded', String(!open));
+m.setAttribute('aria-expanded', String(!open));
+});}
+})();
+// Dropdown open/close + Esc
+(function(){
+const dropdowns = document.querySelectorAll('.nav-dropdown');
+dropdowns.forEach(dd => {
+  const btn=dd.querySelector('.nav-link-button');
+  const panel=dd.querySelector('.dropdown-panel');
+  const setOpen=(o)=>{dd.setAttribute('aria-expanded', String(o)); btn.setAttribute('aria-expanded', String(o));};
+  btn.addEventListener('click', e=>{e.stopPropagation(); setOpen(dd.getAttribute('aria-expanded')!=='true');});
+  document.addEventListener('click', ()=> setOpen(false));
+  [btn,panel].forEach(el=>el&&el.addEventListener('keydown', e=>{ if(e.key==='Escape') setOpen(false);}));
+});
+})();
+// Active nav state
+(function(){
+const p = window.location.pathname.replace(/index\.html$/, '');
+const mark = (k)=>{ const el=document.querySelector(`[data-nav="${k}"]`); if(el) el.setAttribute('aria-current','page');};
+if(p==='/'||p==='') mark('home');
+else if(p.endsWith('/about.html')) mark('about');
+else if(p.startsWith('/services/')) mark('services');
+else if(p.startsWith('/blog')) mark('blog');
+else if(p.endsWith('/contact.html')) mark('contact');
+else if(p.startsWith('/locations/')) mark('locations');
+})();
+</script>
+</body>
+</html>
