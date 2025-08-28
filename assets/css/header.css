@@ -156,3 +156,30 @@ html { scroll-padding-top: 80px; }
 .site-header, .nav-desktop, .nav-list, .has-sub, .sub-toggle, .sub-menu,
 .nav-ctas, .hamburger, .overlay, .drawer, .drawer-header, .drawer-nav,
 .drawer-list, .accordion, .acc-btn, .acc-panel { display: none !important; }
+
+/* ===========================
+   DESKTOP NAV: dropdown links
+   =========================== */
+@media (min-width: 1025px) {
+  /* Make dropdown toggles look identical to regular nav links */
+  .mpr-drop-toggle {
+    background: transparent !important;
+    border: 0 !important;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  /* Add chevron indicators to dropdown buttons */
+  .mpr-drop-toggle::after {
+    content: "▾";
+    margin-left: 6px;
+    font-size: 0.85em;
+    opacity: 0.85;
+  }
+
+  /* Ensure consistent hover states */
+  .mpr-link:hover, .mpr-drop-toggle:hover { 
+    background: rgba(255,255,255,0.08) !important; 
+  }
+}
