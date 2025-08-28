@@ -392,6 +392,66 @@
         </section>
         <!-- ===== End Guarantee ===== -->
 
+        <!-- Before / After Slider -->
+        <section id="before-after" class="section">
+          <div class="container">
+            <h2 class="section-title">Recent Roof Transformation (Before / After)</h2>
+
+            <figure class="ba" data-ba aria-label="Before and after comparison of a roof restoration">
+              <!-- AFTER image lives below, full width -->
+              <img
+                src="/assets/img/roof_after.png"
+                width="1024"
+                height="1024"
+                class="ba__after"
+                alt="After: restored roof with new Colorbond finish"
+                loading="lazy"
+                decoding="async"
+              />
+              <!-- BEFORE image overlays and is clipped by slider -->
+              <img
+                src="/assets/img/roof_before.png"
+                width="1024"
+                height="1024"
+                class="ba__before"
+                alt="Before: weathered roof prior to restoration"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <!-- Accessible slider control -->
+              <label class="sr-only" for="ba-slider">Drag to compare before and after</label>
+              <input
+                id="ba-slider"
+                class="ba__slider"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="50"
+                aria-label="Reveal before and after"
+              />
+
+              <!-- Visual handle line + knob -->
+              <div class="ba__handle" aria-hidden="true"></div>
+
+              <!-- Corner labels -->
+              <div class="ba__label ba__label--before">Before</div>
+              <div class="ba__label ba__label--after">After</div>
+              <figcaption class="ba__note">Drag the slider to compare.</figcaption>
+            </figure>
+
+            <noscript>
+              <div class="ba-noscript">
+                <img src="/assets/img/roof_before.png" width="1024" height="1024" alt="Before roof" />
+                <img src="/assets/img/roof_after.png" width="1024" height="1024" alt="After roof" />
+              </div>
+            </noscript>
+          </div>
+        </section>
+
         <!-- ===== Colorbond Colours (place above #faq) ===== -->
         <section id="colourbond" class="wrap cb" aria-label="Colorbond colour options">
             <div class="cb-left">

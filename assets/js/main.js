@@ -209,6 +209,9 @@
 // Main application initialization
 document.addEventListener('DOMContentLoaded', function() {
     
+    // Initialize Before/After slider
+    initBeforeAfter();
+    
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
     navLinks.forEach(link => {
@@ -1027,6 +1030,52 @@ function initializeInteractiveFeatures() {
  * - Project gallery with before/after imagery
  * - Online quote calculator and cost estimation tools
  */
+
+// Before/After slider
+function initBeforeAfter() {
+  const root = document.querySelector('.ba[data-ba]');
+  if (!root) return;
+
+  const slider = root.querySelector('.ba__slider');
+  const before = root.querySelector('.ba__before');
+  const handle = root.querySelector('.ba__handle');
+
+  const setPos = (pct) => {
+    const clamped = Math.max(0, Math.min(100, pct));
+    root.style.setProperty('--pos', clamped + '%');
+    slider.setAttribute('aria-valuenow', String(Math.round(clamped)));
+  };
+
+  // Input
+  slider.addEventListener('input', (e) => setPos(e.target.value));
+
+  // Pointer drag (so users can drag anywhere)
+  let dragging = false;
+  const onMove = (clientX) => {
+    const rect = root.getBoundingClientRect();
+    const pct = ((clientX - rect.left) / rect.width) * 100;
+    setPos(pct);
+  };
+
+  root.addEventListener('pointerdown', (e) => {
+    dragging = true;
+    root.setPointerCapture(e.pointerId);
+    onMove(e.clientX);
+  });
+
+  root.addEventListener('pointermove', (e) => {
+    if (!dragging) return;
+    onMove(e.clientX);
+  });
+
+  root.addEventListener('pointerup', (e) => {
+    dragging = false;
+    root.releasePointerCapture(e.pointerId);
+  });
+
+  // Start centered
+  setPos(50);
+}
 
 // GA4 Event Tracking Helper
 document.addEventListener('click', function (e) {
