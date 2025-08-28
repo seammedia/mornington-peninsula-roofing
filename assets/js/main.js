@@ -1028,53 +1028,76 @@ function initializeInteractiveFeatures() {
  * - Online quote calculator and cost estimation tools
  */
 
-// Before/After slider logic
+// Before/After slider – robust pointer/mouse/touch logic
 (function () {
-  const section = document.querySelector('#before-after .ba-frame');
-  if (!section) return;
+  const frame = document.querySelector('#before-after .ba-frame');
+  if (!frame) return;
 
-  const clip = section.querySelector('.ba-clip');
-  const handle = section.querySelector('.ba-handle');
+  const handle = frame.querySelector('.ba-handle');
 
-  // start at center
+  // Initialise at 50%
   setSplit(0.5);
 
-  let dragging = false;
-
   function setSplit(ratio) {
-    // clamp 0.05–0.95 so labels/handle remain visible
-    const clamped = Math.min(0.95, Math.max(0.05, ratio));
-    section.style.setProperty('--split', `${clamped * 100}%`);
+    // Clamp to keep badges/handle visible
+    const r = Math.max(0.05, Math.min(0.95, ratio));
+    frame.style.setProperty('--split', (r * 100) + '%');
   }
 
-  function posToRatio(e) {
-    const rect = section.getBoundingClientRect();
-    const x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
-    return x / rect.width;
+  function clientX(e) {
+    if (e.touches && e.touches[0]) return e.touches[0].clientX;
+    return e.clientX;
   }
 
-  function onDown(e) {
-    dragging = true;
-    setSplit(posToRatio(e));
-    e.preventDefault();
-  }
-  function onMove(e) {
-    if (!dragging) return;
-    setSplit(posToRatio(e));
-  }
-  function onUp() {
-    dragging = false;
+  function updateFromEvent(e) {
+    const rect = frame.getBoundingClientRect();
+    const x = clientX(e) - rect.left;
+    setSplit(x / rect.width);
   }
 
-  handle.addEventListener('mousedown', onDown);
-  section.addEventListener('mousedown', onDown);
-  window.addEventListener('mousemove', onMove);
-  window.addEventListener('mouseup', onUp);
+  // Pointer Events preferred
+  if (window.PointerEvent) {
+    const start = (e) => {
+      updateFromEvent(e);
+      const move = (ee) => updateFromEvent(ee);
+      const end  = () => {
+        window.removeEventListener('pointermove', move);
+        window.removeEventListener('pointerup', end);
+      };
+      window.addEventListener('pointermove', move);
+      window.addEventListener('pointerup', end, { once: true });
+    };
+    frame.addEventListener('pointerdown', start);
+    if (handle) handle.addEventListener('pointerdown', start);
+  } else {
+    // Mouse fallback
+    const mStart = (e) => {
+      updateFromEvent(e);
+      const move = (ee) => updateFromEvent(ee);
+      const up   = () => {
+        window.removeEventListener('mousemove', move);
+        window.removeEventListener('mouseup', up);
+      };
+      window.addEventListener('mousemove', move);
+      window.addEventListener('mouseup', up);
+    };
+    frame.addEventListener('mousedown', mStart);
+    if (handle) handle.addEventListener('mousedown', mStart);
 
-  handle.addEventListener('touchstart', onDown, {passive:false});
-  section.addEventListener('touchstart', onDown, {passive:false});
-  window.addEventListener('touchmove', onMove, {passive:false});
-  window.addEventListener('touchend', onUp);
+    // Touch fallback
+    const tStart = (e) => {
+      updateFromEvent(e);
+      const move = (ee) => { ee.preventDefault(); updateFromEvent(ee); };
+      const end  = () => {
+        window.removeEventListener('touchmove', move);
+        window.removeEventListener('touchend', end);
+      };
+      window.addEventListener('touchmove', move, { passive: false });
+      window.addEventListener('touchend', end);
+    };
+    frame.addEventListener('touchstart', tStart, { passive: false });
+    if (handle) handle.addEventListener('touchstart', tStart, { passive: false });
+  }
 })();
 
 // GA4 Event Tracking Helper

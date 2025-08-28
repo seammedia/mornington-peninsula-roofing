@@ -899,3 +899,42 @@ html { scroll-padding-top: var(--mpr-header-height); }
     height: 30px;
   }
 }
+
+/* BEFORE/AFTER — make clip-path read the CSS var across browsers */
+#before-after .ba-frame {
+  position: relative;
+  overflow: hidden;
+  /* Default split if JS hasn't run yet */
+  --split: 50%;
+}
+
+#before-after .ba-clip {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, var(--split,50%) 0, var(--split,50%) 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, var(--split,50%) 0, var(--split,50%) 100%, 0 100%);
+  will-change: clip-path;
+  transition: clip-path 80ms linear;
+}
+
+/* Basic handle positioning; keep or adjust to your design */
+#before-after .ba-handle {
+  position: absolute;
+  top: 50%;
+  left: var(--split, 50%);
+  transform: translate(-50%, -50%);
+  cursor: ew-resize;
+  z-index: 5;
+  /* your visual styles already in place */
+}
+
+/* Make sure images fill the frame */
+#before-after .ba-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  user-select: none;
+  pointer-events: none;
+}
