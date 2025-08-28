@@ -96,31 +96,6 @@
         /* Hero - optimized for LCP */
         .roofing-specialists-bar { display: none !important; }
         
-        .hero-fullwidth { 
-            position: relative; 
-            min-height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-        
-        .hero-fullwidth picture { 
-            position: absolute; 
-            top: 0; 
-            left: 0; 
-            width: 100%; 
-            height: 100%; 
-            z-index: 1;
-        }
-        
-        .hero-fullwidth img { 
-            width: 100%; 
-            height: 100%; 
-            object-fit: cover; 
-            display: block;
-        }
-        
         /* Accessibility */
         .visually-hidden { 
             position: absolute !important; 
@@ -310,18 +285,77 @@
         </div>
     </section>
 
-    <!-- Optimized LCP Hero Section -->
-    <section class="hero-fullwidth" id="home-hero" aria-label="Mornington Peninsula Roofing hero">
-        <picture>
-          <source type="image/avif"
-                  srcset="/assets/img/hero/mpr-hero-800.avif 800w, /assets/img/hero/mpr-hero-1200.avif 1200w, /assets/img/hero/mpr-hero-1600.avif 1600w, /assets/img/hero/mpr-hero-2000.avif 2000w"
-                  sizes="(max-width: 768px) 100vw, 1200px">
-          <source type="image/webp"
-                  srcset="/assets/img/hero/mpr-hero-800.webp 800w, /assets/img/hero/mpr-hero-1200.webp 1200w, /assets/img/hero/mpr-hero-1600.webp 1600w, /assets/img/hero/mpr-hero-2000.webp 2000w"
-                  sizes="(max-width: 768px) 100vw, 1200px">
-          <img src="/assets/img/hero/mpr-hero-1600.jpg" alt="Mornington Peninsula Roofing"
-               width="1600" height="900" decoding="async" fetchpriority="high">
-        </picture>
+    <!-- Lead-Gen Hero Section -->
+    <section class="hero hero--mpr" id="home-hero">
+      <picture class="hero__media">
+        <source type="image/avif"
+                srcset="/assets/img/hero/mpr-hero-800.avif 800w, /assets/img/hero/mpr-hero-1200.avif 1200w, /assets/img/hero/mpr-hero-1600.avif 1600w, /assets/img/hero/mpr-hero-2000.avif 2000w"
+                sizes="(max-width: 768px) 100vw, 1200px">
+        <source type="image/webp"
+                srcset="/assets/img/hero/mpr-hero-800.webp 800w, /assets/img/hero/mpr-hero-1200.webp 1200w, /assets/img/hero/mpr-hero-1600.webp 1600w, /assets/img/hero/mpr-hero-2000.webp 2000w"
+                sizes="(max-width: 768px) 100vw, 1200px">
+        <img
+          src="/assets/img/hero/mpr-hero-1600.jpg"
+          alt="Clean Colorbond roof under a clear blue Mornington Peninsula sky"
+          width="2000" height="1100"
+          decoding="async"
+          fetchpriority="high"
+          class="hero__img"
+        >
+      </picture>
+
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__inner container">
+        <div class="hero__content">
+          <p class="hero__eyebrow">THE ROOFING SPECIALISTS</p>
+          <h1 class="hero__title">Mornington Peninsula Roofing</h1>
+
+          <div class="hero__cta-row">
+            <a href="#hero-quote" class="btn btn--primary">Get a fast quote</a>
+            <a href="tel:0341627766" class="btn btn--ghost">03 4162 7766</a>
+          </div>
+
+          <div class="hero__badge" aria-hidden="true">
+            <span>GET A FAST QUOTE</span>
+          </div>
+        </div>
+
+        <form id="hero-quote" class="hero-form" action="https://formspree.io/f/mjkebvdz" method="POST" novalidate>
+          <input type="hidden" name="page" value="home-hero" />
+
+          <div class="form-row">
+            <label for="hq-name">Full name</label>
+            <input id="hq-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+          </div>
+
+          <div class="form-row">
+            <label for="hq-email">Email address</label>
+            <input id="hq-email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required>
+          </div>
+
+          <div class="form-row">
+            <label for="hq-phone">Phone number</label>
+            <input id="hq-phone" name="phone" type="tel" placeholder="04xx xxx xxx" autocomplete="tel" required>
+          </div>
+
+          <div class="form-row">
+            <label for="hq-service">Service type</label>
+            <select id="hq-service" name="service" required>
+              <option value="" selected disabled>Select a service</option>
+              <option>Roof Repairs</option>
+              <option>Roof Restoration</option>
+              <option>Re-Roofing</option>
+              <option>Roof Painting</option>
+              <option>Free Quote</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--block">Get a fast quote</button>
+          <p class="form-note">No spam. We'll call you back quickly.</p>
+        </form>
+      </div>
     </section>
 
     <!-- USP/Trust Bar -->
@@ -339,7 +373,6 @@
 
         <!-- Services Section -->
         <section id="services" class="wrap">
-            <h1 class="visually-hidden">Mornington Peninsula Roofing - Expert Roofing Services for 25+ Years</h1>
             <h2>Roofing Services</h2>
             <div class="card-grid">
                 <a class="card" href="/services/roof-repairs.html">
