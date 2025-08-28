@@ -233,68 +233,23 @@
 </script>
 </head>
 <body>
-<header class="site-header">
-  <div class="nav-container">
-    <a class="brand" href="/">Mornington Peninsula Roofing</a>
-    <button class="nav-toggle" aria-controls="site-drawer" aria-expanded="false" aria-label="Open menu">
-      <span class="hamburger" aria-hidden="true"></span>
-    </button>
-    <nav id="site-menu" class="site-menu" aria-expanded="false">
-      <a href="/" class="nav-link" data-nav="home">Home</a>
-      <a href="/about.html" class="nav-link" data-nav="about">About</a>
-      <div class="nav-dropdown" data-nav="services">
-        <button class="nav-link nav-link-button" aria-expanded="false" aria-haspopup="true">
-          Services <span class="caret" aria-hidden="true">▾</span>
-        </button>
-        <div class="dropdown-panel" role="menu">
-          <a role="menuitem" class="dropdown-link" href="/services/emergency-roof-repairs.html">Emergency Roof Repairs</a>
-          <a role="menuitem" class="dropdown-link" href="/services/roof-repairs.html">Roof Repairs</a>
-          <a role="menuitem" class="dropdown-link" href="/services/roof-restoration.html">Roof Restoration</a>
-          <a role="menuitem" class="dropdown-link" href="/services/re-roofing.html">Re-Roofing</a>
-          <a role="menuitem" class="dropdown-link" href="/services/roof-painting.html">Roof Painting</a>
-        </div>
-      </div>
-      <div class="nav-dropdown" data-nav="locations">
-        <button class="nav-link nav-link-button" aria-expanded="false" aria-haspopup="true">
-          Locations <span class="caret" aria-hidden="true">▾</span>
-        </button>
-        <div class="dropdown-panel" role="menu">
-          <a role="menuitem" class="dropdown-link" href="/locations/mount-eliza.html">Mount Eliza</a>
-          <a role="menuitem" class="dropdown-link" href="/locations/mornington.html">Mornington</a>
-          <a role="menuitem" class="dropdown-link" href="/locations/frankston.html">Frankston</a>
-          <a role="menuitem" class="dropdown-link" href="/locations/sorrento.html">Sorrento</a>
-          <a role="menuitem" class="dropdown-link" href="/locations/rosebud.html">Rosebud</a>
-          <a role="menuitem" class="dropdown-link" href="/locations/carrum.html">Carrum</a>
-          <a role="menuitem" class="dropdown-link" href="/locations/carrum-downs.html">Carrum Downs</a>
-          <a role="menuitem" class="dropdown-link" href="/locations/seaford.html">Seaford</a>
-          <a role="menuitem" class="dropdown-link" href="/locations/mount-martha.html">Mount Martha</a>
-          <a role="menuitem" class="dropdown-link" href="/locations/cranbourne.html">Cranbourne</a>
-          <a role="menuitem" class="dropdown-link" href="/locations/flinders.html">Flinders</a>
-          <a role="menuitem" class="dropdown-link" href="/locations/dromana.html">Dromana</a>
-          <a role="menuitem" class="dropdown-link" href="/locations/hampton.html">Hampton</a>
-        </div>
-      </div>
-      <a href="/blog/" class="nav-link" data-nav="blog">Blog</a>
-      <a href="/contact.html" class="nav-link" data-nav="contact">Contact</a>
-      <!-- Optional compact CTAs; hidden on medium screens to save space -->
-      <a href="tel:0341627766" class="btn btn-ghost hide-md">03 4162 7766</a>
-      <a href="/contact.html" class="btn hide-md">Get Quote</a>
-    </nav>
-  </div>
-</header>
+<header class="site-header" role="banner">
+  <div class="nav-wrap container">
+    <a class="logo" href="/" aria-label="Mornington Peninsula Roofing">
+      Mornington Peninsula Roofing
+    </a>
 
-    <!-- Overlay that covers the page when the drawer is open -->
-    <div class="nav-overlay" hidden></div>
-
-    <!-- Off-canvas drawer (mobile nav) -->
-    <nav id="site-drawer" class="nav-drawer" aria-hidden="true" hidden>
-      <ul class="drawer-list">
+    <!-- Desktop nav -->
+    <nav class="primary-nav" aria-label="Primary">
+      <ul class="nav-list">
         <li><a href="/">Home</a></li>
         <li><a href="/about.html">About</a></li>
 
         <li class="has-submenu">
-          <button class="submenu-toggle" aria-expanded="false">Services</button>
-          <ul class="submenu" hidden>
+          <button class="submenu-toggle" aria-expanded="false" aria-controls="desktop-services-sub">
+            Services <span class="chev" aria-hidden="true">▾</span>
+          </button>
+          <ul id="desktop-services-sub" class="submenu">
             <li><a href="/services/emergency-roof-repairs.html">Emergency Roof Repairs</a></li>
             <li><a href="/services/roof-repairs.html">Roof Repairs</a></li>
             <li><a href="/services/roof-restoration.html">Roof Restoration</a></li>
@@ -304,8 +259,10 @@
         </li>
 
         <li class="has-submenu">
-          <button class="submenu-toggle" aria-expanded="false">Locations</button>
-          <ul class="submenu" hidden>
+          <button class="submenu-toggle" aria-expanded="false" aria-controls="desktop-locations-sub">
+            Locations <span class="chev" aria-hidden="true">▾</span>
+          </button>
+          <ul id="desktop-locations-sub" class="submenu">
             <li><a href="/locations/mount-eliza.html">Mount Eliza</a></li>
             <li><a href="/locations/mornington.html">Mornington</a></li>
             <li><a href="/locations/frankston.html">Frankston</a></li>
@@ -324,9 +281,83 @@
 
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/contact.html">Contact</a></li>
-        <li><a class="cta" href="tel:0341627766">03 4162 7766</a></li>
       </ul>
     </nav>
+
+    <div class="nav-cta">
+      <a class="phone-link" href="tel:0341627766">03 4162 7766</a>
+      <a class="btn btn-outline" href="#hero-quote">Get quote</a>
+    </div>
+
+    <!-- Hamburger (mobile only) -->
+    <button
+      id="hamburger"
+      class="hamburger"
+      type="button"
+      aria-label="Open menu"
+      aria-controls="mobile-menu"
+      aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Off-canvas mobile panel -->
+  <div id="mobile-menu" class="mobile-menu" hidden>
+    <nav aria-label="Mobile">
+      <ul class="mobile-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+
+        <li class="mobile-group">
+          <button class="mobile-accordion" aria-expanded="false" aria-controls="m-services">
+            Services
+            <span class="chev" aria-hidden="true">▾</span>
+          </button>
+          <ul id="m-services" class="mobile-sub">
+            <li><a href="/services/emergency-roof-repairs.html">Emergency Roof Repairs</a></li>
+            <li><a href="/services/roof-repairs.html">Roof Repairs</a></li>
+            <li><a href="/services/roof-restoration.html">Roof Restoration</a></li>
+            <li><a href="/services/re-roofing.html">Re-Roofing</a></li>
+            <li><a href="/services/roof-painting.html">Roof Painting</a></li>
+          </ul>
+        </li>
+
+        <li class="mobile-group">
+          <button class="mobile-accordion" aria-expanded="false" aria-controls="m-locations">
+            Locations
+            <span class="chev" aria-hidden="true">▾</span>
+          </button>
+          <ul id="m-locations" class="mobile-sub">
+            <li><a href="/locations/mount-eliza.html">Mount Eliza</a></li>
+            <li><a href="/locations/mornington.html">Mornington</a></li>
+            <li><a href="/locations/frankston.html">Frankston</a></li>
+            <li><a href="/locations/sorrento.html">Sorrento</a></li>
+            <li><a href="/locations/rosebud.html">Rosebud</a></li>
+            <li><a href="/locations/carrum.html">Carrum</a></li>
+            <li><a href="/locations/carrum-downs.html">Carrum Downs</a></li>
+            <li><a href="/locations/seaford.html">Seaford</a></li>
+            <li><a href="/locations/mount-martha.html">Mount Martha</a></li>
+            <li><a href="/locations/cranbourne.html">Cranbourne</a></li>
+            <li><a href="/locations/flinders.html">Flinders</a></li>
+            <li><a href="/locations/dromana.html">Dromana</a></li>
+            <li><a href="/locations/hampton.html">Hampton</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+
+        <li class="mobile-cta">
+          <a class="btn btn-primary w-full" href="tel:0341627766">Call 03 4162 7766</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Backdrop -->
+  <div id="mobile-backdrop" class="mobile-backdrop" hidden></div>
+</header>
+
 
     <!-- Header Bar - REMOVED: was dark strip, now hidden -->
     <!-- Moved h1 to hero section for better SEO -->
@@ -850,30 +881,7 @@
     <!-- JavaScript -->
     <script src="/assets/js/main.js" defer></script>
 <script defer>
-// Mobile hamburger - removed (replaced with drawer navigation in main.js)
-// Dropdown open/close + Esc (handle multiple dropdowns)
-(function(){
-const dropdowns = document.querySelectorAll('.nav-dropdown');
-dropdowns.forEach(dd => {
-  const btn=dd.querySelector('.nav-link-button');
-  const panel=dd.querySelector('.dropdown-panel');
-  const setOpen=(o)=>{dd.setAttribute('aria-expanded', String(o)); btn.setAttribute('aria-expanded', String(o));};
-  btn.addEventListener('click', e=>{e.stopPropagation(); setOpen(dd.getAttribute('aria-expanded')!=='true');});
-  document.addEventListener('click', ()=> setOpen(false));
-  [btn,panel].forEach(el=>el&&el.addEventListener('keydown', e=>{ if(e.key==='Escape') setOpen(false);}));
-});
-})();
-// Active nav state
-(function(){
-const p = window.location.pathname.replace(/index\.html$/, '');
-const mark = (k)=>{ const el=document.querySelector(`[data-nav="${k}"]`); if(el) el.setAttribute('aria-current','page');};
-if(p==='/'||p==='') mark('home');
-else if(p.endsWith('/about.html')) mark('about');
-else if(p.startsWith('/services/')) mark('services');
-else if(p.startsWith('/blog')) mark('blog');
-else if(p.endsWith('/contact.html')) mark('contact');
-else if(p.startsWith('/locations/')) mark('locations');
-})();
+// Old navigation scripts removed - now using improved off-canvas mobile navigation
 
 // Formspree AJAX form handling
 document.addEventListener('submit', async (e) => {

@@ -1195,50 +1195,52 @@ document.addEventListener('submit', function (e) {
     }
 });
 
-// Mobile drawer navigation
-(function () {
-  const toggle = document.querySelector('.nav-toggle');
-  const drawer = document.getElementById('site-drawer');
-  const overlay = document.querySelector('.nav-overlay');
-  if (!toggle || !drawer || !overlay) return;
+// Mobile navigation handler
+(function(){
+  const body = document.body;
+  const burger = document.getElementById('hamburger');
+  const panel  = document.getElementById('mobile-menu');
+  const veil   = document.getElementById('mobile-backdrop');
+  if(!burger || !panel || !veil) return;
 
-  function openDrawer() {
-    document.body.classList.add('menu-open');
-    toggle.classList.add('is-open');
-    drawer.classList.add('open');
-    overlay.hidden = false;
-    drawer.hidden = false;
-    drawer.setAttribute('aria-hidden', 'false');
-    toggle.setAttribute('aria-expanded', 'true');
-  }
+  const open = () => {
+    body.classList.add('menu-open');
+    burger.setAttribute('aria-expanded','true');
+    panel.hidden = false; veil.hidden = false;
+    // focus first link for a11y
+    setTimeout(() => {
+      const first = panel.querySelector('a,button,[tabindex]:not([tabindex="-1"])');
+      first && first.focus();
+    }, 10);
+  };
+  const close = () => {
+    body.classList.remove('menu-open');
+    burger.setAttribute('aria-expanded','false');
+    // let transition finish then hide to keep tab order clean
+    setTimeout(() => { panel.hidden = true; veil.hidden = true; }, 220);
+  };
 
-  function closeDrawer() {
-    document.body.classList.remove('menu-open');
-    toggle.classList.remove('is-open');
-    drawer.classList.remove('open');
-    overlay.hidden = true;
-    drawer.setAttribute('aria-hidden', 'true');
-    toggle.setAttribute('aria-expanded', 'false');
-    // keep drawer in DOM for animation; keep hidden attribute synced
-    setTimeout(() => { if (!drawer.classList.contains('open')) drawer.hidden = true; }, 250);
-  }
-
-  toggle.addEventListener('click', () => {
-    const isOpen = drawer.classList.contains('open');
-    isOpen ? closeDrawer() : openDrawer();
+  burger.addEventListener('click', () => {
+    const expanded = burger.getAttribute('aria-expanded') === 'true';
+    expanded ? close() : open();
   });
+  veil.addEventListener('click', close);
+  window.addEventListener('keydown', (e) => { if(e.key === 'Escape') close(); });
 
-  overlay.addEventListener('click', closeDrawer);
-  window.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeDrawer(); });
-
-  // Tap-to-expand submenus (no hover on mobile)
-  drawer.addEventListener('click', (e) => {
-    const btn = e.target.closest('.submenu-toggle');
-    if (!btn) return;
-    const submenu = btn.nextElementSibling;
+  // Mobile submenus
+  panel.addEventListener('click', (e) => {
+    const btn = e.target.closest('.mobile-accordion');
+    if(!btn) return;
     const expanded = btn.getAttribute('aria-expanded') === 'true';
     btn.setAttribute('aria-expanded', String(!expanded));
-    submenu.hidden = expanded;
+  });
+
+  // Prevent desktop submenu buttons from doing anything on desktop if not needed
+  document.querySelectorAll('.submenu-toggle').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      // purely decorative for hover; keep accessible toggle on focus
+      if (window.matchMedia('(max-width: 992px)').matches) e.preventDefault();
+    });
   });
 })();
 
