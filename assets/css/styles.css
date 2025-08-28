@@ -663,3 +663,120 @@ html { scroll-padding-top: var(--mpr-header-height); }
   white-space: nowrap !important;
   border: 0 !important;
 }
+
+/* =========================
+   Emergency CTA Banner
+   ========================= */
+:root{
+  /* Emergency CTA color variables */
+  --cta-dark: #222;              /* deep charcoal */
+  --cta-dark-2: #3d3d3d;         /* secondary gray for angled area */
+  --cta-red: #c41207;            /* button red */
+  --cta-red-hover: #a50f06;      /* darker on hover */
+  --cta-text: #ffffff;           /* white text */
+  --cta-radius: 12px;
+}
+
+.emergency-cta{
+  position: relative;
+  isolation: isolate; /* keep pseudo below contents */
+  margin: 56px auto 40px;
+  border-radius: var(--cta-radius);
+  overflow: hidden;
+  background: var(--cta-dark);
+  color: var(--cta-text);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* angled wedge on the right */
+.emergency-cta::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 58%, var(--cta-dark-2) 58%);
+  z-index: 0;
+}
+
+.emergency-cta__inner{
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(18px, 2.5vw, 28px) clamp(16px, 3vw, 28px);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px 24px;
+  align-items: center;
+}
+
+.emergency-cta__left{
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.emergency-cta__icon{
+  flex: 0 0 auto;
+  color: #ff4a3d; /* subtle accent for icon */
+  filter: drop-shadow(0 1px 0 rgba(0,0,0,0.2));
+}
+
+.emergency-cta__title{
+  margin: 0;
+  font-size: clamp(20px, 1.8vw, 28px);
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+}
+
+.emergency-cta__right{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.emergency-cta__btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--cta-red);
+  color: var(--cta-text);
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  box-shadow: 0 6px 18px rgba(196,18,7,0.35);
+  transform: translateZ(0); /* better rendering */
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.emergency-cta__btn:hover,
+.emergency-cta__btn:focus-visible{
+  background: var(--cta-red-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(196,18,7,0.42);
+  outline: none;
+}
+
+.emergency-cta__btn:active{
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(196,18,7,0.28);
+}
+
+.emergency-cta__btn-icon{
+  flex: 0 0 auto;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 720px){
+  .emergency-cta__inner{
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .emergency-cta__right{
+    justify-content: flex-start;
+  }
+  .emergency-cta::after{
+    background: linear-gradient(120deg, transparent 80%, var(--cta-dark-2) 80%);
+  }
+}
