@@ -392,63 +392,33 @@
         </section>
         <!-- ===== End Guarantee ===== -->
 
-        <!-- Before / After Slider -->
-        <section id="before-after" class="section">
+        <!-- Before/After (Home) -->
+        <section id="before-after" class="home-section ba-section">
           <div class="container">
-            <h2 class="section-title">Recent Roof Transformation (Before / After)</h2>
+            <h2 class="home-heading h-like-faq">Recent roof transformation <span class="muted">(before / after)</span></h2>
 
-            <figure class="ba" data-ba aria-label="Before and after comparison of a roof restoration">
-              <!-- AFTER image lives below, full width -->
-              <img
-                src="/assets/img/roof_after.png"
-                width="1024"
-                height="1024"
-                class="ba__after"
-                alt="After: restored roof with new Colorbond finish"
-                loading="lazy"
-                decoding="async"
-              />
-              <!-- BEFORE image overlays and is clipped by slider -->
-              <img
-                src="/assets/img/roof_before.png"
-                width="1024"
-                height="1024"
-                class="ba__before"
-                alt="Before: weathered roof prior to restoration"
-                loading="lazy"
-                decoding="async"
-              />
+            <figure class="ba-wrap" aria-label="Before and after roof transformation slider">
+              <div class="ba-frame">
+                <img
+                  class="ba-img ba-img--after"
+                  src="/assets/img/roof_after.png"
+                  alt="After — new Colorbond roof installed"
+                  width="1024" height="1024" decoding="async" loading="lazy" />
 
-              <!-- Accessible slider control -->
-              <label class="sr-only" for="ba-slider">Drag to compare before and after</label>
-              <input
-                id="ba-slider"
-                class="ba__slider"
-                type="range"
-                min="0"
-                max="100"
-                value="50"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                aria-valuenow="50"
-                aria-label="Reveal before and after"
-              />
+                <div class="ba-clip" style="--split:50%;">
+                  <img
+                    class="ba-img ba-img--before"
+                    src="/assets/img/roof_before.png"
+                    alt="Before — old tiled roof with moss"
+                    width="1024" height="1024" decoding="async" loading="lazy" />
+                </div>
 
-              <!-- Visual handle line + knob -->
-              <div class="ba__handle" aria-hidden="true"></div>
-
-              <!-- Corner labels -->
-              <div class="ba__label ba__label--before">Before</div>
-              <div class="ba__label ba__label--after">After</div>
-              <figcaption class="ba__note">Drag the slider to compare.</figcaption>
-            </figure>
-
-            <noscript>
-              <div class="ba-noscript">
-                <img src="/assets/img/roof_before.png" width="1024" height="1024" alt="Before roof" />
-                <img src="/assets/img/roof_after.png" width="1024" height="1024" alt="After roof" />
+                <button class="ba-handle" type="button" aria-label="Drag to reveal before or after"></button>
+                <span class="ba-badge ba-badge--before">Before</span>
+                <span class="ba-badge ba-badge--after">After</span>
               </div>
-            </noscript>
+              <figcaption class="sr-only">Drag the handle to compare before and after.</figcaption>
+            </figure>
           </div>
         </section>
 

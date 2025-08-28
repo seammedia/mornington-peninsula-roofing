@@ -209,9 +209,6 @@
 // Main application initialization
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Initialize Before/After slider
-    initBeforeAfter();
-    
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
     navLinks.forEach(link => {
@@ -1031,51 +1028,54 @@ function initializeInteractiveFeatures() {
  * - Online quote calculator and cost estimation tools
  */
 
-// Before/After slider
-function initBeforeAfter() {
-  const root = document.querySelector('.ba[data-ba]');
-  if (!root) return;
+// Before/After slider logic
+(function () {
+  const section = document.querySelector('#before-after .ba-frame');
+  if (!section) return;
 
-  const slider = root.querySelector('.ba__slider');
-  const before = root.querySelector('.ba__before');
-  const handle = root.querySelector('.ba__handle');
+  const clip = section.querySelector('.ba-clip');
+  const handle = section.querySelector('.ba-handle');
 
-  const setPos = (pct) => {
-    const clamped = Math.max(0, Math.min(100, pct));
-    root.style.setProperty('--pos', clamped + '%');
-    slider.setAttribute('aria-valuenow', String(Math.round(clamped)));
-  };
+  // start at center
+  setSplit(0.5);
 
-  // Input
-  slider.addEventListener('input', (e) => setPos(e.target.value));
-
-  // Pointer drag (so users can drag anywhere)
   let dragging = false;
-  const onMove = (clientX) => {
-    const rect = root.getBoundingClientRect();
-    const pct = ((clientX - rect.left) / rect.width) * 100;
-    setPos(pct);
-  };
 
-  root.addEventListener('pointerdown', (e) => {
+  function setSplit(ratio) {
+    // clamp 0.05–0.95 so labels/handle remain visible
+    const clamped = Math.min(0.95, Math.max(0.05, ratio));
+    section.style.setProperty('--split', `${clamped * 100}%`);
+  }
+
+  function posToRatio(e) {
+    const rect = section.getBoundingClientRect();
+    const x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
+    return x / rect.width;
+  }
+
+  function onDown(e) {
     dragging = true;
-    root.setPointerCapture(e.pointerId);
-    onMove(e.clientX);
-  });
-
-  root.addEventListener('pointermove', (e) => {
+    setSplit(posToRatio(e));
+    e.preventDefault();
+  }
+  function onMove(e) {
     if (!dragging) return;
-    onMove(e.clientX);
-  });
-
-  root.addEventListener('pointerup', (e) => {
+    setSplit(posToRatio(e));
+  }
+  function onUp() {
     dragging = false;
-    root.releasePointerCapture(e.pointerId);
-  });
+  }
 
-  // Start centered
-  setPos(50);
-}
+  handle.addEventListener('mousedown', onDown);
+  section.addEventListener('mousedown', onDown);
+  window.addEventListener('mousemove', onMove);
+  window.addEventListener('mouseup', onUp);
+
+  handle.addEventListener('touchstart', onDown, {passive:false});
+  section.addEventListener('touchstart', onDown, {passive:false});
+  window.addEventListener('touchmove', onMove, {passive:false});
+  window.addEventListener('touchend', onUp);
+})();
 
 // GA4 Event Tracking Helper
 document.addEventListener('click', function (e) {

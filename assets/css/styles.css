@@ -781,119 +781,121 @@ html { scroll-padding-top: var(--mpr-header-height); }
   }
 }
 
-/* Before/After slider */
-.ba {
-  --pos: 50%;
-  --handle-color: #0f172a; /* site navy using --ink color */
-  position: relative;
-  width: 100%;
-  max-width: 1100px;
-  margin-inline: auto;
-  aspect-ratio: 1 / 1;              /* square source images */
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,.08);
-  background: #f4f6f7;
+/* =============== Before/After (Home) =============== */
+
+/* Match the FAQ heading look (centered, sentence-case, similar size/weight) */
+.home-heading.h-like-faq {
+  margin: 0 auto 1.25rem;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+  color: #102230;               /* same navy tone used for FAQ title */
+  text-transform: none;         /* ensure not ALL CAPS */
+  font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.1rem);
+}
+.home-heading .muted {
+  color: #6b7a86;
+  font-weight: 600;
 }
 
-.ba img {
+/* Overall section spacing to match other home sections */
+.ba-section {
+  padding: clamp(1.75rem, 3vw, 2.25rem) 0;
+}
+
+/* Width constraint so it never overflows the viewport */
+.ba-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Slider frame */
+.ba-frame {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(16, 34, 48, 0.08);
+  background: #0a0f14;
+  /* Give the slider a respectful height that fits comfortably on most screens */
+  height: clamp(260px, 45vw, 520px);
+}
+
+/* Images fill, are always covered, and responsive */
+.ba-img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  user-select: none;
+  pointer-events: none;
 }
 
-.ba__after { z-index: 1; }
-
-/* BEFORE image sits on top, revealed left->right via clip-path */
-.ba__before {
-  z-index: 2;
-  clip-path: inset(0 calc(100% - var(--pos)) 0 0);
-  transition: clip-path 0.06s linear;
-}
-
-/* Invisible full-frame slider for pointer/keyboard access */
-.ba__slider {
+/* Clipped "before" layer controlled by the handle (via CSS var --split) */
+.ba-clip {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
-  cursor: ew-resize;
-  z-index: 5;
+  clip-path: polygon(0 0, var(--split,50%) 0, var(--split,50%) 100%, 0 100%);
+  transition: clip-path 80ms linear;
 }
 
-/* Vertical dividing line + draggable knob */
-.ba__handle {
+/* Drag handle */
+.ba-handle {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: var(--pos);
-  width: 2px;
-  transform: translateX(-1px);
-  background: rgba(255,255,255,0.9);
-  z-index: 4;
-  box-shadow: 0 0 0 1px rgba(16,37,46,.1);
+  top: 50%;
+  left: var(--split, 50%);
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background: rgba(16, 34, 48, 0.85);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+  cursor: ew-resize;
 }
-
-.ba__handle::before {
+.ba-handle::before,
+.ba-handle::after {
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
-  width: 46px;
-  height: 46px;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: var(--handle-color);
-  border: 2px solid #fff;
-  box-shadow: 0 6px 20px rgba(0,0,0,.18);
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  opacity: 0.9;
 }
+.ba-handle::before { left: 8px; transform: translateY(-50%); }
+.ba-handle::after  { right: 8px; transform: translateY(-50%); }
 
-/* Corner "Before / After" labels */
-.ba__label {
+/* Badges */
+.ba-badge {
   position: absolute;
-  top: 12px;
+  top: 10px;
   padding: 6px 10px;
   font-size: 12px;
-  font-weight: 600;
-  letter-spacing: .02em;
+  font-weight: 700;
   color: #fff;
-  background: rgba(16,37,46,.75);
+  background: rgba(16,34,48,0.80);
   border-radius: 999px;
-  z-index: 6;
-  user-select: none;
+  letter-spacing: 0.02em;
 }
-.ba__label--before { left: 12px; }
-.ba__label--after  { right: 12px; }
+.ba-badge--before { left: 10px; }
+.ba-badge--after  { right: 10px; }
 
-.ba__note {
-  margin-top: 12px;
-  font-size: 14px;
-  color: #5b6a72;
-  text-align: center;
-}
-
-/* Screen-reader only utility (if you don't already have one) */
-.sr-only {
-  position: absolute !important;
-  width: 1px; height: 1px;
-  padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0,0,0,0);
-  white-space: nowrap; border: 0;
-}
-
-/* No-JS fallback layout */
-.ba-noscript {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-.ba-noscript img {
-  width: 100%; height: auto; border-radius: 12px;
-}
-@media (max-width: 680px) {
-  .ba { border-radius: 12px; }
-  .ba__handle::before { width: 40px; height: 40px; }
+/* Tweak spacing on very small screens */
+@media (max-width: 560px) {
+  .home-heading.h-like-faq {
+    margin-bottom: 0.75rem;
+  }
+  .ba-badge {
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+  .ba-handle {
+    width: 30px;
+    height: 30px;
+  }
 }
