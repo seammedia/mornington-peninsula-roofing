@@ -1090,27 +1090,7 @@ html { scroll-padding-top: var(--mpr-header-height); }
   display: flex; gap: 12px; flex-wrap: wrap;
 }
 
-/* Badge */
-.hero--mpr .hero__badge {
-  position: absolute;
-  right: clamp(16px, 3vw, 40px);
-  top: clamp(16px, 3vw, 40px);
-  background: #0ea5e9; /* Accent – adjust to brand */
-  color: #fff;
-  width: clamp(84px, 14vw, 140px);
-  aspect-ratio: 1/1;
-  border-radius: 999px;
-  display: grid; place-items: center;
-  box-shadow: 0 12px 30px rgba(0,0,0,.25);
-  text-align: center;
-  padding: 10px;
-}
-.hero--mpr .hero__badge span {
-  font-weight: 800;
-  letter-spacing: .04em;
-  text-transform: uppercase;
-  font-size: clamp(10px, 1.8vw, 14px);
-}
+/* Badge removed */
 
 /* Quote form card */
 .hero-form {
@@ -1244,4 +1224,15 @@ html { scroll-padding-top: var(--mpr-header-height); }
 }
 .hero__pretitle {
   font-size: clamp(12px, 1.6vw, 16px);
+}
+
+/* Kill any hero quote bubble variants */
+.hero .cta-bubble,
+.hero .quote-bubble,
+.hero .hero-quote-bubble,
+.hero .get-quote-bubble,
+.hero .cta-fab,
+.hero__badge,
+.get-a-fast-quote-bubble {
+  display: none !important;
 }
