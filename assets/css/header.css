@@ -108,9 +108,28 @@
 .mpr-drawer-nav{ padding:8px; overflow:auto; -webkit-overflow-scrolling:touch; }
 .mpr-drawer-link, .mpr-drawer-accordion-btn{
   display:flex; align-items:center; justify-content:space-between;
-  width:100%; color:#e7eff6; text-decoration:none; padding:12px 12px; border-radius:10px; font:600 15px Roboto;
+  width:100%; color:#e7eff6; text-decoration:none; padding:12px 12px; border-radius:0; font:600 15px Roboto;
+  background: transparent; border: 0; cursor: pointer;
 }
 .mpr-drawer-link:hover, .mpr-drawer-accordion-btn:hover{ background:#ffffff12; }
+
+/* Style accordion buttons to match regular drawer links */
+.mpr-drawer-accordion-btn {
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* Chevron styling for accordion buttons */
+.mpr-drawer-accordion-btn .chevron {
+  width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2;
+  transition: transform .2s ease; margin-left: auto;
+}
+.mpr-drawer-accordion.open .mpr-drawer-accordion-btn .chevron { 
+  transform: rotate(180deg); 
+}
 .mpr-drawer-accordion{ margin-top:6px; }
 .mpr-acc-panel{ display:none; padding:6px 6px 6px 10px; }
 .mpr-acc-link{ display:block; padding:10px 10px; border-radius:10px; color:#dbe8f2; text-decoration:none; font:500 14px Roboto; }

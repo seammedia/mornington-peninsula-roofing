@@ -28,9 +28,12 @@
   // mobile accordion for Services & Locations
   qsa('.mpr-drawer-accordion-btn').forEach(btn=>{
     btn.addEventListener('click', ()=>{
+      const accordion = btn.closest('.mpr-drawer-accordion');
       const panel = btn.nextElementSibling;
       const expanded = btn.getAttribute('aria-expanded') === 'true';
+      
       btn.setAttribute('aria-expanded', String(!expanded));
+      accordion.classList.toggle('open', !expanded);
       panel.style.display = expanded ? 'none' : 'block';
     });
   });
