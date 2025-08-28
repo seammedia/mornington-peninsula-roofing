@@ -1047,23 +1047,7 @@ html { scroll-padding-top: var(--mpr-header-height); }
   align-items: center;
 }
 
-.hero--mpr .hero__media {
-  position: absolute; inset: 0;
-  z-index: -2;
-}
-
-.hero--mpr .hero__img {
-  width: 100%; height: 100%;
-  object-fit: cover; object-position: center;
-  display: block;
-}
-
-.hero--mpr .hero__overlay {
-  position: absolute; inset: 0;
-  z-index: -1;
-  background:
-    linear-gradient(180deg, rgba(8,18,27,.60) 0%, rgba(8,18,27,.30) 40%, rgba(8,18,27,.65) 100%);
-}
+/* Removed old media/img styles - now using background-image */
 
 .hero--mpr .hero__inner {
   display: grid;
@@ -1071,6 +1055,8 @@ html { scroll-padding-top: var(--mpr-header-height); }
   gap: clamp(24px, 4vw, 48px);
   align-items: center;
   padding-block: clamp(32px, 8vh, 80px);
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 900px) {
@@ -1197,3 +1183,65 @@ html { scroll-padding-top: var(--mpr-header-height); }
 .hero--mpr .btn--ghost:hover { background: rgba(255,255,255,.08); }
 
 .hero--mpr .btn--block { width: 100%; }
+
+/* === Brand fonts === */
+@font-face {
+  font-family: "Peace Sans";
+  src: url("/assets/fonts/Peace Sans Webfont.ttf") format("truetype"),
+       url("/assets/fonts/Peace Sans.otf") format("opentype");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Use system Roboto if present; otherwise pull from Google in <head> below */
+:root {
+  --brand-headline-font: "Peace Sans", Arial, sans-serif;
+  --brand-support-font: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+
+/* === Hero — image + typography === */
+.hero--mpr {
+  /* force the correct image */
+  background-image: url("/img/hero-main-image-new.png?v=2");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero--mpr::before {
+  /* subtle dark overlay for legibility */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.35));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero__pretitle {
+  font-family: var(--brand-support-font);
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: #cfe3f0;
+  opacity: .92;
+}
+
+.hero__title {
+  font-family: var(--brand-headline-font);
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: .96;
+  letter-spacing: .5px;
+  color: #fff;
+  text-shadow: 0 4px 18px rgba(0,0,0,.35);
+}
+
+/* responsive clamps so it doesn't blow out on mobile */
+.hero__title {
+  font-size: clamp(34px, 5.6vw, 84px);
+}
+.hero__pretitle {
+  font-size: clamp(12px, 1.6vw, 16px);
+}
