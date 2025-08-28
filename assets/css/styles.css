@@ -955,8 +955,8 @@ html { scroll-padding-top: var(--mpr-header-height); }
 .ribbon--experience::after {
   content: "";
   position: absolute;
-  top: 0; bottom: 0; right: 22%;
-  width: 140px;
+  top: 0; bottom: 0; right: 30%;
+  width: 120px;
   background: var(--ribbon-accent);
   transform: skewX(-24deg);
   pointer-events: none;
@@ -1007,6 +1007,9 @@ html { scroll-padding-top: var(--mpr-header-height); }
   box-shadow: 0 10px 24px rgba(214,18,7,0.2);
   transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
   white-space: nowrap;
+  position: relative;
+  z-index: 10;
+  margin-right: 8px;
 }
 
 .ribbon__cta:hover,
