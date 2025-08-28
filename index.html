@@ -236,7 +236,9 @@
 <header class="site-header">
   <div class="nav-container">
     <a class="brand" href="/">Mornington Peninsula Roofing</a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+    <button class="nav-toggle" aria-controls="site-drawer" aria-expanded="false" aria-label="Open menu">
+      <span class="hamburger" aria-hidden="true"></span>
+    </button>
     <nav id="site-menu" class="site-menu" aria-expanded="false">
       <a href="/" class="nav-link" data-nav="home">Home</a>
       <a href="/about.html" class="nav-link" data-nav="about">About</a>
@@ -280,6 +282,51 @@
     </nav>
   </div>
 </header>
+
+    <!-- Overlay that covers the page when the drawer is open -->
+    <div class="nav-overlay" hidden></div>
+
+    <!-- Off-canvas drawer (mobile nav) -->
+    <nav id="site-drawer" class="nav-drawer" aria-hidden="true" hidden>
+      <ul class="drawer-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+
+        <li class="has-submenu">
+          <button class="submenu-toggle" aria-expanded="false">Services</button>
+          <ul class="submenu" hidden>
+            <li><a href="/services/emergency-roof-repairs.html">Emergency Roof Repairs</a></li>
+            <li><a href="/services/roof-repairs.html">Roof Repairs</a></li>
+            <li><a href="/services/roof-restoration.html">Roof Restoration</a></li>
+            <li><a href="/services/re-roofing.html">Re-Roofing</a></li>
+            <li><a href="/services/roof-painting.html">Roof Painting</a></li>
+          </ul>
+        </li>
+
+        <li class="has-submenu">
+          <button class="submenu-toggle" aria-expanded="false">Locations</button>
+          <ul class="submenu" hidden>
+            <li><a href="/locations/mount-eliza.html">Mount Eliza</a></li>
+            <li><a href="/locations/mornington.html">Mornington</a></li>
+            <li><a href="/locations/frankston.html">Frankston</a></li>
+            <li><a href="/locations/sorrento.html">Sorrento</a></li>
+            <li><a href="/locations/rosebud.html">Rosebud</a></li>
+            <li><a href="/locations/carrum.html">Carrum</a></li>
+            <li><a href="/locations/carrum-downs.html">Carrum Downs</a></li>
+            <li><a href="/locations/seaford.html">Seaford</a></li>
+            <li><a href="/locations/mount-martha.html">Mount Martha</a></li>
+            <li><a href="/locations/cranbourne.html">Cranbourne</a></li>
+            <li><a href="/locations/flinders.html">Flinders</a></li>
+            <li><a href="/locations/dromana.html">Dromana</a></li>
+            <li><a href="/locations/hampton.html">Hampton</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a class="cta" href="tel:0341627766">03 4162 7766</a></li>
+      </ul>
+    </nav>
 
     <!-- Header Bar - REMOVED: was dark strip, now hidden -->
     <!-- Moved h1 to hero section for better SEO -->
@@ -803,16 +850,7 @@
     <!-- JavaScript -->
     <script src="/assets/js/main.js" defer></script>
 <script defer>
-// Mobile hamburger
-(function(){
-const t=document.querySelector('.nav-toggle');
-const m=document.getElementById('site-menu');
-if(t&&m){t.addEventListener('click',()=>{
-const open=t.getAttribute('aria-expanded')==='true';
-t.setAttribute('aria-expanded', String(!open));
-m.setAttribute('aria-expanded', String(!open));
-});}
-})();
+// Mobile hamburger - removed (replaced with drawer navigation in main.js)
 // Dropdown open/close + Esc (handle multiple dropdowns)
 (function(){
 const dropdowns = document.querySelectorAll('.nav-dropdown');

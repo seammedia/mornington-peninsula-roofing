@@ -59,7 +59,7 @@ body {
 .nav-link:hover,.nav-link:focus-visible,.nav-link-button:hover,.nav-link-button:focus-visible{text-decoration:underline}
 .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:500;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em}
 .btn-ghost{background:transparent;border:1px solid var(--border);color:var(--ink)}
-.nav-toggle{display:none}
+/* .nav-toggle styles moved to mobile nav section below */
 .hide-md{display:inline-block}
 /* Fit on medium screens */
 @media (max-width:1024px){
@@ -67,12 +67,7 @@ body {
   .nav-link,.nav-link-button{letter-spacing:.16em;font-size:.82rem}
   .hide-md{display:none}
 }
-/* Mobile menu */
-@media (max-width:820px){
-  .nav-toggle{display:inline-block}
-  .site-menu{display:none;flex-direction:column;gap:12px;padding:12px 0}
-  .site-menu[aria-expanded="true"]{display:flex}
-}
+/* Old mobile menu styles removed - using drawer navigation */
 
 /* Dropdown */
 .nav-dropdown{position:relative}
@@ -107,11 +102,7 @@ body {
   outline-offset: 2px;
 }
 
-/* Enhanced keyboard navigation */
-.nav-toggle:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-}
+/* Old nav-toggle focus styles removed - using drawer navigation */
 
 /* Smooth scroll + sticky offset for in-page anchors */
 [id]{scroll-margin-top:80px}
@@ -1236,3 +1227,99 @@ html { scroll-padding-top: var(--mpr-header-height); }
 .get-a-fast-quote-bubble {
   display: none !important;
 }
+
+/* --- MOBILE NAV TOGGLE --- */
+.nav-toggle {
+  display: none; /* default hidden on desktop */
+  appearance: none;
+  background: transparent;
+  border: 0;
+  padding: 10px;
+  margin-left: 8px;
+  line-height: 1;
+}
+.nav-toggle .hamburger,
+.nav-toggle .hamburger::before,
+.nav-toggle .hamburger::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 22px;
+  background: #0e1b24; /* dark brand */
+  border-radius: 2px;
+  transition: transform .2s ease, opacity .2s ease;
+}
+.nav-toggle .hamburger::before { transform: translateY(-6px); }
+.nav-toggle .hamburger::after  { transform: translateY( 6px); }
+
+/* when open (JS adds .is-open on button) */
+.nav-toggle.is-open .hamburger { opacity: 0; }
+.nav-toggle.is-open .hamburger::before { transform: translateY(0) rotate(45deg); }
+.nav-toggle.is-open .hamburger::after  { transform: translateY(0) rotate(-45deg); }
+
+/* --- OVERLAY --- */
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(2px);
+  z-index: 1000; /* above content, below drawer */
+}
+
+/* --- DRAWER --- */
+.nav-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: min(85vw, 360px);
+  height: 100dvh;
+  background: #0f2230; /* brand dark */
+  color: #fff;
+  z-index: 1001; /* above overlay */
+  box-shadow: -12px 0 24px rgba(0,0,0,.25);
+  transition: right .25s ease;
+  padding: 18px 18px 24px;
+  overflow-y: auto;
+}
+.nav-drawer.open { right: 0; }
+.nav-drawer a { color: #fff; text-decoration: none; }
+.nav-drawer a:hover { text-decoration: underline; }
+
+.drawer-list { list-style: none; margin: 0; padding: 0; }
+.drawer-list > li { border-bottom: 1px solid rgba(255,255,255,.08); }
+.drawer-list > li > a,
+.drawer-list > li > button.submenu-toggle {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 14px 6px;
+  font-weight: 600;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+.drawer-list > li > a.cta { color: #74c0ff; }
+
+.has-submenu .submenu {
+  list-style: none;
+  margin: 0 0 8px 0;
+  padding-left: 10px;
+  border-left: 2px solid rgba(255,255,255,.12);
+}
+.submenu li a {
+  display: block;
+  padding: 10px 6px;
+  font-weight: 500;
+  opacity: .9;
+}
+
+@media (max-width: 992px) {
+  /* Show the hamburger, hide the desktop nav if needed */
+  .nav-toggle { display: inline-flex; align-items: center; justify-content: center; }
+  /* ensure site header sits above hero */
+  header.site-header { position: relative; z-index: 100; }
+}
+
+/* Prevent background scroll when menu open */
+body.menu-open { overflow: hidden; }
