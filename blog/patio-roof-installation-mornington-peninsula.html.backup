@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Patio Roof Installation Mornington Peninsula | Mornington Peninsula Roofing</title>
+  <meta name="description" content="Professional patio roof installation on the Mornington Peninsula. Custom outdoor roofing solutions with quality materials and expert installation.">
+  <meta property="og:title" content="Patio Roof Installation Mornington Peninsula">
+  <meta property="og:description" content="Professional patio roof installation on the Mornington Peninsula. Custom outdoor roofing solutions with quality materials and expert installation.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.morningtonpeninsularoofing.com.au/blog/patio-roof-installation-mornington-peninsula.html">
+  <meta property="og:image" content="/img/blog/patio-roof-installation-mornington-peninsula.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://www.morningtonpeninsularoofing.com.au/blog/patio-roof-installation-mornington-peninsula.html">
+  
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #475569;
+      --border: #e5e7eb;
+      --accent: #6b8e79;
+    }
+
+    /* Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);z-index:100}
+    .nav-container{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-weight:700;text-decoration:none;color:var(--ink)}
+    .site-menu{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+    .nav-link,.nav-link-button{background:none;border:0;cursor:pointer;font:inherit;text-transform:uppercase;letter-spacing:.2em;font-size:.85rem;text-decoration:none;color:var(--ink);padding:0}
+    .nav-link:hover,.nav-link:focus-visible,.nav-link-button:hover,.nav-link-button:focus-visible{text-decoration:underline}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:500;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em}
+    .btn-ghost{background:transparent;border:1px solid var(--border);color:var(--ink)}
+    .nav-toggle{display:none}
+    .hide-md{display:inline-block}
+    /* Dropdown */
+    .nav-dropdown{position:relative}
+    .dropdown-panel{position:absolute;top:100%;left:0;display:none;min-width:220px;background:#fff;border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,.06);padding:8px}
+    .nav-dropdown[aria-expanded="true"] .dropdown-panel{display:block}
+    .dropdown-link{display:block;padding:10px 12px;color:var(--ink);text-decoration:none}
+    .dropdown-link:hover,.dropdown-link:focus-visible{background:#f7f7f7}
+    /* Active state */
+    .nav-link[aria-current="page"], .nav-link-button[aria-current="page"]{text-decoration:underline}
+    /* Mobile */
+    @media (max-width:1024px){
+      .site-menu{gap:16px}
+      .nav-link,.nav-link-button{letter-spacing:.16em;font-size:.82rem}
+      .hide-md{display:none}
+    }
+    @media (max-width:820px){
+      .nav-toggle{display:inline-block}
+      .site-menu{display:none;flex-direction:column;gap:12px;padding:12px 0}
+      .site-menu[aria-expanded="true"]{display:flex}
+    }
+    /* Anchor offset + smooth scroll */
+    [id]{scroll-margin-top:80px}
+    html{scroll-behavior:smooth}
+
+    /* Hero Section */
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 36px;
+      align-items: center;
+      padding: 48px 20px;
+    }
+
+    .hero .media img {
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      display: block;
+    }
+
+    .hero .meta {
+      color: #64748b;
+      font-size: .9rem;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.1;
+      color: var(--ink);
+      margin: 6px 0 10px;
+    }
+
+    .hero p.lede {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 60ch;
+    }
+
+    .cta {
+      display: flex;
+      gap: 10px;
+      margin: 24px 0 8px;
+    }
+
+    @media (max-width: 980px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+
+    /* Article Content */
+    .article {
+      padding: 28px 20px 64px;
+    }
+
+    .article .content {
+      max-width: 850px;
+      color: var(--muted);
+      font-size: 1.02rem;
+      line-height: 1.7;
+    }
+
+    .article h2 {
+      color: var(--ink);
+      margin: 28px 0 10px;
+      font-size: 1.6rem;
+      line-height: 1.3;
+    }
+
+    .article h3 {
+      color: var(--ink);
+      margin: 20px 0 8px;
+      font-size: 1.25rem;
+    }
+
+    .article ul, .article ol {
+      margin: 16px 0;
+      padding-left: 24px;
+    }
+
+    .article li {
+      margin-bottom: 8px;
+    }
+
+    .article a {
+      color: #0f766e;
+      text-decoration: underline;
+    }
+
+    .note {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 20px 0;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 760px) {
+      .split {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #f8f9fa;
+      padding: 48px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+    }
+
+    .footer-section h4 {
+      font-size: 14px;
+      font-weight: bold;
+      color: var(--ink);
+      margin-bottom: 16px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-section a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-section a:hover,
+    .footer-section a:focus {
+      color: var(--accent);
+    }
+
+    .footer-section p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: center;
+      }
+    }
+  </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QFTWK45LJZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QFTWK45LJZ', { anonymize_ip: true, transport_type: 'beacon' });
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-container">
+    <a class="brand" href="/">Mornington Peninsula Roofing</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+    <nav id="site-menu" class="site-menu" aria-expanded="false">
+      <a href="/" class="nav-link" data-nav="home">Home</a>
+      <a href="/about.html" class="nav-link" data-nav="about">About</a>
+      <a href="/#services" class="nav-link" data-nav="services">Services</a>
+      <div class="nav-dropdown" data-nav="locations">
+        <button class="nav-link nav-link-button" aria-expanded="false" aria-haspopup="true">
+          Locations <span class="caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="dropdown-panel" role="menu">
+          <a role="menuitem" class="dropdown-link" href="/locations/mount-eliza.html">Mount Eliza</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/mornington.html">Mornington</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/frankston.html">Frankston</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/sorrento.html">Sorrento</a>
+        </div>
+      </div>
+      <a href="/blog/" class="nav-link" data-nav="blog">Blog</a>
+      <a href="/contact.html" class="nav-link" data-nav="contact">Contact</a>
+      <a href="tel:0341627766" class="btn btn-ghost hide-md">03 4162 7766</a>
+      <a href="/contact.html" class="btn hide-md">Get Quote</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero wrap">
+  <div class="media">
+    <img src="/img/blog/patio-roof-installation-mornington-peninsula.jpg" alt="Professional patio roof installation on the Mornington Peninsula with modern materials" loading="eager">
+  </div>
+  <div>
+    <div class="meta">By MPR • 24 Aug 2025 • 6–10 min read</div>
+    <h1>Patio Roof Installation Mornington Peninsula</h1>
+    <p class="lede">Transform your outdoor space with expert patio roofing. Quality materials and professional installation for lasting protection.</p>
+    <div class="cta">
+      <a class="btn" href="/contact.html">Get a quote</a>
+      <a class="btn-ghost" href="/#services">See our services</a>
+    </div>
+  </div>
+</section>
+
+<main class="article wrap">
+  <article class="content" itemscope itemtype="https://schema.org/BlogPosting">
+    <meta itemprop="headline" content="Patio Roof Installation Mornington Peninsula">
+    <meta itemprop="image" content="/img/blog/patio-roof-installation-mornington-peninsula.jpg">
+    <meta itemprop="datePublished" content="2025-08-24">
+    <meta itemprop="author" content="MPR">
+
+    <p>Creating the perfect outdoor living space starts with choosing the right patio roof. On the Mornington Peninsula, where weather conditions can shift from coastal breezes to intense summer sun, your patio roof installation needs to balance protection, aesthetics, and durability.</p>
+
+    <h2>Planning Your Patio Roof Installation</h2>
+    <p>Before breaking ground, several key considerations will determine the success of your patio roof project:</p>
+
+    <h3>Site Assessment and Design</h3>
+    <p>Every patio roof installation begins with a thorough site evaluation. We assess your existing structure, soil conditions, and drainage requirements. The design phase considers your home's architectural style, ensuring the new roof complements rather than competes with your existing roofline.</p>
+
+    <div class="note">
+      <p><strong>Planning Tip:</strong> Council permits may be required for patio roof installations. We handle all necessary approvals to ensure your project complies with local building codes.</p>
+    </div>
+
+    <h3>Material Selection for Peninsula Conditions</h3>
+    <p>The Peninsula's coastal environment demands materials that can withstand salt air, UV exposure, and varying weather conditions. Popular options include:</p>
+
+    <ul>
+      <li><strong>Colorbond Steel:</strong> Excellent corrosion resistance and color retention</li>
+      <li><strong>Polycarbonate Sheets:</strong> Lightweight with good light transmission</li>
+      <li><strong>Insulated Panels:</strong> Superior thermal performance for year-round comfort</li>
+      <li><strong>Timber Framework:</strong> Natural aesthetics with proper treatment for longevity</li>
+    </ul>
+
+    <h2>Installation Process and Timeline</h2>
+    <p>A professional patio roof installation typically follows a structured timeline to ensure quality and safety:</p>
+
+    <div class="split">
+      <div>
+        <h3>Week 1: Foundation and Framework</h3>
+        <p>Foundation preparation and post installation form the structural backbone of your patio roof. Precise measurements and proper concrete footings ensure long-term stability.</p>
+      </div>
+      <div>
+        <h3>Week 2: Roofing and Finishing</h3>
+        <p>Roof installation, flashing, and guttering complete the weather protection system. Final inspections ensure everything meets our quality standards.</p>
+      </div>
+    </div>
+
+    <h3>Structural Considerations</h3>
+    <p>Peninsula installations must account for wind loads and potential storm conditions. Our engineering approach includes:</p>
+
+    <ul>
+      <li>Wind load calculations specific to your location</li>
+      <li>Appropriate post spacing and beam sizing</li>
+      <li>Connection details that exceed minimum standards</li>
+      <li>Integration with existing structures where applicable</li>
+    </ul>
+
+    <h2>Design Styles and Options</h2>
+    <p>Your patio roof should enhance both function and aesthetics. Popular design approaches include:</p>
+
+    <h3>Attached vs. Freestanding Designs</h3>
+    <p>Attached patio roofs integrate with your home's structure, creating seamless indoor-outdoor transitions. Freestanding options offer more flexibility in positioning and can serve multiple outdoor areas.</p>
+
+    <h3>Roof Pitch and Drainage</h3>
+    <p>Proper roof pitch ensures effective water drainage while maintaining the desired aesthetic. We design slopes that shed water efficiently while complementing your home's roofline.</p>
+
+    <div class="note">
+      <p><strong>Design Note:</strong> Flat or low-pitch roofs require different waterproofing approaches and may need additional drainage considerations.</p>
+    </div>
+
+    <h2>Cost Factors and Investment Value</h2>
+    <p>Understanding the investment involved helps you make informed decisions about materials and design complexity:</p>
+
+    <ul>
+      <li>Material selection significantly impacts both cost and longevity</li>
+      <li>Site accessibility affects installation complexity</li>
+      <li>Permit requirements vary by location and design</li>
+      <li>Integration with existing utilities may require additional work</li>
+    </ul>
+
+    <h3>Long-term Value Considerations</h3>
+    <p>A well-designed patio roof installation adds both functional outdoor space and property value. Quality materials and professional installation ensure decades of reliable performance.</p>
+
+    <h2>Maintenance and Care</h2>
+    <p>Proper maintenance extends the life of your patio roof investment:</p>
+
+    <ul>
+      <li>Annual inspections for loose fasteners or damaged materials</li>
+      <li>Regular gutter cleaning and drainage checks</li>
+      <li>Prompt attention to any signs of wear or damage</li>
+      <li>Professional servicing for complex systems</li>
+    </ul>
+
+    <h2>Why Choose Professional Installation</h2>
+    <p>While patio roofing might seem straightforward, professional installation ensures compliance with building codes, proper engineering, and warranty protection. Our Peninsula experience means understanding local conditions and requirements that DIY approaches often overlook.</p>
+
+    <p>Ready to enhance your outdoor living space with professional patio roof installation? <a href="/contact.html">Contact us</a> for a consultation and quote tailored to your specific needs.</p>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Patio Roof Installation Mornington Peninsula",
+      "image": "https://www.morningtonpeninsularoofing.com.au/img/blog/patio-roof-installation-mornington-peninsula.jpg",
+      "datePublished": "2025-08-24",
+      "author": {
+        "@type": "Organization",
+        "name": "Mornington Peninsula Roofing"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Mornington Peninsula Roofing"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.morningtonpeninsularoofing.com.au/blog/patio-roof-installation-mornington-peninsula.html"
+      },
+      "description": "Professional patio roof installation on the Mornington Peninsula. Custom outdoor roofing solutions with quality materials and expert installation."
+    }
+    </script>
+  </article>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>MENU</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/#services">Services</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>CONTACT</h4>
+        <p><a href="tel:03-4162-7766">03 4162 7766</a></p>
+        <p>Servicing Mornington Peninsula</p>
+      </div>
+      <div class="footer-section">
+        <h4>LOCATIONS</h4>
+        <ul>
+          <li><a href="/locations/mount-eliza.html">Mount Eliza</a></li>
+          <li><a href="/locations/mornington.html">Mornington</a></li>
+          <li><a href="/locations/frankston.html">Frankston</a></li>
+          <li><a href="/locations/sorrento.html">Sorrento</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Mobile hamburger
+(function(){
+const t=document.querySelector('.nav-toggle');
+const m=document.getElementById('site-menu');
+if(t&&m){t.addEventListener('click',()=>{
+const open=t.getAttribute('aria-expanded')==='true';
+t.setAttribute('aria-expanded', String(!open));
+m.setAttribute('aria-expanded', String(!open));
+});}
+})();
+
+// Dropdown open/close + Esc
+(function(){
+const dd=document.querySelector('.nav-dropdown'); if(!dd) return;
+const btn=dd.querySelector('.nav-link-button');
+const panel=dd.querySelector('.dropdown-panel');
+const setOpen=(o)=>{dd.setAttribute('aria-expanded', String(o)); btn.setAttribute('aria-expanded', String(o));};
+btn.addEventListener('click', e=>{e.stopPropagation(); setOpen(dd.getAttribute('aria-expanded')!=='true');});
+document.addEventListener('click', ()=> setOpen(false));
+[btn,panel].forEach(el=>el&&el.addEventListener('keydown', e=>{ if(e.key==='Escape') setOpen(false);}));
+})();
+
+// Active nav state
+(function(){
+const p = window.location.pathname.replace(/index\.html$/, '');
+const mark = (k)=>{ const el=document.querySelector(`[data-nav="${k}"]`); if(el) el.setAttribute('aria-current','page');};
+if(p==='/'||p==='') mark('home');
+else if(p.endsWith('/about.html')) mark('about');
+else if(p.startsWith('/blog')) mark('blog');
+else if(p.endsWith('/contact.html')) mark('contact');
+else if(p.startsWith('/locations/')) mark('locations');
+})();
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+</script>
+</body>
+</html>

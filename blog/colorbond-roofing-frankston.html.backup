@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Colorbond Roofing Frankston | Mornington Peninsula Roofing</title>
+  <meta name="description" content="Your guide to Colorbond roofing in Frankston — profiles, colours and coastal performance for Mornington Peninsula homes.">
+  <meta property="og:title" content="Colorbond Roofing Frankston">
+  <meta property="og:description" content="Profiles, colours and coastal performance for Colorbond roofing in Frankston. Expert advice from local roofing specialists.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.morningtonpeninsularoofing.com.au/blog/colorbond-roofing-frankston.html">
+  <meta property="og:image" content="/img/blog/colorbond-frankston.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://www.morningtonpeninsularoofing.com.au/blog/colorbond-roofing-frankston.html">
+  
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #475569;
+      --border: #e5e7eb;
+      --accent: #6b8e79;
+    }
+
+    /* Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);z-index:100}
+    .nav-container{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-weight:700;text-decoration:none;color:var(--ink)}
+    .site-menu{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+    .nav-link,.nav-link-button{background:none;border:0;cursor:pointer;font:inherit;text-transform:uppercase;letter-spacing:.2em;font-size:.85rem;text-decoration:none;color:var(--ink);padding:0}
+    .nav-link:hover,.nav-link:focus-visible,.nav-link-button:hover,.nav-link-button:focus-visible{text-decoration:underline}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:500;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em}
+    .btn-ghost{background:transparent;border:1px solid var(--border);color:var(--ink)}
+    .nav-toggle{display:none}
+    .hide-md{display:inline-block}
+    /* Dropdown */
+    .nav-dropdown{position:relative}
+    .dropdown-panel{position:absolute;top:100%;left:0;display:none;min-width:220px;background:#fff;border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,.06);padding:8px}
+    .nav-dropdown[aria-expanded="true"] .dropdown-panel{display:block}
+    .dropdown-link{display:block;padding:10px 12px;color:var(--ink);text-decoration:none}
+    .dropdown-link:hover,.dropdown-link:focus-visible{background:#f7f7f7}
+    /* Active state */
+    .nav-link[aria-current="page"], .nav-link-button[aria-current="page"]{text-decoration:underline}
+    /* Mobile */
+    @media (max-width:1024px){
+      .site-menu{gap:16px}
+      .nav-link,.nav-link-button{letter-spacing:.16em;font-size:.82rem}
+      .hide-md{display:none}
+    }
+    @media (max-width:820px){
+      .nav-toggle{display:inline-block}
+      .site-menu{display:none;flex-direction:column;gap:12px;padding:12px 0}
+      .site-menu[aria-expanded="true"]{display:flex}
+    }
+    /* Anchor offset + smooth scroll */
+    [id]{scroll-margin-top:80px}
+    html{scroll-behavior:smooth}
+
+    /* Hero Section */
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 36px;
+      align-items: center;
+      padding: 48px 20px;
+    }
+
+    .hero .media img {
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      display: block;
+    }
+
+    .hero .meta {
+      color: #64748b;
+      font-size: .9rem;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.1;
+      color: var(--ink);
+      margin: 6px 0 10px;
+    }
+
+    .hero p.lede {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 60ch;
+    }
+
+    .cta {
+      display: flex;
+      gap: 10px;
+      margin: 24px 0 8px;
+    }
+
+    @media (max-width: 980px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+
+    /* Article Content */
+    .article {
+      padding: 28px 20px 64px;
+    }
+
+    .article .content {
+      max-width: 850px;
+      color: var(--muted);
+      font-size: 1.02rem;
+      line-height: 1.7;
+    }
+
+    .article h2 {
+      color: var(--ink);
+      margin: 28px 0 10px;
+      font-size: 1.6rem;
+      line-height: 1.3;
+    }
+
+    .article h3 {
+      color: var(--ink);
+      margin: 20px 0 8px;
+      font-size: 1.25rem;
+    }
+
+    .article ul, .article ol {
+      margin: 16px 0;
+      padding-left: 24px;
+    }
+
+    .article li {
+      margin-bottom: 8px;
+    }
+
+    .article a {
+      color: #0f766e;
+      text-decoration: underline;
+    }
+
+    .note {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 20px 0;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 760px) {
+      .split {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #f8f9fa;
+      padding: 48px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+    }
+
+    .footer-section h4 {
+      font-size: 14px;
+      font-weight: bold;
+      color: var(--ink);
+      margin-bottom: 16px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-section a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-section a:hover,
+    .footer-section a:focus {
+      color: var(--accent);
+    }
+
+    .footer-section p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: center;
+      }
+    }
+  </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QFTWK45LJZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QFTWK45LJZ', { anonymize_ip: true, transport_type: 'beacon' });
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-container">
+    <a class="brand" href="/">Mornington Peninsula Roofing</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+    <nav id="site-menu" class="site-menu" aria-expanded="false">
+      <a href="/" class="nav-link" data-nav="home">Home</a>
+      <a href="/about.html" class="nav-link" data-nav="about">About</a>
+      <a href="/#services" class="nav-link" data-nav="services">Services</a>
+      <div class="nav-dropdown" data-nav="locations">
+        <button class="nav-link nav-link-button" aria-expanded="false" aria-haspopup="true">
+          Locations <span class="caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="dropdown-panel" role="menu">
+          <a role="menuitem" class="dropdown-link" href="/locations/mount-eliza.html">Mount Eliza</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/mornington.html">Mornington</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/frankston.html">Frankston</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/sorrento.html">Sorrento</a>
+        </div>
+      </div>
+      <a href="/blog/" class="nav-link" data-nav="blog">Blog</a>
+      <a href="/contact.html" class="nav-link" data-nav="contact">Contact</a>
+      <a href="tel:0341627766" class="btn btn-ghost hide-md">03 4162 7766</a>
+      <a href="/contact.html" class="btn hide-md">Get Quote</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero wrap">
+  <div class="media">
+    <picture>
+      <source srcset="/img/blog/colorbond-frankston.webp" type="image/webp">
+      <source srcset="/img/blog/colorbond-frankston.avif" type="image/avif">
+      <img src="/img/blog/colorbond-frankston.jpg" alt="New Colorbond roof installation in Frankston showing durable steel roofing materials" loading="eager">
+    </picture>
+  </div>
+  <div>
+    <div class="meta">By MPR • 23 Aug 2025 • 6–8 min read</div>
+    <h1>Colorbond Roofing Frankston</h1>
+    <p class="lede">Considering Colorbond for your Frankston home? Here's how to choose the right profile, colour and coastal performance features for Peninsula conditions.</p>
+    <div class="cta">
+      <a class="btn" href="/contact.html">Get a Colorbond quote</a>
+      <a class="btn-ghost" href="/#services">See our services</a>
+    </div>
+  </div>
+</section>
+
+<main class="article wrap">
+  <article class="content" itemscope itemtype="https://schema.org/BlogPosting">
+    <meta itemprop="headline" content="Colorbond Roofing Frankston">
+    <meta itemprop="image" content="/img/blog/colorbond-frankston.jpg">
+    <meta itemprop="datePublished" content="2025-08-23">
+    <meta itemprop="author" content="MPR">
+
+    <h2>Why Colorbond suits Frankston</h2>
+    <p>Colorbond steel is engineered for Australian weather and performs well in bayside suburbs like Frankston. The material's zinc-aluminium coating provides excellent corrosion resistance, making it ideal for homes within 5km of Port Phillip Bay where salt air can accelerate rust on lesser materials.</p>
+
+    <p>Unlike tiles or timber, Colorbond expands and contracts predictably with temperature changes. This stability means fewer cracked fixings and better long-term weather sealing – crucial for Peninsula homes exposed to strong southerlies and sudden temperature drops.</p>
+
+    <h2>Profiles, colours & acoustic options</h2>
+    <div class="split">
+      <div>
+        <h3>Popular Profiles</h3>
+        <ul>
+          <li><strong>Corrugated</strong> – Classic ribbed look, suits period home updates and coastal cottage styles.</li>
+          <li><strong>Standing seam</strong> – Premium contemporary finish with hidden fixings for clean lines.</li>
+          <li><strong>Trapezoidal (Trimdek/Kliplok)</strong> – Spans well on low pitches, popular for modern extensions.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Colour Selection</h3>
+        <p>Choose a tone that complements your brick or render. Dark colours like Monument® or Night Sky® can run warmer in summer – pair with ceiling insulation and roof ventilation.</p>
+        <p>Lighter shades such as Surfmist® or Shale Grey™ reflect heat better and work well with Frankston's mix of weatherboard and brick homes.</p>
+      </div>
+    </div>
+
+    <div class="note">
+      <p><strong>Coastal Consideration:</strong> For homes closer to the waterfront, consider Colorbond Ultra® which offers enhanced corrosion resistance for marine environments.</p>
+    </div>
+
+    <h2>Coastal performance in Frankston</h2>
+    <p>Frankston's proximity to the bay means salt-laden air, especially during south-westerly weather. Regular maintenance becomes more important – rinsing with fresh water every 6 months helps prevent salt buildup that can cause premature wear.</p>
+
+    <p>Wind uplift is another factor. Frankston can experience strong gusts during storm fronts rolling in from Bass Strait. Proper fixing densities (typically every 300mm in high-wind areas) and experienced installation are essential. See our <a href="/#services">roofing services</a> for wind-rated installations.</p>
+
+    <h2>Insulation and comfort</h2>
+    <p>Metal roofing can amplify rain noise without proper insulation. In Frankston's climate, we recommend:</p>
+    <ul>
+      <li>Bulk insulation (R1.8 or higher) for thermal performance</li>
+      <li>Reflective foil sarking to reduce radiant heat</li>
+      <li>Consider acoustic batts if rain noise is a concern</li>
+    </ul>
+
+    <h2>Repair vs re-roof considerations</h2>
+    <p>Localised rust spots or loose fixings can often be repaired cost-effectively. However, consider a full re-roof when:</p>
+    <ul>
+      <li>Corrosion affects more than 20% of the roof area</li>
+      <li>Multiple leaks indicate widespread deterioration</li>
+      <li>The existing roof lacks adequate insulation or ventilation</li>
+      <li>You're planning major renovations or extensions</li>
+    </ul>
+
+    <h2>Installation timing and weather</h2>
+    <p>Frankston's weather is generally suitable for roofing work year-round, though winter months may have more rain delays. Spring and autumn offer the most consistent working conditions.</p>
+
+    <p>Quality installers will avoid working in strong winds (over 25km/h) and ensure proper temporary weather protection during multi-day installations.</p>
+
+    <h2>Next steps for your Frankston Colorbond roof</h2>
+    <p>We handle residential and commercial re-roofing across the Peninsula and Bayside, including <a href="/locations/frankston.html">Frankston</a> and surrounding suburbs. Our team understands local conditions, council requirements, and neighbour notification processes.</p>
+
+    <p>For advice specific to your property, including colour selection and profile recommendations, <a href="/contact.html">contact our team</a> for an on-site consultation.</p>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Colorbond Roofing Frankston",
+      "image": "https://www.morningtonpeninsularoofing.com.au/img/blog/colorbond-frankston.jpg",
+      "datePublished": "2025-08-23",
+      "author": {
+        "@type": "Organization",
+        "name": "Mornington Peninsula Roofing"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Mornington Peninsula Roofing"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.morningtonpeninsularoofing.com.au/blog/colorbond-roofing-frankston.html"
+      },
+      "description": "Guide to Colorbond roofing in Frankston — profiles, colours, coastal performance and installation considerations for Peninsula homes."
+    }
+    </script>
+  </article>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>MENU</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/#services">Services</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>CONTACT</h4>
+        <p><a href="tel:03-4162-7766">03 4162 7766</a></p>
+        <p>Servicing Mornington Peninsula</p>
+      </div>
+      <div class="footer-section">
+        <h4>LOCATIONS</h4>
+        <ul>
+          <li><a href="/locations/mount-eliza.html">Mount Eliza</a></li>
+          <li><a href="/locations/mornington.html">Mornington</a></li>
+          <li><a href="/locations/frankston.html">Frankston</a></li>
+          <li><a href="/locations/sorrento.html">Sorrento</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Mobile hamburger
+(function(){
+const t=document.querySelector('.nav-toggle');
+const m=document.getElementById('site-menu');
+if(t&&m){t.addEventListener('click',()=>{
+const open=t.getAttribute('aria-expanded')==='true';
+t.setAttribute('aria-expanded', String(!open));
+m.setAttribute('aria-expanded', String(!open));
+});}
+})();
+
+// Dropdown open/close + Esc
+(function(){
+const dd=document.querySelector('.nav-dropdown'); if(!dd) return;
+const btn=dd.querySelector('.nav-link-button');
+const panel=dd.querySelector('.dropdown-panel');
+const setOpen=(o)=>{dd.setAttribute('aria-expanded', String(o)); btn.setAttribute('aria-expanded', String(o));};
+btn.addEventListener('click', e=>{e.stopPropagation(); setOpen(dd.getAttribute('aria-expanded')!=='true');});
+document.addEventListener('click', ()=> setOpen(false));
+[btn,panel].forEach(el=>el&&el.addEventListener('keydown', e=>{ if(e.key==='Escape') setOpen(false);}));
+})();
+
+// Active nav state
+(function(){
+const p = window.location.pathname.replace(/index\.html$/, '');
+const mark = (k)=>{ const el=document.querySelector(`[data-nav="${k}"]`); if(el) el.setAttribute('aria-current','page');};
+if(p==='/'||p==='') mark('home');
+else if(p.endsWith('/about.html')) mark('about');
+else if(p.startsWith('/blog')) mark('blog');
+else if(p.endsWith('/contact.html')) mark('contact');
+else if(p.startsWith('/locations/')) mark('locations');
+})();
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+</script>
+</body>
+</html>

@@ -1195,54 +1195,7 @@ document.addEventListener('submit', function (e) {
     }
 });
 
-// Mobile navigation handler
-(function(){
-  const body = document.body;
-  const burger = document.getElementById('hamburger');
-  const panel  = document.getElementById('mobile-menu');
-  const veil   = document.getElementById('mobile-backdrop');
-  if(!burger || !panel || !veil) return;
-
-  const open = () => {
-    body.classList.add('menu-open');
-    burger.setAttribute('aria-expanded','true');
-    panel.hidden = false; veil.hidden = false;
-    // focus first link for a11y
-    setTimeout(() => {
-      const first = panel.querySelector('a,button,[tabindex]:not([tabindex="-1"])');
-      first && first.focus();
-    }, 10);
-  };
-  const close = () => {
-    body.classList.remove('menu-open');
-    burger.setAttribute('aria-expanded','false');
-    // let transition finish then hide to keep tab order clean
-    setTimeout(() => { panel.hidden = true; veil.hidden = true; }, 220);
-  };
-
-  burger.addEventListener('click', () => {
-    const expanded = burger.getAttribute('aria-expanded') === 'true';
-    expanded ? close() : open();
-  });
-  veil.addEventListener('click', close);
-  window.addEventListener('keydown', (e) => { if(e.key === 'Escape') close(); });
-
-  // Mobile submenus
-  panel.addEventListener('click', (e) => {
-    const btn = e.target.closest('.mobile-accordion');
-    if(!btn) return;
-    const expanded = btn.getAttribute('aria-expanded') === 'true';
-    btn.setAttribute('aria-expanded', String(!expanded));
-  });
-
-  // Prevent desktop submenu buttons from doing anything on desktop if not needed
-  document.querySelectorAll('.submenu-toggle').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      // purely decorative for hover; keep accessible toggle on focus
-      if (window.matchMedia('(max-width: 992px)').matches) e.preventDefault();
-    });
-  });
-})();
+// Old Mobile navigation handler - Replaced by site.js
 
 // Export functions for testing or external use
 if (typeof module !== 'undefined' && module.exports) {

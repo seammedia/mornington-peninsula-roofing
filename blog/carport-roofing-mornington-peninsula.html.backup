@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Carport Roofing Mornington Peninsula | Mornington Peninsula Roofing</title>
+  <meta name="description" content="Materials, permits and drainage tips for long-lasting carport roofing in coastal conditions across the Mornington Peninsula.">
+  <meta property="og:title" content="Carport Roofing Mornington Peninsula | Mornington Peninsula Roofing">
+  <meta property="og:description" content="Materials, permits and drainage tips for long-lasting carport roofing in coastal conditions.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.morningtonpeninsularoofing.com.au/blog/carport-roofing-mornington-peninsula.html">
+  <meta property="og:image" content="/img/blog/carport-roofing-mornington-peninsula.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://www.morningtonpeninsularoofing.com.au/blog/carport-roofing-mornington-peninsula.html">
+  
+  <style>
+    /* CSS Custom Properties */
+    :root {
+        --ink: #0f172a;
+        --muted: #475569;
+        --border: #e5e7eb;
+        --accent: #6b8e79;
+        --background: #ffffff;
+        --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        --line-height-base: 1.6;
+        --line-height-relaxed: 1.8;
+        --letter-spacing-wide: 0.1em;
+        --letter-spacing-wider: 0.15em;
+        --container-max-width: 1200px;
+        --spacing-xs: 24px;
+        --spacing-sm: 32px;
+        --spacing-md: 48px;
+        --spacing-lg: 60px;
+    }
+
+    /* Reset and Base */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: var(--font-system);
+        line-height: var(--line-height-base);
+        color: var(--muted);
+        background-color: var(--background);
+    }
+
+    /* Header */
+    .site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);z-index:100}
+    .nav-container{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-weight:700;text-decoration:none;color:var(--ink)}
+    .site-menu{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+    .nav-link,.nav-link-button{background:none;border:0;cursor:pointer;font:inherit;text-transform:uppercase;letter-spacing:.2em;font-size:.85rem;text-decoration:none;color:var(--ink);padding:0}
+    .nav-link:hover,.nav-link:focus-visible,.nav-link-button:hover,.nav-link-button:focus-visible{text-decoration:underline}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:500;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em}
+    .btn-ghost{background:transparent;border:1px solid var(--border);color:var(--ink)}
+    .nav-toggle{display:none}
+    .hide-md{display:inline-block}
+    /* Dropdown */
+    .nav-dropdown{position:relative}
+    .dropdown-panel{position:absolute;top:100%;left:0;display:none;min-width:220px;background:#fff;border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,.06);padding:8px}
+    .nav-dropdown[aria-expanded="true"] .dropdown-panel{display:block}
+    .dropdown-link{display:block;padding:10px 12px;color:var(--ink);text-decoration:none}
+    .dropdown-link:hover,.dropdown-link:focus-visible{background:#f7f7f7}
+    /* Active state */
+    .nav-link[aria-current="page"], .nav-link-button[aria-current="page"]{text-decoration:underline}
+    /* Mobile */
+    @media (max-width:1024px){
+      .site-menu{gap:16px}
+      .nav-link,.nav-link-button{letter-spacing:.16em;font-size:.82rem}
+      .hide-md{display:none}
+    }
+    @media (max-width:820px){
+      .nav-toggle{display:inline-block}
+      .site-menu{display:none;flex-direction:column;gap:12px;padding:12px 0}
+      .site-menu[aria-expanded="true"]{display:flex}
+    }
+    /* Anchor offset + smooth scroll */
+    [id]{scroll-margin-top:80px}
+    html{scroll-behavior:smooth}
+
+    /* Hero Section */
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 36px;
+      align-items: center;
+      padding: 48px 20px;
+    }
+
+    .hero .media img {
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      display: block;
+    }
+
+    .hero .meta {
+      color: #64748b;
+      font-size: .9rem;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.1;
+      color: var(--ink);
+      margin: 6px 0 10px;
+    }
+
+    .hero p.lede {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 60ch;
+    }
+
+    .cta {
+      display: flex;
+      gap: 10px;
+      margin: 24px 0 8px;
+    }
+
+    @media (max-width: 980px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+
+    /* Article Content */
+    .article {
+      padding: 28px 20px 64px;
+    }
+
+    .article .content {
+      max-width: 850px;
+      color: var(--muted);
+      font-size: 1.02rem;
+      line-height: 1.7;
+    }
+
+    .article h2 {
+      color: var(--ink);
+      margin: 28px 0 10px;
+      font-size: 1.6rem;
+      line-height: 1.3;
+    }
+
+    .article h3 {
+      color: var(--ink);
+      margin: 20px 0 8px;
+      font-size: 1.25rem;
+    }
+
+    .article ul, .article ol {
+      margin: 16px 0;
+      padding-left: 24px;
+    }
+
+    .article li {
+      margin-bottom: 8px;
+    }
+
+    .article a {
+      color: #0f766e;
+      text-decoration: underline;
+    }
+
+    .note {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 20px 0;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 760px) {
+      .split {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Page Styles */
+    .wrap{max-width:1200px;margin:0 auto}
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:center;padding:48px 20px}
+    .hero .media img{width:100%;height:auto;border-radius:14px;display:block}
+    .hero .meta{color:#64748b;font-size:.9rem;margin-bottom:10px}
+    .hero h1{font-size:clamp(28px,4vw,44px);line-height:1.1;color:var(--ink);margin:6px 0 10px}
+    .hero p.lede{color:var(--muted);font-size:1.05rem;max-width:60ch}
+    @media (max-width:980px){.hero{grid-template-columns:1fr;gap:20px}}
+    .article{padding:28px 20px 64px}
+    .article .content{max-width:850px;color:var(--muted);font-size:1.02rem;line-height:1.7}
+    .article h2{color:var(--ink);margin:28px 0 10px;font-size:1.6rem;line-height:1.3}
+    .article h3{color:var(--ink);margin:20px 0 8px;font-size:1.25rem}
+    .note{background:#f8fafc;border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin:16px 0;color:var(--muted)}
+    .cta{display:flex;gap:10px;margin:24px 0 8px}
+    .toc{border-left:3px solid var(--border);padding-left:12px;margin:14px 0}
+    .toc a{display:block;color:var(--ink);text-decoration:none;margin:4px 0}
+    .toc a:hover{text-decoration:underline}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    @media (max-width:760px){.split{grid-template-columns:1fr}}
+    .article a{color:#0f766e;text-decoration:underline}
+    figure{margin:20px 0}
+    figcaption{font-size:.9rem;color:#6b7280;margin-top:6px}
+    .article ul, .article ol {margin:16px 0 16px 24px}
+    .article li {margin-bottom:8px}
+    /* Fix oversized bottom image */
+    .article figure img{
+      width:100%;
+      aspect-ratio:16 / 9; /* keep landscape */
+      max-height:clamp(260px,45vh,520px);
+      height:auto; /* computed by aspect-ratio */
+      object-fit:cover; /* crop tall images neatly */
+      border-radius:12px;
+    }
+    /* Optional: soften spacing */
+    .article figure{margin:20px auto}
+
+    /* Footer */
+    .footer {
+        background-color: #f8f9fa;
+        padding: var(--spacing-md) 0;
+        border-top: 1px solid var(--border);
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: var(--spacing-sm);
+        max-width: var(--container-max-width);
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .footer-section h4 {
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--ink);
+        margin-bottom: 16px;
+        letter-spacing: var(--letter-spacing-wide);
+        text-transform: uppercase;
+    }
+
+    .footer-section ul {
+        list-style: none;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 8px;
+    }
+
+    .footer-section a {
+        text-decoration: none;
+        color: var(--muted);
+        font-size: 14px;
+        transition: color 0.3s ease;
+    }
+
+    .footer-section a:hover,
+    .footer-section a:focus {
+        color: var(--accent);
+    }
+
+    .footer-section p {
+        color: var(--muted);
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    @media (max-width: 768px) {
+        .footer-content {
+            grid-template-columns: 1fr;
+            gap: var(--spacing-sm);
+            text-align: center;
+        }
+    }
+  </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QFTWK45LJZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QFTWK45LJZ', { anonymize_ip: true, transport_type: 'beacon' });
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-container">
+    <a class="brand" href="/">Mornington Peninsula Roofing</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+    <nav id="site-menu" class="site-menu" aria-expanded="false">
+      <a href="/" class="nav-link" data-nav="home">Home</a>
+      <a href="/about.html" class="nav-link" data-nav="about">About</a>
+      <a href="/#services" class="nav-link" data-nav="services">Services</a>
+      <div class="nav-dropdown" data-nav="locations">
+        <button class="nav-link nav-link-button" aria-expanded="false" aria-haspopup="true">
+          Locations <span class="caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="dropdown-panel" role="menu">
+          <a role="menuitem" class="dropdown-link" href="/locations/mount-eliza.html">Mount Eliza</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/mornington.html">Mornington</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/frankston.html">Frankston</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/sorrento.html">Sorrento</a>
+        </div>
+      </div>
+      <a href="/blog/" class="nav-link" data-nav="blog">Blog</a>
+      <a href="/contact.html" class="nav-link" data-nav="contact">Contact</a>
+      <a href="tel:0341627766" class="btn btn-ghost hide-md">03 4162 7766</a>
+      <a href="/contact.html" class="btn hide-md">Get Quote</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero wrap">
+  <div class="media">
+    <img src="/img/blog/carport-roofing-mornington-peninsula.jpg" alt="Modern carport roof installation on Mornington Peninsula property" width="1200" height="800" loading="eager">
+  </div>
+  <div>
+    <div class="meta">By MPR • 24 Aug 2025 • 6–10 min read</div>
+    <h1>Carport Roofing Mornington Peninsula</h1>
+    <p class="lede">From Colorbond to polycarbonate, choose a carport roof that lasts by the bay.</p>
+    <div class="cta">
+      <a class="btn" href="/contact.html">Get a quote</a>
+      <a class="btn-ghost" href="/#services">See our services</a>
+    </div>
+  </div>
+</section>
+
+<main class="article wrap">
+  <article class="content" itemscope itemtype="https://schema.org/BlogPosting">
+    <meta itemprop="headline" content="Carport Roofing Mornington Peninsula">
+    <meta itemprop="image" content="/img/blog/carport-roofing-mornington-peninsula.jpg">
+    <meta itemprop="datePublished" content="2025-08-24">
+    <meta itemprop="author" content="MPR">
+
+    <nav class="toc" aria-label="Table of contents">
+      <strong>In this guide</strong>
+      <a href="#materials">Best carport roofing materials</a>
+      <a href="#design">Design considerations for Peninsula conditions</a>
+      <a href="#permits">Permits & drainage</a>
+      <a href="#installation">Installation considerations</a>
+      <a href="#maintenance">Maintenance and longevity</a>
+      <a href="#integration">Integration with existing structures</a>
+    </nav>
+
+    <h2 id="materials">Best carport roofing materials</h2>
+    <p>Peninsula conditions demand careful material selection for carport roofing that provides reliable weather protection while complementing your home's architecture.</p>
+    
+    <ul>
+      <li><strong>Colorbond® steel</strong> – Durable and low-maintenance, with excellent corrosion resistance for coastal areas. Available in colours to match your home's existing roofing.</li>
+      <li><strong>Polycarbonate sheets</strong> – Light and bright, great for areas where natural light penetration is desired. UV-resistant grades prevent yellowing and maintain clarity.</li>
+      <li><strong>Insulated panels</strong> – Superior thermal performance for climates with extreme temperature variations. Reduces noise from rain and provides excellent weather sealing.</li>
+      <li><strong>Corrugated steel</strong> – Economic option with good longevity when properly treated. Classic appearance suits traditional home styles.</li>
+    </ul>
+
+    <p>Each material offers distinct advantages depending on your priorities for appearance, light transmission, thermal comfort, and budget considerations.</p>
+
+    <h2 id="design">Design considerations for Peninsula conditions</h2>
+    <div class="split">
+      <div>
+        <h3>Wind resistance</h3>
+        <p>Peninsula locations experience strong southerly winds that can generate significant uplift forces on carport roofs. Proper structural design and fastening densities ensure your carport roof remains secure during severe weather events.</p>
+      </div>
+      <div>
+        <h3>Drainage planning</h3>
+        <p>Effective water management prevents pooling and directs runoff away from vehicles and structures. Adequate fall towards gutters and properly sized downpipes handle Peninsula's intense rainfall events.</p>
+      </div>
+    </div>
+
+    <h2 id="permits">Permits & drainage</h2>
+    <p>Most carport roofing projects require building permits, particularly when structures exceed certain size thresholds or involve electrical work for lighting.</p>
+    
+    <p>Check local council requirements early in your planning process. The <a href="https://www.vba.vic.gov.au/consumers/homeowners" target="_blank" rel="noopener">Victorian Building Authority</a> provides guidance on residential building permits and requirements.</p>
+
+    <p>Proper drainage design prevents water damage to vehicles and surrounding structures while ensuring compliance with local stormwater management requirements.</p>
+
+    <div class="note">
+      <p><strong>Planning Tip:</strong> Consider future vehicle sizes and usage patterns when designing carport dimensions and clearances. What fits today may not accommodate your needs in five years.</p>
+    </div>
+
+    <h2 id="installation">Installation considerations</h2>
+    <p>Professional installation ensures carport roofing performs reliably for decades while meeting all safety and building code requirements.</p>
+
+    <p>Proper post spacing and foundation design account for local soil conditions and wind loading. Peninsula's clay soils require specific footings to prevent movement that could compromise structural integrity.</p>
+
+    <p>Flashing details around attachments to existing buildings require careful attention to prevent water penetration. Compatible materials and proper overlap sequences ensure weatherproof connections.</p>
+
+    <h2 id="maintenance">Maintenance and longevity</h2>
+    <p>Regular maintenance extends carport roof life while preserving appearance and functionality. Peninsula conditions create specific maintenance requirements.</p>
+
+    <ul>
+      <li>Annual cleaning removes salt buildup and organic debris</li>
+      <li>Gutter cleaning prevents overflow and water damage</li>
+      <li>Fastener inspection identifies loose or deteriorating connections</li>
+      <li>Sealant renewal maintains weatherproof details</li>
+    </ul>
+
+    <h2 id="integration">Integration with existing structures</h2>
+    <p>Successful carport additions complement existing architecture while providing practical weather protection for vehicles and storage.</p>
+
+    <p>Material and colour coordination with your home's existing roofing creates visual continuity. Structural connections must accommodate differential movement between new and existing construction.</p>
+
+    <h2>Next steps</h2>
+    <p>Planning a carport roof installation involves multiple considerations from structural design through material selection and permit compliance.</p>
+    
+    <p>See our <a href="/services/re-roofing.html">re-roofing services</a> for comprehensive roofing solutions, or explore our work in <a href="/locations/mornington.html">Mornington</a> and surrounding Peninsula locations.</p>
+
+    <figure>
+      <img src="/img/blog/carport-roofing-mornington-peninsula.jpg" alt="Completed carport installation showing quality roofing and structural details" loading="lazy">
+      <figcaption>Professional carport installation provides lasting vehicle protection and property enhancement.</figcaption>
+    </figure>
+
+    <p class="note"><strong>Ready to proceed?</strong> <a href="/contact.html">Contact our team</a> for detailed consultation on carport roofing options suited to your specific situation and local conditions.</p>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Carport Roofing Mornington Peninsula",
+      "image": "https://www.morningtonpeninsularoofing.com.au/img/blog/carport-roofing-mornington-peninsula.jpg",
+      "datePublished": "2025-08-24",
+      "author": {
+        "@type": "Organization",
+        "name": "Mornington Peninsula Roofing"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Mornington Peninsula Roofing"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.morningtonpeninsularoofing.com.au/blog/carport-roofing-mornington-peninsula.html"
+      },
+      "description": "Materials, permits and drainage tips for long-lasting carport roofing in coastal conditions across the Mornington Peninsula."
+    }
+    </script>
+  </article>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>MENU</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/#services">Services</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>CONTACT</h4>
+        <p><a href="tel:03-4162-7766">03 4162 7766</a></p>
+        <p>Servicing Mornington Peninsula</p>
+      </div>
+      <div class="footer-section">
+        <h4>LOCATIONS</h4>
+        <ul>
+          <li><a href="/locations/mount-eliza.html">Mount Eliza</a></li>
+          <li><a href="/locations/mornington.html">Mornington</a></li>
+          <li><a href="/locations/frankston.html">Frankston</a></li>
+          <li><a href="/locations/sorrento.html">Sorrento</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Mobile hamburger
+(function(){
+const t=document.querySelector('.nav-toggle');
+const m=document.getElementById('site-menu');
+if(t&&m){t.addEventListener('click',()=>{
+const open=t.getAttribute('aria-expanded')==='true';
+t.setAttribute('aria-expanded', String(!open));
+m.setAttribute('aria-expanded', String(!open));
+});}
+})();
+
+// Dropdown open/close + Esc
+(function(){
+const dd=document.querySelector('.nav-dropdown'); if(!dd) return;
+const btn=dd.querySelector('.nav-link-button');
+const panel=dd.querySelector('.dropdown-panel');
+const setOpen=(o)=>{dd.setAttribute('aria-expanded', String(o)); btn.setAttribute('aria-expanded', String(o));};
+btn.addEventListener('click', e=>{e.stopPropagation(); setOpen(dd.getAttribute('aria-expanded')!=='true');});
+document.addEventListener('click', ()=> setOpen(false));
+[btn,panel].forEach(el=>el&&el.addEventListener('keydown', e=>{ if(e.key==='Escape') setOpen(false);}));
+})();
+
+// Active nav state
+(function(){
+const p = window.location.pathname.replace(/index\.html$/, '');
+const mark = (k)=>{ const el=document.querySelector(`[data-nav="${k}"]`); if(el) el.setAttribute('aria-current','page');};
+if(p==='/'||p==='') mark('home');
+else if(p.endsWith('/about.html')) mark('about');
+else if(p.startsWith('/blog')) mark('blog');
+else if(p.endsWith('/contact.html')) mark('contact');
+else if(p.startsWith('/locations/')) mark('locations');
+})();
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+</script>
+</body>
+</html>

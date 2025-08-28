@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Roofing Contractors Mornington Peninsula | Mornington Peninsula Roofing</title>
+  <meta name="description" content="How to choose qualified roofing contractors on the Mornington Peninsula. Experience, licensing, insurance and local knowledge for quality roofing work.">
+  <meta property="og:title" content="Roofing Contractors Mornington Peninsula">
+  <meta property="og:description" content="How to choose qualified roofing contractors on the Peninsula. Local expertise and quality workmanship.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.morningtonpeninsularoofing.com.au/blog/roofing-contractors-mornington-peninsula.html">
+  <meta property="og:image" content="/img/blog/roofing-contractors-mornington-peninsula.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://www.morningtonpeninsularoofing.com.au/blog/roofing-contractors-mornington-peninsula.html">
+  
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #475569;
+      --border: #e5e7eb;
+      --accent: #6b8e79;
+    }
+
+    /* Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);z-index:100}
+    .nav-container{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-weight:700;text-decoration:none;color:var(--ink)}
+    .site-menu{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+    .nav-link,.nav-link-button{background:none;border:0;cursor:pointer;font:inherit;text-transform:uppercase;letter-spacing:.2em;font-size:.85rem;text-decoration:none;color:var(--ink);padding:0}
+    .nav-link:hover,.nav-link:focus-visible,.nav-link-button:hover,.nav-link-button:focus-visible{text-decoration:underline}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:500;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em}
+    .btn-ghost{background:transparent;border:1px solid var(--border);color:var(--ink)}
+    .nav-toggle{display:none}
+    .hide-md{display:inline-block}
+    /* Dropdown */
+    .nav-dropdown{position:relative}
+    .dropdown-panel{position:absolute;top:100%;left:0;display:none;min-width:220px;background:#fff;border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,.06);padding:8px}
+    .nav-dropdown[aria-expanded="true"] .dropdown-panel{display:block}
+    .dropdown-link{display:block;padding:10px 12px;color:var(--ink);text-decoration:none}
+    .dropdown-link:hover,.dropdown-link:focus-visible{background:#f7f7f7}
+    /* Active state */
+    .nav-link[aria-current="page"], .nav-link-button[aria-current="page"]{text-decoration:underline}
+    /* Mobile */
+    @media (max-width:1024px){
+      .site-menu{gap:16px}
+      .nav-link,.nav-link-button{letter-spacing:.16em;font-size:.82rem}
+      .hide-md{display:none}
+    }
+    @media (max-width:820px){
+      .nav-toggle{display:inline-block}
+      .site-menu{display:none;flex-direction:column;gap:12px;padding:12px 0}
+      .site-menu[aria-expanded="true"]{display:flex}
+    }
+    /* Anchor offset + smooth scroll */
+    [id]{scroll-margin-top:80px}
+    html{scroll-behavior:smooth}
+
+    /* Hero Section */
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 36px;
+      align-items: center;
+      padding: 48px 20px;
+    }
+
+    .hero .media picture {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero .media img {
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      display: block;
+    }
+
+    .hero .meta {
+      color: #64748b;
+      font-size: .9rem;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.1;
+      color: var(--ink);
+      margin: 6px 0 10px;
+    }
+
+    .hero p.lede {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 60ch;
+    }
+
+    .cta {
+      display: flex;
+      gap: 10px;
+      margin: 24px 0 8px;
+    }
+
+    @media (max-width: 980px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+
+    /* Article Content */
+    .article {
+      padding: 28px 20px 64px;
+    }
+
+    .article .content {
+      max-width: 850px;
+      color: var(--muted);
+      font-size: 1.02rem;
+      line-height: 1.7;
+    }
+
+    .article h2 {
+      color: var(--ink);
+      margin: 28px 0 10px;
+      font-size: 1.6rem;
+      line-height: 1.3;
+    }
+
+    .article h3 {
+      color: var(--ink);
+      margin: 20px 0 8px;
+      font-size: 1.25rem;
+    }
+
+    .article ul, .article ol {
+      margin: 16px 0;
+      padding-left: 24px;
+    }
+
+    .article li {
+      margin-bottom: 8px;
+    }
+
+    .article a {
+      color: #0f766e;
+      text-decoration: underline;
+    }
+
+    .note {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 20px 0;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 760px) {
+      .split {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #f8f9fa;
+      padding: 48px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+    }
+
+    .footer-section h4 {
+      font-size: 14px;
+      font-weight: bold;
+      color: var(--ink);
+      margin-bottom: 16px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-section a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-section a:hover,
+    .footer-section a:focus {
+      color: var(--accent);
+    }
+
+    .footer-section p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: center;
+      }
+    }
+  </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QFTWK45LJZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QFTWK45LJZ', { anonymize_ip: true, transport_type: 'beacon' });
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-container">
+    <a class="brand" href="/">Mornington Peninsula Roofing</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+    <nav id="site-menu" class="site-menu" aria-expanded="false">
+      <a href="/" class="nav-link" data-nav="home">Home</a>
+      <a href="/about.html" class="nav-link" data-nav="about">About</a>
+      <a href="/#services" class="nav-link" data-nav="services">Services</a>
+      <div class="nav-dropdown" data-nav="locations">
+        <button class="nav-link nav-link-button" aria-expanded="false" aria-haspopup="true">
+          Locations <span class="caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="dropdown-panel" role="menu">
+          <a role="menuitem" class="dropdown-link" href="/locations/mount-eliza.html">Mount Eliza</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/mornington.html">Mornington</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/frankston.html">Frankston</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/sorrento.html">Sorrento</a>
+        </div>
+      </div>
+      <a href="/blog/" class="nav-link" data-nav="blog">Blog</a>
+      <a href="/contact.html" class="nav-link" data-nav="contact">Contact</a>
+      <a href="tel:0341627766" class="btn btn-ghost hide-md">03 4162 7766</a>
+      <a href="/contact.html" class="btn hide-md">Get Quote</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero wrap">
+  <div class="media">
+    <picture>
+      <img src="../assets/img/re-roofing.png" alt="Professional roof construction showing tiles and sarking installation on Mornington Peninsula home" width="600" height="400" loading="eager">
+    </picture>
+  </div>
+  <div>
+    <div class="meta">By MPR • 24 Aug 2025 • 6–8 min read</div>
+    <h1>Roofing Contractors Mornington Peninsula</h1>
+    <p class="lede">Choosing the right roofing contractor can make the difference between a roof that lasts decades and one that requires constant repairs. Here's how to find quality Peninsula specialists.</p>
+    <div class="cta">
+      <a class="btn" href="/contact.html">Get a quote</a>
+      <a class="btn-ghost" href="/#services">See our services</a>
+    </div>
+  </div>
+</section>
+
+<main class="article wrap">
+  <article class="content" itemscope itemtype="https://schema.org/BlogPosting">
+    <meta itemprop="headline" content="Roofing Contractors Mornington Peninsula">
+    <meta itemprop="image" content="/img/blog/roofing-contractors-mornington-peninsula.jpg">
+    <meta itemprop="datePublished" content="2025-08-24">
+    <meta itemprop="author" content="MPR">
+
+    <h2>What to look for in Peninsula roofing contractors</h2>
+    <p>The Peninsula's unique coastal conditions require contractors who understand salt air corrosion, wind loads, and local building requirements. Generic roofing experience isn't enough.</p>
+
+    <div class="split">
+      <div>
+        <h3>Essential Credentials</h3>
+        <ul>
+          <li><strong>Builder's registration</strong> – current VBA license</li>
+          <li><strong>Insurance coverage</strong> – public liability minimum $10M</li>
+          <li><strong>WorkSafe compliance</strong> – current OH&S certifications</li>
+          <li><strong>Local council knowledge</strong> – heritage and planning expertise</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Peninsula Experience</h3>
+        <ul>
+          <li><strong>Coastal material knowledge</strong> – marine-grade fixings and coatings</li>
+          <li><strong>Wind rating expertise</strong> – N2-N4 classifications</li>
+          <li><strong>Local supplier networks</strong> – quality materials at competitive prices</li>
+          <li><strong>Heritage area experience</strong> – overlay compliance and approvals</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="note">
+      <p><strong>Red flags:</strong> Door-to-door sales, pressure for immediate decisions, cash-only payments, no fixed business address, or quotes significantly below market rates.</p>
+    </div>
+
+    <h2>Questions to ask potential contractors</h2>
+    <p>A thorough vetting process protects you from poor workmanship and potential legal issues:</p>
+
+    <ul>
+      <li><strong>Portfolio review</strong> – recent Peninsula projects with before/after photos</li>
+      <li><strong>Reference checks</strong> – speak with recent customers about quality and service</li>
+      <li><strong>Insurance verification</strong> – request current certificates directly from insurer</li>
+      <li><strong>Warranty terms</strong> – clear written warranties on materials and workmanship</li>
+      <li><strong>Timeline expectations</strong> – realistic project schedules with weather contingencies</li>
+      <li><strong>Material specifications</strong> – detailed breakdown of products and grades used</li>
+    </ul>
+
+    <h2>Understanding quotes and contracts</h2>
+    <p>Quality contractors provide detailed, transparent quotes that help you make informed decisions:</p>
+
+    <div class="split">
+      <div>
+        <h3>Quote Should Include</h3>
+        <ul>
+          <li>Detailed material specifications with brands and grades</li>
+          <li>Labour breakdown with timelines</li>
+          <li>Permit and disposal costs</li>
+          <li>Weather protection provisions</li>
+          <li>Clean-up responsibilities</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contract Must Cover</h3>
+        <ul>
+          <li>Start and completion dates</li>
+          <li>Payment schedule tied to milestones</li>
+          <li>Change order procedures</li>
+          <li>Warranty terms in writing</li>
+          <li>Dispute resolution process</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Local knowledge matters</h2>
+    <p>Peninsula roofing presents unique challenges that experienced local contractors understand:</p>
+
+    <ul>
+      <li><strong>Council variations</strong> – <a href="/locations/frankston.html">Frankston</a>, <a href="/locations/mornington.html">Mornington</a>, and other Peninsula councils have different requirements</li>
+      <li><strong>Heritage considerations</strong> – overlay areas require specific materials and approval processes</li>
+      <li><strong>Coastal exposure</strong> – salt air demands upgraded materials and installation techniques</li>
+      <li><strong>Seasonal weather</strong> – understanding of Peninsula wind patterns and rainfall timing</li>
+      <li><strong>Supplier relationships</strong> – local networks for quality materials and emergency supplies</li>
+    </ul>
+
+    <h2>Payment and progress management</h2>
+    <p>Protect yourself with structured payment schedules and clear milestone definitions:</p>
+
+    <div class="note">
+      <p><strong>Never pay large amounts upfront.</strong> Legitimate contractors can purchase materials on account and don't require significant deposits for standard residential jobs.</p>
+    </div>
+
+    <ul>
+      <li><strong>10% deposit maximum</strong> – only after signed contract</li>
+      <li><strong>Progress payments</strong> – tied to completed work stages</li>
+      <li><strong>Final payment retention</strong> – hold 5-10% until defects period ends</li>
+      <li><strong>Written variations</strong> – all changes must be documented and approved</li>
+    </ul>
+
+    <h2>Quality assurance and warranties</h2>
+    <p>Reputable contractors stand behind their work with comprehensive warranties:</p>
+
+    <div class="split">
+      <div>
+        <h3>Workmanship Warranty</h3>
+        <ul>
+          <li>Minimum 5 years on installation</li>
+          <li>Clear defects liability period</li>
+          <li>Prompt response to warranty claims</li>
+          <li>Transfer provisions if business sold</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Material Warranties</h3>
+        <ul>
+          <li>Manufacturer warranties on all components</li>
+          <li>Proper installation for warranty validity</li>
+          <li>Documentation provided at completion</li>
+          <li>Ongoing maintenance requirements</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Working with your chosen contractor</h2>
+    <p>Good communication and clear expectations ensure successful project outcomes:</p>
+
+    <ul>
+      <li><strong>Regular updates</strong> – daily progress reports for major projects</li>
+      <li><strong>Site access</strong> – clear arrangements for workers and materials</li>
+      <li><strong>Neighbour consideration</strong> – noise control and property protection</li>
+      <li><strong>Weather delays</strong> – realistic scheduling with Peninsula conditions</li>
+      <li><strong>Final inspection</strong> – thorough walkthrough before final payment</li>
+    </ul>
+
+    <h2>After project completion</h2>
+    <p>A professional contractor's relationship continues beyond project completion:</p>
+
+    <div class="note">
+      <p><strong>Keep all documentation:</strong> Contracts, warranties, permits, material certificates, and photographs for future reference and warranty claims.</p>
+    </div>
+
+    <p>Quality Peninsula contractors offer ongoing maintenance services and respond promptly to warranty issues. They understand that their reputation depends on long-term customer satisfaction.</p>
+
+    <p>When selecting roofing contractors for your Peninsula property, prioritise local experience, proper credentials, and transparent business practices. The initial time investment in choosing quality contractors pays dividends in roof performance and peace of mind.</p>
+
+    <p>For honest assessment and transparent quoting on your Peninsula roofing project, <a href="/contact.html">contact our experienced team</a>. We've built our reputation on quality workmanship and customer service across all Peninsula suburbs.</p>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Roofing Contractors Mornington Peninsula",
+      "image": "https://www.morningtonpeninsularoofing.com.au/img/blog/roofing-contractors-mornington-peninsula.jpg",
+      "datePublished": "2025-08-24",
+      "author": {
+        "@type": "Organization",
+        "name": "Mornington Peninsula Roofing"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Mornington Peninsula Roofing"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.morningtonpeninsularoofing.com.au/blog/roofing-contractors-mornington-peninsula.html"
+      },
+      "description": "How to choose qualified roofing contractors on the Mornington Peninsula. Experience, licensing, insurance and local knowledge for quality roofing work."
+    }
+    </script>
+  </article>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>MENU</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/#services">Services</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>CONTACT</h4>
+        <p><a href="tel:03-4162-7766">03 4162 7766</a></p>
+        <p>Servicing Mornington Peninsula</p>
+      </div>
+      <div class="footer-section">
+        <h4>LOCATIONS</h4>
+        <ul>
+          <li><a href="/locations/mount-eliza.html">Mount Eliza</a></li>
+          <li><a href="/locations/mornington.html">Mornington</a></li>
+          <li><a href="/locations/frankston.html">Frankston</a></li>
+          <li><a href="/locations/sorrento.html">Sorrento</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Mobile hamburger
+(function(){
+const t=document.querySelector('.nav-toggle');
+const m=document.getElementById('site-menu');
+if(t&&m){t.addEventListener('click',()=>{
+const open=t.getAttribute('aria-expanded')==='true';
+t.setAttribute('aria-expanded', String(!open));
+m.setAttribute('aria-expanded', String(!open));
+});}
+})();
+
+// Dropdown open/close + Esc
+(function(){
+const dd=document.querySelector('.nav-dropdown'); if(!dd) return;
+const btn=dd.querySelector('.nav-link-button');
+const panel=dd.querySelector('.dropdown-panel');
+const setOpen=(o)=>{dd.setAttribute('aria-expanded', String(o)); btn.setAttribute('aria-expanded', String(o));};
+btn.addEventListener('click', e=>{e.stopPropagation(); setOpen(dd.getAttribute('aria-expanded')!=='true');});
+document.addEventListener('click', ()=> setOpen(false));
+[btn,panel].forEach(el=>el&&el.addEventListener('keydown', e=>{ if(e.key==='Escape') setOpen(false);}));
+})();
+
+// Active nav state
+(function(){
+const p = window.location.pathname.replace(/index\.html$/, '');
+const mark = (k)=>{ const el=document.querySelector(`[data-nav="${k}"]`); if(el) el.setAttribute('aria-current','page');};
+if(p==='/'||p==='') mark('home');
+else if(p.endsWith('/about.html')) mark('about');
+else if(p.startsWith('/blog')) mark('blog');
+else if(p.endsWith('/contact.html')) mark('contact');
+else if(p.startsWith('/locations/')) mark('locations');
+})();
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+</script>
+</body>
+</html>

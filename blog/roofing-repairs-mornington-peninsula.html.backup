@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Roofing Repairs Mornington Peninsula | Mornington Peninsula Roofing</title>
+  <meta name="description" content="A practical local guide to roof leak repairs on the Mornington Peninsula. Early signs, common causes, repair options and costs for tiled and metal roofs.">
+  <meta property="og:title" content="Roofing Repairs Mornington Peninsula">
+  <meta property="og:description" content="Local guide to leak detection and repairs for tile and metal roofs in coastal Peninsula conditions.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.morningtonpeninsularoofing.com.au/blog/roofing-repairs-mornington-peninsula.html">
+  <meta property="og:image" content="/assets/img/About_Us.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://www.morningtonpeninsularoofing.com.au/blog/roofing-repairs-mornington-peninsula.html">
+  
+  <style>
+    /* CSS Custom Properties */
+    :root {
+        --ink: #0f172a;
+        --muted: #475569;
+        --border: #e5e7eb;
+        --accent: #6b8e79;
+        --background: #ffffff;
+        --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        --line-height-base: 1.6;
+        --line-height-relaxed: 1.8;
+        --letter-spacing-wide: 0.1em;
+        --letter-spacing-wider: 0.15em;
+        --container-max-width: 1200px;
+        --spacing-xs: 24px;
+        --spacing-sm: 32px;
+        --spacing-md: 48px;
+        --spacing-lg: 60px;
+    }
+
+    /* Reset and Base */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: var(--font-system);
+        line-height: var(--line-height-base);
+        color: var(--muted);
+        background-color: var(--background);
+    }
+
+    /* Header Styles */
+    .site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);z-index:100}
+    .nav-container{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-weight:700;text-decoration:none;color:var(--ink)}
+    .site-menu{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+    .nav-link,.nav-link-button{background:none;border:0;cursor:pointer;font:inherit;text-transform:uppercase;letter-spacing:.2em;font-size:.85rem;text-decoration:none;color:var(--ink);padding:0}
+    .nav-link:hover,.nav-link:focus-visible,.nav-link-button:hover,.nav-link-button:focus-visible{text-decoration:underline}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:500;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em}
+    .btn-ghost{background:transparent;border:1px solid var(--border);color:var(--ink)}
+    .nav-toggle{display:none}
+    .hide-md{display:inline-block}
+    /* Dropdown */
+    .nav-dropdown{position:relative}
+    .dropdown-panel{position:absolute;top:100%;left:0;display:none;min-width:220px;background:#fff;border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,.06);padding:8px}
+    .nav-dropdown[aria-expanded="true"] .dropdown-panel{display:block}
+    .dropdown-link{display:block;padding:10px 12px;color:var(--ink);text-decoration:none}
+    .dropdown-link:hover,.dropdown-link:focus-visible{background:#f7f7f7}
+    /* Active state */
+    .nav-link[aria-current="page"], .nav-link-button[aria-current="page"]{text-decoration:underline}
+    /* Fit on medium screens */
+    @media (max-width:1024px){
+      .site-menu{gap:16px}
+      .nav-link,.nav-link-button{letter-spacing:.16em;font-size:.82rem}
+      .hide-md{display:none}
+    }
+    /* Mobile menu */
+    @media (max-width:820px){
+      .nav-toggle{display:inline-block}
+      .site-menu{display:none;flex-direction:column;gap:12px;padding:12px 0}
+      .site-menu[aria-expanded="true"]{display:flex}
+    }
+    /* Anchor offset + smooth scroll */
+    [id]{scroll-margin-top:80px}
+    html{scroll-behavior:smooth}
+
+    /* Page Styles */
+    .wrap{max-width:1200px;margin:0 auto}
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:center;padding:48px 20px}
+    .hero .media img{width:100%;height:auto;border-radius:14px;display:block}
+    .hero .meta{color:#64748b;font-size:.9rem;margin-bottom:10px}
+    .hero h1{font-size:clamp(28px,4vw,44px);line-height:1.1;color:var(--ink);margin:6px 0 10px}
+    .hero p.lede{color:var(--muted);font-size:1.05rem;max-width:60ch}
+    @media (max-width:980px){.hero{grid-template-columns:1fr;gap:20px}}
+    .article{padding:28px 20px 64px}
+    .article .content{max-width:850px;color:var(--muted);font-size:1.02rem;line-height:1.7}
+    .article h2{color:var(--ink);margin:28px 0 10px;font-size:1.6rem;line-height:1.3}
+    .article h3{color:var(--ink);margin:20px 0 8px;font-size:1.25rem}
+    .note{background:#f8fafc;border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin:16px 0;color:var(--muted)}
+    .cta{display:flex;gap:10px;margin:24px 0 8px}
+    .toc{border-left:3px solid var(--border);padding-left:12px;margin:14px 0}
+    .toc a{display:block;color:var(--ink);text-decoration:none;margin:4px 0}
+    .toc a:hover{text-decoration:underline}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    @media (max-width:760px){.split{grid-template-columns:1fr}}
+    .article a{color:#0f766e;text-decoration:underline}
+    figure{margin:20px 0}
+    figcaption{font-size:.9rem;color:#6b7280;margin-top:6px}
+    .article ul, .article ol {margin:16px 0 16px 24px}
+    .article li {margin-bottom:8px}
+    /* Fix oversized bottom image */
+    .article figure img{
+      width:100%;
+      aspect-ratio:16 / 9; /* keep landscape */
+      max-height:clamp(260px,45vh,520px);
+      height:auto; /* computed by aspect-ratio */
+      object-fit:cover; /* crop tall images neatly */
+      border-radius:12px;
+    }
+    /* Optional: soften spacing */
+    .article figure{margin:20px auto}
+
+    /* Footer */
+    .footer {
+        background-color: #f8f9fa;
+        padding: var(--spacing-md) 0;
+        border-top: 1px solid var(--border);
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: var(--spacing-sm);
+        max-width: var(--container-max-width);
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .footer-section h4 {
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--ink);
+        margin-bottom: 16px;
+        letter-spacing: var(--letter-spacing-wide);
+        text-transform: uppercase;
+    }
+
+    .footer-section ul {
+        list-style: none;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 8px;
+    }
+
+    .footer-section a {
+        text-decoration: none;
+        color: var(--muted);
+        font-size: 14px;
+        transition: color 0.3s ease;
+    }
+
+    .footer-section a:hover,
+    .footer-section a:focus {
+        color: var(--accent);
+    }
+
+    .footer-section p {
+        color: var(--muted);
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    @media (max-width: 768px) {
+        .footer-content {
+            grid-template-columns: 1fr;
+            gap: var(--spacing-sm);
+            text-align: center;
+        }
+    }
+
+    /* Two-column layout for locations list in footer */
+    .footer-links.loc-columns {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-links.loc-columns li {
+        margin-bottom: 8px;
+        break-inside: avoid;
+    }
+
+    @media (min-width: 768px) {
+        .footer-links.loc-columns {
+            columns: 2;
+            column-gap: 24px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .footer-links.loc-columns {
+            columns: 1;
+        }
+    }
+  </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QFTWK45LJZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QFTWK45LJZ', { anonymize_ip: true, transport_type: 'beacon' });
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-container">
+    <a class="brand" href="/">Mornington Peninsula Roofing</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+    <nav id="site-menu" class="site-menu" aria-expanded="false">
+      <a href="/" class="nav-link" data-nav="home">Home</a>
+      <a href="/about.html" class="nav-link" data-nav="about">About</a>
+      <a href="/#services" class="nav-link" data-nav="services">Services</a>
+      <div class="nav-dropdown" data-nav="locations">
+        <button class="nav-link nav-link-button" aria-expanded="false" aria-haspopup="true">
+          Locations <span class="caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="dropdown-panel" role="menu">
+          <a role="menuitem" class="dropdown-link" href="/locations/mount-eliza.html">Mount Eliza</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/mornington.html">Mornington</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/frankston.html">Frankston</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/sorrento.html">Sorrento</a>
+        </div>
+      </div>
+      <a href="/blog/" class="nav-link" data-nav="blog">Blog</a>
+      <a href="/contact.html" class="nav-link" data-nav="contact">Contact</a>
+      <!-- Optional compact CTAs; hidden on medium screens to save space -->
+      <a href="tel:0341627766" class="btn btn-ghost hide-md">03 4162 7766</a>
+      <a href="/contact.html" class="btn hide-md">Get Quote</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero wrap">
+  <div class="media">
+    <img src="/assets/img/About_Us.jpg" alt="Repairing a tiled roof on the Mornington Peninsula" loading="lazy">
+  </div>
+  <div>
+    <div class="meta">By MPR • 22 Aug 2025 • 6–8 min read</div>
+    <h1>Roofing Repairs Mornington Peninsula</h1>
+    <p class="lede">Leaks on the Peninsula are often triggered by wind-driven rain, salt exposure and seasonal weather patterns. Here's how to spot issues early and get lasting repairs.</p>
+    <div class="cta">
+      <a class="btn" href="/contact.html">Get a repair quote</a>
+      <a class="btn-ghost" href="/#services">See our services</a>
+    </div>
+  </div>
+</section>
+
+<main class="article wrap">
+  <article class="content" itemscope itemtype="https://schema.org/BlogPosting">
+    <meta itemprop="headline" content="Roofing Repairs Mornington Peninsula">
+    <meta itemprop="image" content="/assets/img/About_Us.jpg">
+    <meta itemprop="datePublished" content="2025-08-22">
+    <meta itemprop="author" content="MPR">
+    
+    <nav class="toc" aria-label="Table of contents">
+      <strong>In this guide</strong>
+      <a href="#signs">Early signs your roof needs repair</a>
+      <a href="#causes">Common causes of leaks on the Peninsula</a>
+      <a href="#tile-vs-metal">Repair options: tiled vs metal roofs</a>
+      <a href="#repair-or-replace">Repair or re-roof?</a>
+      <a href="#cost-factors">What affects repair cost</a>
+      <a href="#faq">FAQs</a>
+    </nav>
+
+    <h2 id="signs">Early signs your roof needs repair</h2>
+    <div class="split">
+      <ul>
+        <li>Ceiling stains or light brown "tea" marks after rain.</li>
+        <li>Musty odours in the roof space.</li>
+        <li>Water tracking down internal walls or around downlights.</li>
+        <li>Visible cracks in ridge pointing or slipped tiles.</li>
+      </ul>
+      <ul>
+        <li>Rust spots, flaking paint or loose fasteners on metal sheets.</li>
+        <li>Debris build-up in valleys and gutters, especially after windy days.</li>
+        <li>Drips around skylights, chimneys or solar mounts.</li>
+      </ul>
+    </div>
+    <p class="note">Tip: After heavy weather, check valleys and gutters safely from ground level using binoculars. Never attempt roof inspection during or immediately after storms.</p>
+
+    <h2 id="causes">Common causes of leaks on the Peninsula</h2>
+    <p>Living by the bay brings <em>salt spray</em> and <em>wind-driven rain</em>. Combine that with the Peninsula's changeable weather, and roofs face unique challenges:</p>
+    <ul>
+      <li>Cracked bedding and brittle pointing along ridge caps.</li>
+      <li>Blocked valleys and gutters forcing water under laps.</li>
+      <li>Perished or poorly detailed flashings around chimneys and parapets.</li>
+      <li>Loose or corroded screws on metal roofs; failed seal washers.</li>
+      <li>Unsealed solar or antenna penetrations.</li>
+    </ul>
+
+    <h2 id="tile-vs-metal">Repair options: tiled vs metal roofs</h2>
+    
+    <h3>Tiled roofs</h3>
+    <ul>
+      <li>Replace broken/slipped tiles, re-bed and re-point ridges.</li>
+      <li>Clear valleys; install new valley irons and storm seals if required.</li>
+      <li>Re-seal around penetrations and re-flash chimneys correctly.</li>
+    </ul>
+
+    <h3>Metal roofs (Colorbond/steel)</h3>
+    <ul>
+      <li>Replace corroded sheets or cut out rust and fit patches to code.</li>
+      <li>Upgrade to cyclone-rated screws with new seal washers.</li>
+      <li>Re-flash junctions and parapets; add scribe and turn-ups/downs where missing.</li>
+    </ul>
+
+    <p class="note">Safety first: roofing work involves height risks. See <a href="https://www.safeworkaustralia.gov.au/safety-topic/industry/construction" target="_blank" rel="noopener">Safe Work Australia guidelines</a> for working at height requirements.</p>
+
+    <h2 id="repair-or-replace">Repair or re-roof?</h2>
+    <p>If failures are isolated (e.g., a cracked valley, small rust patches, localized ridge breakdown), targeted repairs often make sense. However, consider <a href="/#services">re-roofing</a> when:</p>
+    <ul>
+      <li>There's widespread rusting, delamination or tile fatigue across large areas.</li>
+      <li>Previous patching hasn't held, or the roof has multiple chronic leaks.</li>
+      <li>You're renovating and want to add insulation/sarking and uplift street appeal.</li>
+    </ul>
+    <p>We can walk you through both options and provide a transparent quote for repairs vs <a href="/contact.html">complete replacement</a>.</p>
+
+    <h2 id="cost-factors">What affects repair cost</h2>
+    <ul>
+      <li>Extent of damage and access (single vs double storey, pitch, safety setup).</li>
+      <li>Roof type and materials (tile vs metal; availability of matching tiles/sheets).</li>
+      <li>Number of penetrations and flashing details that need re-work.</li>
+      <li>Whether membrane coatings or repainting are part of the scope.</li>
+    </ul>
+
+    <h2 id="faq">FAQs</h2>
+    
+    <h3>How fast can you attend?</h3>
+    <p>We prioritise active leaks and storm damage. Same-week call-outs are common across the Peninsula, with emergency tarping available when needed.</p>
+
+    <h3>Do you paint after repairs?</h3>
+    <p>Where appropriate, we spot-prime/paint metal patches and can include full <a href="/#services">roof painting</a> as part of a broader restoration.</p>
+
+    <h3>What suburbs do you cover?</h3>
+    <p>All of the Mornington Peninsula, including <a href="/locations/mount-eliza.html">Mount Eliza</a>, <a href="/locations/mornington.html">Mornington</a>, <a href="/locations/frankston.html">Frankston</a>, and <a href="/locations/sorrento.html">Sorrento</a>.</p>
+
+    <figure>
+      <img src="/assets/img/About_Us.jpg" alt="Completed roof repair with new ridge pointing on a Peninsula home" loading="lazy">
+      <figcaption>Good prep and detailing = long-lasting repairs, even in coastal conditions.</figcaption>
+    </figure>
+
+    <p class="note"><strong>Next step:</strong> Send a couple of photos (valley/ridge area and any visible damage) via our <a href="/contact.html">contact form</a> for an initial assessment and quote.</p>
+
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"BlogPosting",
+      "headline":"Roofing Repairs Mornington Peninsula",
+      "image":"https://www.morningtonpeninsularoofing.com.au/assets/img/About_Us.jpg",
+      "datePublished":"2025-08-22",
+      "author":{"@type":"Organization","name":"Mornington Peninsula Roofing"},
+      "publisher":{"@type":"Organization","name":"Mornington Peninsula Roofing"},
+      "mainEntityOfPage":{"@type":"WebPage","@id":"https://www.morningtonpeninsularoofing.com.au/blog/roofing-repairs-mornington-peninsula.html"},
+      "description":"A practical local guide to roof leak repairs on the Mornington Peninsula. Early signs, common causes, repair options and costs for tiled and metal roofs."
+    }
+    </script>
+  </article>
+</main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>MENU</h4>
+            <ul class="footer-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>CONTACT</h4>
+            <p><a href="tel:03-4162-7766">03 4162 7766</a></p>
+            <p>Servicing Mornington Peninsula</p>
+        </div>
+        <div class="footer-section" id="locations">
+            <h4>LOCATIONS</h4>
+            <ul class="footer-links loc-columns">
+                <li><a href="/locations/mount-eliza.html">Mount Eliza</a></li>
+                <li><a href="/locations/mornington.html">Mornington</a></li>
+                <li><a href="/locations/frankston.html">Frankston</a></li>
+                <li><a href="/locations/sorrento.html">Sorrento</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script>
+// Mobile hamburger
+(function(){
+const t=document.querySelector('.nav-toggle');
+const m=document.getElementById('site-menu');
+if(t&&m){t.addEventListener('click',()=>{
+const open=t.getAttribute('aria-expanded')==='true';
+t.setAttribute('aria-expanded', String(!open));
+m.setAttribute('aria-expanded', String(!open));
+});}
+})();
+// Dropdown open/close + Esc
+(function(){
+const dd=document.querySelector('.nav-dropdown'); if(!dd) return;
+const btn=dd.querySelector('.nav-link-button');
+const panel=dd.querySelector('.dropdown-panel');
+const setOpen=(o)=>{dd.setAttribute('aria-expanded', String(o)); btn.setAttribute('aria-expanded', String(o));};
+btn.addEventListener('click', e=>{e.stopPropagation(); setOpen(dd.getAttribute('aria-expanded')!=='true');});
+document.addEventListener('click', ()=> setOpen(false));
+[btn,panel].forEach(el=>el&&el.addEventListener('keydown', e=>{ if(e.key==='Escape') setOpen(false);}));
+})();
+// Active nav state
+(function(){
+const p = window.location.pathname.replace(/index\.html$/, '');
+const mark = (k)=>{ const el=document.querySelector(`[data-nav="${k}"]`); if(el) el.setAttribute('aria-current','page');};
+if(p==='/'||p==='') mark('home');
+else if(p.endsWith('/about.html')) mark('about');
+else if(p.startsWith('/blog')) mark('blog');
+else if(p.endsWith('/contact.html')) mark('contact');
+else if(p.startsWith('/locations/')) mark('locations');
+})();
+</script>
+</body>
+</html>

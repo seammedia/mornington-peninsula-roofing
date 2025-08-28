@@ -32,6 +32,7 @@
     <!-- Optimized CSS Loading -->
     <link rel="preload" as="style" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/site.css">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     
     <!-- Critical CSS for LCP/Header -->
@@ -40,65 +41,10 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
         
-        /* Header - fixed height to prevent CLS */
-        .site-header { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #e5e7eb; z-index: 100; height: 70px; transition: box-shadow 0.3s ease; }
-        .navigation.scrolled { box-shadow: 0 4px 8px rgba(0,0,0,0.15) !important; }
-        .nav-container { max-width: 1200px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; height: 100%; }
-        .brand { font-weight: 700; text-decoration: none; color: #0f172a; }
-        
-        /* --- Fixed white header --- */
-        .navigation, .site-header, header[role="banner"] {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: #ffffff;
-            border-bottom: 1px solid #E9EEF3;
-            box-shadow: 0 2px 8px rgba(0,0,0,.06);
-        }
-
-        /* Link colours inside header */
-        .navigation .nav-menu a,
-        .navigation a { color: #0E1B2B; }
-        .navigation .nav-menu a:hover,
-        .navigation a:hover { color: #2F6D58; }
-
-        /* Phone & CTA button colours in header */
-        .navigation .btn,
-        .navigation .phone-number {
-            color: #0E1B2B;
-            border-color: #CBD5DF;
-        }
-        .navigation .btn--primary,
-        .navigation .cta,
-        .navigation .get-quote {
-            background: #6F8F7C;
-            color: #fff;
-        }
-
-        /* Mobile hamburger icon colour */
-        .hamburger span,
-        .hamburger::before,
-        .hamburger::after { background: #0E1B2B; }
-
-        /* Make dropdowns match the white header */
-        .nav-dropdown,
-        .dropdown-menu {
-            background: #fff;
-            border: 1px solid #E9EEF3;
-            box-shadow: 0 8px 24px rgba(0,0,0,.08);
-        }
-        .nav-dropdown a { color: #0E1B2B; }
-        .nav-dropdown a:hover { background: #F6FAF8; }
-
-        /* If a dark strip with text (e.g., "THE ROOFING SPECIALISTS") appears below the nav, neutralize it */
-        .topline, .page-kicker, .hero-kicker {
-            background: #fff;
-            color: #0E1B2B;
-            border: 0;
-        }
+        /* Scroll padding for anchor links with sticky header */
+        html { scroll-padding-top: 80px; }
         
         /* Hero - optimized for LCP */
-        .roofing-specialists-bar { display: none !important; }
         
         /* Accessibility */
         .visually-hidden { 
@@ -233,139 +179,136 @@
 </script>
 </head>
 <body>
-<header class="site-header" role="banner">
-  <div class="nav-wrap container">
-    <a class="logo" href="/" aria-label="Mornington Peninsula Roofing">
-      Mornington Peninsula Roofing
+<!-- Shared Header -->
+<link rel="preload" href="/assets/fonts/Peace Sans Webfont.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="/assets/css/header.css">
+
+<header class="mpr-header mpr-reset" role="banner">
+  <nav class="mpr-nav" aria-label="Main navigation">
+    <!-- Brand -->
+    <a class="mpr-brand" href="/index.html" aria-label="Mornington Peninsula Roofing">
+      <span class="mpr-logo">MP</span>
+      <span class="mpr-brand-title">
+        <span class="mpr-sub">The Roofing Specialists</span>
+        <span class="mpr-main">Mornington Peninsula Roofing</span>
+      </span>
     </a>
 
-    <!-- Desktop nav -->
-    <nav class="primary-nav" aria-label="Primary">
-      <ul class="nav-list">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about.html">About</a></li>
+    <!-- Desktop links -->
+    <div class="mpr-links" aria-label="Primary">
+      <a class="mpr-link" href="/index.html" data-nav="/">Home</a>
+      <a class="mpr-link" href="/about.html" data-nav="/about.html">About</a>
 
-        <li class="has-submenu">
-          <button class="submenu-toggle" aria-expanded="false" aria-controls="desktop-services-sub">
-            Services <span class="chev" aria-hidden="true">▾</span>
-          </button>
-          <ul id="desktop-services-sub" class="submenu">
-            <li><a href="/services/emergency-roof-repairs.html">Emergency Roof Repairs</a></li>
-            <li><a href="/services/roof-repairs.html">Roof Repairs</a></li>
-            <li><a href="/services/roof-restoration.html">Roof Restoration</a></li>
-            <li><a href="/services/re-roofing.html">Re-Roofing</a></li>
-            <li><a href="/services/roof-painting.html">Roof Painting</a></li>
-          </ul>
-        </li>
+      <div class="mpr-dropdown" aria-haspopup="true">
+        <button class="mpr-drop-toggle" aria-expanded="false">Services ▾</button>
+        <div class="mpr-drop-menu" role="menu">
+          <a class="mpr-drop-link" href="/services/roof-repairs.html" data-nav="/services/roof-repairs.html">Roof Repairs</a>
+          <a class="mpr-drop-link" href="/services/roof-restoration.html" data-nav="/services/roof-restoration.html">Roof Restoration</a>
+          <a class="mpr-drop-link" href="/services/re-roofing.html" data-nav="/services/re-roofing.html">Re-Roofing</a>
+          <a class="mpr-drop-link" href="/services/roof-painting.html" data-nav="/services/roof-painting.html">Roof Painting</a>
+          <a class="mpr-drop-link" href="/services/emergency-roof-repairs.html" data-nav="/services/emergency-roof-repairs.html">Emergency Repairs</a>
+        </div>
+      </div>
 
-        <li class="has-submenu">
-          <button class="submenu-toggle" aria-expanded="false" aria-controls="desktop-locations-sub">
-            Locations <span class="chev" aria-hidden="true">▾</span>
-          </button>
-          <ul id="desktop-locations-sub" class="submenu">
-            <li><a href="/locations/mount-eliza.html">Mount Eliza</a></li>
-            <li><a href="/locations/mornington.html">Mornington</a></li>
-            <li><a href="/locations/frankston.html">Frankston</a></li>
-            <li><a href="/locations/sorrento.html">Sorrento</a></li>
-            <li><a href="/locations/rosebud.html">Rosebud</a></li>
-            <li><a href="/locations/carrum.html">Carrum</a></li>
-            <li><a href="/locations/carrum-downs.html">Carrum Downs</a></li>
-            <li><a href="/locations/seaford.html">Seaford</a></li>
-            <li><a href="/locations/mount-martha.html">Mount Martha</a></li>
-            <li><a href="/locations/cranbourne.html">Cranbourne</a></li>
-            <li><a href="/locations/flinders.html">Flinders</a></li>
-            <li><a href="/locations/dromana.html">Dromana</a></li>
-            <li><a href="/locations/hampton.html">Hampton</a></li>
-          </ul>
-        </li>
+      <div class="mpr-dropdown" aria-haspopup="true">
+        <button class="mpr-drop-toggle" aria-expanded="false">Locations ▾</button>
+        <div class="mpr-drop-menu" role="menu">
+          <a class="mpr-drop-link" href="/locations/mount-eliza.html" data-nav="/locations/mount-eliza.html">Mount Eliza</a>
+          <a class="mpr-drop-link" href="/locations/mornington.html" data-nav="/locations/mornington.html">Mornington</a>
+          <a class="mpr-drop-link" href="/locations/frankston.html" data-nav="/locations/frankston.html">Frankston</a>
+          <a class="mpr-drop-link" href="/locations/sorrento.html" data-nav="/locations/sorrento.html">Sorrento</a>
+          <a class="mpr-drop-link" href="/locations/rosebud.html" data-nav="/locations/rosebud.html">Rosebud</a>
+          <a class="mpr-drop-link" href="/locations/carrum.html" data-nav="/locations/carrum.html">Carrum</a>
+          <a class="mpr-drop-link" href="/locations/carrum-downs.html" data-nav="/locations/carrum-downs.html">Carrum Downs</a>
+          <a class="mpr-drop-link" href="/locations/seaford.html" data-nav="/locations/seaford.html">Seaford</a>
+          <a class="mpr-drop-link" href="/locations/mount-martha.html" data-nav="/locations/mount-martha.html">Mount Martha</a>
+          <a class="mpr-drop-link" href="/locations/cranbourne.html" data-nav="/locations/cranbourne.html">Cranbourne</a>
+          <a class="mpr-drop-link" href="/locations/flinders.html" data-nav="/locations/flinders.html">Flinders</a>
+          <a class="mpr-drop-link" href="/locations/dromana.html" data-nav="/locations/dromana.html">Dromana</a>
+          <a class="mpr-drop-link" href="/locations/hampton.html" data-nav="/locations/hampton.html">Hampton</a>
+        </div>
+      </div>
 
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="nav-cta">
-      <a class="phone-link" href="tel:0341627766">03 4162 7766</a>
-      <a class="btn btn-outline" href="#hero-quote">Get quote</a>
+      <a class="mpr-link" href="/blog/" data-nav="/blog/">Blog</a>
+      <a class="mpr-link" href="/contact.html" data-nav="/contact.html">Contact</a>
     </div>
 
-    <!-- Hamburger (mobile only) -->
-    <button
-      id="hamburger"
-      class="hamburger"
-      type="button"
-      aria-label="Open menu"
-      aria-controls="mobile-menu"
-      aria-expanded="false">
-      <span></span><span></span><span></span>
+    <!-- Desktop right -->
+    <div class="mpr-right">
+      <a class="mpr-phone" href="tel:+61341627766">03 4162 7766</a>
+      <a class="mpr-cta" href="/contact.html">Get Quote</a>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button id="mpr-open" class="mpr-hamburger" aria-label="Open menu" aria-controls="mpr-drawer">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </nav>
+</header>
+
+<!-- Off-canvas + Overlay -->
+<div class="mpr-overlay" tabindex="-1" aria-hidden="true"></div>
+
+<aside id="mpr-drawer" class="mpr-drawer" aria-hidden="true" aria-label="Mobile menu" role="dialog">
+  <div class="mpr-drawer-head">
+    <div class="mpr-brand-title">
+      <span class="mpr-sub">The Roofing Specialists</span>
+      <span class="mpr-main" style="font-family:'Peace Sans','Peace Sans Webfont',impact,sans-serif;">Mornington Peninsula Roofing</span>
+    </div>
+    <button id="mpr-close" class="mpr-close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
   </div>
 
-  <!-- Off-canvas mobile panel -->
-  <div id="mobile-menu" class="mobile-menu" hidden>
-    <nav aria-label="Mobile">
-      <ul class="mobile-list">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about.html">About</a></li>
+  <nav class="mpr-drawer-nav">
+    <a class="mpr-drawer-link" href="/index.html" data-nav="/">Home</a>
+    <a class="mpr-drawer-link" href="/about.html" data-nav="/about.html">About</a>
 
-        <li class="mobile-group">
-          <button class="mobile-accordion" aria-expanded="false" aria-controls="m-services">
-            Services
-            <span class="chev" aria-hidden="true">▾</span>
-          </button>
-          <ul id="m-services" class="mobile-sub">
-            <li><a href="/services/emergency-roof-repairs.html">Emergency Roof Repairs</a></li>
-            <li><a href="/services/roof-repairs.html">Roof Repairs</a></li>
-            <li><a href="/services/roof-restoration.html">Roof Restoration</a></li>
-            <li><a href="/services/re-roofing.html">Re-Roofing</a></li>
-            <li><a href="/services/roof-painting.html">Roof Painting</a></li>
-          </ul>
-        </li>
+    <!-- Services accordion -->
+    <div class="mpr-drawer-accordion">
+      <button class="mpr-drawer-accordion-btn" aria-expanded="false">Services</button>
+      <div class="mpr-acc-panel">
+        <a class="mpr-acc-link" href="/services/roof-repairs.html" data-nav="/services/roof-repairs.html">Roof Repairs</a>
+        <a class="mpr-acc-link" href="/services/roof-restoration.html" data-nav="/services/roof-restoration.html">Roof Restoration</a>
+        <a class="mpr-acc-link" href="/services/re-roofing.html" data-nav="/services/re-roofing.html">Re-Roofing</a>
+        <a class="mpr-acc-link" href="/services/roof-painting.html" data-nav="/services/roof-painting.html">Roof Painting</a>
+        <a class="mpr-acc-link" href="/services/emergency-roof-repairs.html" data-nav="/services/emergency-roof-repairs.html">Emergency Repairs</a>
+      </div>
+    </div>
 
-        <li class="mobile-group">
-          <button class="mobile-accordion" aria-expanded="false" aria-controls="m-locations">
-            Locations
-            <span class="chev" aria-hidden="true">▾</span>
-          </button>
-          <ul id="m-locations" class="mobile-sub">
-            <li><a href="/locations/mount-eliza.html">Mount Eliza</a></li>
-            <li><a href="/locations/mornington.html">Mornington</a></li>
-            <li><a href="/locations/frankston.html">Frankston</a></li>
-            <li><a href="/locations/sorrento.html">Sorrento</a></li>
-            <li><a href="/locations/rosebud.html">Rosebud</a></li>
-            <li><a href="/locations/carrum.html">Carrum</a></li>
-            <li><a href="/locations/carrum-downs.html">Carrum Downs</a></li>
-            <li><a href="/locations/seaford.html">Seaford</a></li>
-            <li><a href="/locations/mount-martha.html">Mount Martha</a></li>
-            <li><a href="/locations/cranbourne.html">Cranbourne</a></li>
-            <li><a href="/locations/flinders.html">Flinders</a></li>
-            <li><a href="/locations/dromana.html">Dromana</a></li>
-            <li><a href="/locations/hampton.html">Hampton</a></li>
-          </ul>
-        </li>
+    <!-- Locations accordion -->
+    <div class="mpr-drawer-accordion">
+      <button class="mpr-drawer-accordion-btn" aria-expanded="false">Locations</button>
+      <div class="mpr-acc-panel">
+        <a class="mpr-acc-link" href="/locations/mount-eliza.html" data-nav="/locations/mount-eliza.html">Mount Eliza</a>
+        <a class="mpr-acc-link" href="/locations/mornington.html" data-nav="/locations/mornington.html">Mornington</a>
+        <a class="mpr-acc-link" href="/locations/frankston.html" data-nav="/locations/frankston.html">Frankston</a>
+        <a class="mpr-acc-link" href="/locations/sorrento.html" data-nav="/locations/sorrento.html">Sorrento</a>
+        <a class="mpr-acc-link" href="/locations/rosebud.html" data-nav="/locations/rosebud.html">Rosebud</a>
+        <a class="mpr-acc-link" href="/locations/carrum.html" data-nav="/locations/carrum.html">Carrum</a>
+        <a class="mpr-acc-link" href="/locations/carrum-downs.html" data-nav="/locations/carrum-downs.html">Carrum Downs</a>
+        <a class="mpr-acc-link" href="/locations/seaford.html" data-nav="/locations/seaford.html">Seaford</a>
+        <a class="mpr-acc-link" href="/locations/mount-martha.html" data-nav="/locations/mount-martha.html">Mount Martha</a>
+        <a class="mpr-acc-link" href="/locations/cranbourne.html" data-nav="/locations/cranbourne.html">Cranbourne</a>
+        <a class="mpr-acc-link" href="/locations/flinders.html" data-nav="/locations/flinders.html">Flinders</a>
+        <a class="mpr-acc-link" href="/locations/dromana.html" data-nav="/locations/dromana.html">Dromana</a>
+        <a class="mpr-acc-link" href="/locations/hampton.html" data-nav="/locations/hampton.html">Hampton</a>
+      </div>
+    </div>
 
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/contact.html">Contact</a></li>
+    <a class="mpr-drawer-link" href="/blog/" data-nav="/blog/">Blog</a>
+    <a class="mpr-drawer-link" href="/contact.html" data-nav="/contact.html">Contact</a>
+  </nav>
 
-        <li class="mobile-cta">
-          <a class="btn btn-primary w-full" href="tel:0341627766">Call 03 4162 7766</a>
-        </li>
-      </ul>
-    </nav>
+  <div class="mpr-drawer-foot">
+    <a class="mpr-drawer-phone" href="tel:+61341627766">03 4162 7766</a>
+    <a class="mpr-drawer-cta" href="/contact.html">Get Quote</a>
   </div>
+</aside>
 
-  <!-- Backdrop -->
-  <div id="mobile-backdrop" class="mobile-backdrop" hidden></div>
-</header>
+<script defer src="/assets/js/header.js"></script>
 
 
-    <!-- Header Bar - REMOVED: was dark strip, now hidden -->
-    <!-- Moved h1 to hero section for better SEO -->
-    <section class="roofing-specialists-bar" style="display: none;">
-        <div class="container">
-            <h2>THE ROOFING SPECIALISTS</h2>
-        </div>
-    </section>
 
     <!-- Lead-Gen Hero Section -->
     <section class="hero hero--mpr" id="home-hero">
@@ -880,6 +823,7 @@
 
     <!-- JavaScript -->
     <script src="/assets/js/main.js" defer></script>
+    <script defer src="/assets/js/site.js"></script>
 <script defer>
 // Old navigation scripts removed - now using improved off-canvas mobile navigation
 

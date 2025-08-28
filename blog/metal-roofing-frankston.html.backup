@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Metal Roofing Frankston | Mornington Peninsula Roofing</title>
+  <meta name="description" content="Everything you need to know about metal roofing in Frankston — repairs, replacements, insulation, noise and maintenance for coastal conditions.">
+  <meta property="og:title" content="Metal Roofing Frankston">
+  <meta property="og:description" content="Repairs, re-roofing and maintenance for metal roofs in Frankston. Expert advice for coastal Peninsula conditions.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.morningtonpeninsularoofing.com.au/blog/metal-roofing-frankston.html">
+  <meta property="og:image" content="/img/blog/metal-roofing-frankston.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://www.morningtonpeninsularoofing.com.au/blog/metal-roofing-frankston.html">
+  
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #475569;
+      --border: #e5e7eb;
+      --accent: #6b8e79;
+    }
+
+    /* Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);z-index:100}
+    .nav-container{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-weight:700;text-decoration:none;color:var(--ink)}
+    .site-menu{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+    .nav-link,.nav-link-button{background:none;border:0;cursor:pointer;font:inherit;text-transform:uppercase;letter-spacing:.2em;font-size:.85rem;text-decoration:none;color:var(--ink);padding:0}
+    .nav-link:hover,.nav-link:focus-visible,.nav-link-button:hover,.nav-link-button:focus-visible{text-decoration:underline}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:500;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em}
+    .btn-ghost{background:transparent;border:1px solid var(--border);color:var(--ink)}
+    .nav-toggle{display:none}
+    .hide-md{display:inline-block}
+    /* Dropdown */
+    .nav-dropdown{position:relative}
+    .dropdown-panel{position:absolute;top:100%;left:0;display:none;min-width:220px;background:#fff;border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,.06);padding:8px}
+    .nav-dropdown[aria-expanded="true"] .dropdown-panel{display:block}
+    .dropdown-link{display:block;padding:10px 12px;color:var(--ink);text-decoration:none}
+    .dropdown-link:hover,.dropdown-link:focus-visible{background:#f7f7f7}
+    /* Active state */
+    .nav-link[aria-current="page"], .nav-link-button[aria-current="page"]{text-decoration:underline}
+    /* Mobile */
+    @media (max-width:1024px){
+      .site-menu{gap:16px}
+      .nav-link,.nav-link-button{letter-spacing:.16em;font-size:.82rem}
+      .hide-md{display:none}
+    }
+    @media (max-width:820px){
+      .nav-toggle{display:inline-block}
+      .site-menu{display:none;flex-direction:column;gap:12px;padding:12px 0}
+      .site-menu[aria-expanded="true"]{display:flex}
+    }
+    /* Anchor offset + smooth scroll */
+    [id]{scroll-margin-top:80px}
+    html{scroll-behavior:smooth}
+
+    /* Hero Section */
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 36px;
+      align-items: center;
+      padding: 48px 20px;
+    }
+
+    .hero .media img {
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      display: block;
+    }
+
+    .hero .meta {
+      color: #64748b;
+      font-size: .9rem;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.1;
+      color: var(--ink);
+      margin: 6px 0 10px;
+    }
+
+    .hero p.lede {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 60ch;
+    }
+
+    .cta {
+      display: flex;
+      gap: 10px;
+      margin: 24px 0 8px;
+    }
+
+    @media (max-width: 980px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+
+    /* Article Content */
+    .article {
+      padding: 28px 20px 64px;
+    }
+
+    .article .content {
+      max-width: 850px;
+      color: var(--muted);
+      font-size: 1.02rem;
+      line-height: 1.7;
+    }
+
+    .article h2 {
+      color: var(--ink);
+      margin: 28px 0 10px;
+      font-size: 1.6rem;
+      line-height: 1.3;
+    }
+
+    .article h3 {
+      color: var(--ink);
+      margin: 20px 0 8px;
+      font-size: 1.25rem;
+    }
+
+    .article ul, .article ol {
+      margin: 16px 0;
+      padding-left: 24px;
+    }
+
+    .article li {
+      margin-bottom: 8px;
+    }
+
+    .article a {
+      color: #0f766e;
+      text-decoration: underline;
+    }
+
+    .note {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 20px 0;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 760px) {
+      .split {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #f8f9fa;
+      padding: 48px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+    }
+
+    .footer-section h4 {
+      font-size: 14px;
+      font-weight: bold;
+      color: var(--ink);
+      margin-bottom: 16px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-section a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-section a:hover,
+    .footer-section a:focus {
+      color: var(--accent);
+    }
+
+    .footer-section p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: center;
+      }
+    }
+  </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QFTWK45LJZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QFTWK45LJZ', { anonymize_ip: true, transport_type: 'beacon' });
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-container">
+    <a class="brand" href="/">Mornington Peninsula Roofing</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+    <nav id="site-menu" class="site-menu" aria-expanded="false">
+      <a href="/" class="nav-link" data-nav="home">Home</a>
+      <a href="/about.html" class="nav-link" data-nav="about">About</a>
+      <a href="/#services" class="nav-link" data-nav="services">Services</a>
+      <div class="nav-dropdown" data-nav="locations">
+        <button class="nav-link nav-link-button" aria-expanded="false" aria-haspopup="true">
+          Locations <span class="caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="dropdown-panel" role="menu">
+          <a role="menuitem" class="dropdown-link" href="/locations/mount-eliza.html">Mount Eliza</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/mornington.html">Mornington</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/frankston.html">Frankston</a>
+          <a role="menuitem" class="dropdown-link" href="/locations/sorrento.html">Sorrento</a>
+        </div>
+      </div>
+      <a href="/blog/" class="nav-link" data-nav="blog">Blog</a>
+      <a href="/contact.html" class="nav-link" data-nav="contact">Contact</a>
+      <a href="tel:0341627766" class="btn btn-ghost hide-md">03 4162 7766</a>
+      <a href="/contact.html" class="btn hide-md">Get Quote</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero wrap">
+  <div class="media">
+    <picture>
+      <source srcset="/img/blog/metal-roofing-frankston.webp" type="image/webp">
+      <source srcset="/img/blog/metal-roofing-frankston.avif" type="image/avif">
+      <img src="/img/blog/metal-roofing-frankston.jpg" alt="Metal roof re-roofing project in Frankston showing professional installation and coastal durability" loading="eager">
+    </picture>
+  </div>
+  <div>
+    <div class="meta">By MPR • 23 Aug 2025 • 6–8 min read</div>
+    <h1>Metal Roofing Frankston</h1>
+    <p class="lede">From leak repairs to full re-roofing, here's how to choose the best approach for your Frankston metal roof, considering coastal conditions and noise control.</p>
+    <div class="cta">
+      <a class="btn" href="/contact.html">Get a metal roofing quote</a>
+      <a class="btn-ghost" href="/#services">See our services</a>
+    </div>
+  </div>
+</section>
+
+<main class="article wrap">
+  <article class="content" itemscope itemtype="https://schema.org/BlogPosting">
+    <meta itemprop="headline" content="Metal Roofing Frankston">
+    <meta itemprop="image" content="/img/blog/metal-roofing-frankston.jpg">
+    <meta itemprop="datePublished" content="2025-08-23">
+    <meta itemprop="author" content="MPR">
+
+    <h2>Repair, restore or replace?</h2>
+    <p>Small rust patches, loose screws and failing seal washers can often be repaired cost-effectively. If corrosion affects less than 15% of your roof area, targeted repairs might be your best option.</p>
+
+    <p>However, consider a full re-roof when rust is widespread, multiple leaks have developed, or when you're dealing with an aged roof (25+ years) that lacks modern insulation and ventilation. Frankston's coastal environment accelerates wear, so what starts as minor surface rust can quickly become structural issues.</p>
+
+    <div class="note">
+      <p><strong>Signs it's time to re-roof:</strong> Multiple leak points, extensive rust, failed fixings across 20% or more of the roof, or when repair costs approach 40% of replacement cost.</p>
+    </div>
+
+    <h2>Material choices for coastal conditions</h2>
+    <p>Not all metal roofing performs equally in Frankston's salt-air environment:</p>
+
+    <div class="split">
+      <div>
+        <h3>Best Performers</h3>
+        <ul>
+          <li><strong>Colorbond steel</strong> – zinc-aluminium coating provides excellent corrosion resistance</li>
+          <li><strong>Zincalume®</strong> – cost-effective with good coastal performance</li>
+          <li><strong>Copper</strong> – premium option, naturally corrosion-resistant</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Consider Carefully</h3>
+        <ul>
+          <li><strong>Galvanised steel</strong> – adequate for inland areas but less suitable near the bay</li>
+          <li><strong>Aluminium</strong> – lightweight but can be prone to oil-canning and noise</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Noise & comfort considerations</h2>
+    <p>Modern metal roofs can be very quiet with the right build-up. Frankston homeowners often worry about rain noise, but proper insulation makes a dramatic difference:</p>
+
+    <ul>
+      <li><strong>Bulk insulation (R1.8-R2.5)</strong> – reduces both noise and thermal transfer</li>
+      <li><strong>Reflective sarking</strong> – prevents condensation and adds thermal barrier</li>
+      <li><strong>Acoustic batts</strong> – specifically designed to dampen sound transmission</li>
+      <li><strong>Proper fixing</strong> – eliminates movement noise and drumming effects</li>
+    </ul>
+
+    <p>A well-installed metal roof with adequate insulation is often quieter than tiles, which can rattle in strong winds common to the Peninsula.</p>
+
+    <h2>Critical installation details</h2>
+    <p>Frankston's weather patterns – strong southerlies, driving rain, and temperature variations – demand attention to specific details:</p>
+
+    <ul>
+      <li><strong>Correct turn-ups and downs</strong> – scribing flashings to prevent wind-driven rain penetration</li>
+      <li><strong>High-quality fasteners</strong> – stainless steel or properly coated screws matched to the coastal environment</li>
+      <li><strong>Expansion joints</strong> – on long roof runs to prevent oil-canning and thermal stress noise</li>
+      <li><strong>Adequate ventilation</strong> – ridge vents and eave ventilation to prevent condensation buildup</li>
+    </ul>
+
+    <h2>Wind resistance and fixing patterns</h2>
+    <p>Frankston experiences strong wind events, particularly during winter storms. Modern metal roofing installation follows strict guidelines:</p>
+
+    <ul>
+      <li>Fixing densities of every 300mm in high-wind areas</li>
+      <li>Structural engineer certification for wind loads over N3 classification</li>
+      <li>Proper edge fixing and flashings to prevent uplift</li>
+      <li>Quality fixings that won't pull out under cyclical loading</li>
+    </ul>
+
+    <h2>Maintenance plan for coastal conditions</h2>
+    <p>Regular maintenance extends roof life significantly in Frankston's environment:</p>
+
+    <div class="split">
+      <div>
+        <h3>Every 6 months</h3>
+        <ul>
+          <li>Rinse with fresh water to remove salt buildup</li>
+          <li>Clear gutters and valleys of leaves and debris</li>
+          <li>Check for loose or missing fixings</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Annual inspection</h3>
+        <ul>
+          <li>Professional assessment of rust spots</li>
+          <li>Flashing and sealing inspection</li>
+          <li>Ventilation system check</li>
+        </ul>
+      </div>
+    </div>
+
+    <p>Frankston's Norfolk pines and gum trees shed debris year-round. Keep valleys clear, especially after windy days, as blocked drainage can cause water backup and premature wear.</p>
+
+    <h2>Council considerations and approvals</h2>
+    <p>Most metal roof replacements in Frankston don't require planning permits if you're maintaining the same roofline and using similar materials. However, heritage overlay areas may have restrictions on colour and profile choices.</p>
+
+    <p>Always check with Frankston City Council for specific requirements, particularly in Heritage Overlay areas or if you're changing roof pitch or adding features like solar panels.</p>
+
+    <h2>Cost factors and timing</h2>
+    <p>Metal roofing costs vary based on:</p>
+    <ul>
+      <li><strong>Material choice</strong> – Colorbond typically costs 15-25% more than basic zincalume</li>
+      <li><strong>Profile complexity</strong> – standing seam costs more than corrugated</li>
+      <li><strong>Access difficulty</strong> – steep pitches or restricted access increase labour costs</li>
+      <li><strong>Insulation upgrade</strong> – adding proper insulation increases upfront cost but improves comfort</li>
+    </ul>
+
+    <div class="note">
+      <p><strong>Best timing:</strong> Spring and autumn offer the most predictable weather for roofing work. Winter installations are possible but may face rain delays.</p>
+    </div>
+
+    <h2>Working with local specialists</h2>
+    <p>Choose roofers familiar with Peninsula conditions. Local knowledge matters for understanding wind patterns, salt exposure levels, and council requirements specific to <a href="/locations/frankston.html">Frankston</a>.</p>
+
+    <p>Our team has worked extensively in coastal environments across the Peninsula. We understand the specific challenges of Frankston's climate and can recommend the best materials and techniques for your situation.</p>
+
+    <p>For a detailed assessment of your metal roof's condition and recommendations tailored to your property, <a href="/contact.html">contact our team</a> for an on-site consultation. We service all areas of Frankston and surrounding Peninsula suburbs.</p>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Metal Roofing Frankston",
+      "image": "https://www.morningtonpeninsularoofing.com.au/img/blog/metal-roofing-frankston.jpg",
+      "datePublished": "2025-08-23",
+      "author": {
+        "@type": "Organization",
+        "name": "Mornington Peninsula Roofing"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Mornington Peninsula Roofing"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.morningtonpeninsularoofing.com.au/blog/metal-roofing-frankston.html"
+      },
+      "description": "Metal roofing in Frankston — repairs, replacements, insulation, noise and maintenance for coastal conditions. Expert advice from Peninsula specialists."
+    }
+    </script>
+  </article>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>MENU</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/#services">Services</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>CONTACT</h4>
+        <p><a href="tel:03-4162-7766">03 4162 7766</a></p>
+        <p>Servicing Mornington Peninsula</p>
+      </div>
+      <div class="footer-section">
+        <h4>LOCATIONS</h4>
+        <ul>
+          <li><a href="/locations/mount-eliza.html">Mount Eliza</a></li>
+          <li><a href="/locations/mornington.html">Mornington</a></li>
+          <li><a href="/locations/frankston.html">Frankston</a></li>
+          <li><a href="/locations/sorrento.html">Sorrento</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Mobile hamburger
+(function(){
+const t=document.querySelector('.nav-toggle');
+const m=document.getElementById('site-menu');
+if(t&&m){t.addEventListener('click',()=>{
+const open=t.getAttribute('aria-expanded')==='true';
+t.setAttribute('aria-expanded', String(!open));
+m.setAttribute('aria-expanded', String(!open));
+});}
+})();
+
+// Dropdown open/close + Esc
+(function(){
+const dd=document.querySelector('.nav-dropdown'); if(!dd) return;
+const btn=dd.querySelector('.nav-link-button');
+const panel=dd.querySelector('.dropdown-panel');
+const setOpen=(o)=>{dd.setAttribute('aria-expanded', String(o)); btn.setAttribute('aria-expanded', String(o));};
+btn.addEventListener('click', e=>{e.stopPropagation(); setOpen(dd.getAttribute('aria-expanded')!=='true');});
+document.addEventListener('click', ()=> setOpen(false));
+[btn,panel].forEach(el=>el&&el.addEventListener('keydown', e=>{ if(e.key==='Escape') setOpen(false);}));
+})();
+
+// Active nav state
+(function(){
+const p = window.location.pathname.replace(/index\.html$/, '');
+const mark = (k)=>{ const el=document.querySelector(`[data-nav="${k}"]`); if(el) el.setAttribute('aria-current','page');};
+if(p==='/'||p==='') mark('home');
+else if(p.endsWith('/about.html')) mark('about');
+else if(p.startsWith('/blog')) mark('blog');
+else if(p.endsWith('/contact.html')) mark('contact');
+else if(p.startsWith('/locations/')) mark('locations');
+})();
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+</script>
+</body>
+</html>
