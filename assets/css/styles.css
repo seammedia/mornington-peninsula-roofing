@@ -938,3 +938,98 @@ html { scroll-padding-top: var(--mpr-header-height); }
   user-select: none;
   pointer-events: none;
 }
+
+/* Ribbon component (Experience) */
+.ribbon {
+  position: relative;
+  color: #fff;
+  background: #222; /* dark band */
+  overflow: hidden;
+}
+
+.ribbon--experience {
+  /* diagonal darker wedge on the right side */
+  --ribbon-accent: #3b3b3b;
+}
+
+.ribbon--experience::after {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; right: 22%;
+  width: 140px;
+  background: var(--ribbon-accent);
+  transform: skewX(-24deg);
+  pointer-events: none;
+}
+
+/* Content container */
+.ribbon__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* Left group */
+.ribbon__left {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ribbon__icon {
+  color: #ff6a4d; /* subtle warm accent to match prior banner icon */
+  display: inline-flex;
+}
+
+.ribbon__title {
+  margin: 0;
+  font-size: clamp(18px, 2.4vw, 28px);
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+  font-weight: 700;
+}
+
+/* CTA button */
+.ribbon__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #d61207;       /* brand red from emergency CTA */
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  box-shadow: 0 10px 24px rgba(214,18,7,0.2);
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+  white-space: nowrap;
+}
+
+.ribbon__cta:hover,
+.ribbon__cta:focus-visible {
+  background: #bf1107;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 30px rgba(214,18,7,0.28);
+  outline: none;
+}
+
+.ribbon__cta-icon {
+  display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 840px) {
+  .ribbon__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ribbon--experience::after {
+    right: -80px; /* push accent out so it doesn't crowd */
+    opacity: 0.4;
+  }
+}
