@@ -114,7 +114,12 @@
   <!-- Blog -->
   <url>
     <loc>https://www.morningtonpeninsularoofing.com.au/blog/</loc>
-    <lastmod>2025-08-27</lastmod>
+    <lastmod>2025-08-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.morningtonpeninsularoofing.com.au/blog/how-much-does-it-cost-to-paint-a-roof.html</loc>
+    <lastmod>2025-08-29</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
