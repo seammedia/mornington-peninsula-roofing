@@ -389,6 +389,60 @@
       line-height: 1.5;
     }
 
+    /* Headings -> Poppins (this page only) */
+    .hero h1,
+    .article h1,
+    .article h2,
+    .article h3,
+    .article h4,
+    .article h5,
+    .article h6 {
+      font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      letter-spacing: .01em;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    /* Make the CTA button text white (this page only) */
+    .hero .btn,
+    .hero .button,
+    .hero .cta-button,
+    .article .btn,
+    .article .button,
+    .article .button-primary,
+    .article .btn-primary,
+    .article .cta-btn,
+    .article .cta-button,
+    .article a.button,
+    .article a.btn {
+      color: #fff !important;
+      text-shadow: none;
+    }
+    /* Ensure hover/active states keep white text */
+    .hero .btn:hover,
+    .hero .button:hover,
+    .hero .cta-button:hover,
+    .article .btn:hover,
+    .article .button:hover,
+    .article .button-primary:hover,
+    .article .btn-primary:hover,
+    .article .cta-btn:hover,
+    .article .cta-button:hover,
+    .article a.button:hover,
+    .article a.btn:hover,
+    .hero .btn:active,
+    .hero .button:active,
+    .hero .cta-button:active,
+    .article .btn:active,
+    .article .button:active,
+    .article .button-primary:active,
+    .article .btn-primary:active,
+    .article .cta-btn:active,
+    .article .cta-button:active,
+    .article a.button:active,
+    .article a.btn:active {
+      color: #fff !important;
+    }
+
     /* Structured data visibility */
     script[type="application/ld+json"] {
       display: none;
