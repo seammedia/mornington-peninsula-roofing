@@ -341,6 +341,19 @@ h1{font-size:clamp(28px,4vw,44px);line-height:1.1;color:var(--ink);margin:6px 0 
 
 <script defer src="/assets/js/header.js"></script>
 
+<!-- Breadcrumbs -->
+<nav aria-label="Breadcrumb" style="max-width: 1200px; margin: 0 auto; padding: 20px 20px 0;">
+  <ol style="display: flex; gap: 8px; list-style: none; font-size: 0.875rem; color: var(--muted, #666);">
+    <li><a href="/" style="color: var(--muted, #666); text-decoration: none;">Home</a></li>
+    <li aria-hidden="true">→</li>
+    <li><a href="/service-areas/" style="color: var(--muted, #666); text-decoration: none;">Service Areas</a></li>
+    <li aria-hidden="true">→</li>
+    <li><a href="/service-areas/mornington/" style="color: var(--muted, #666); text-decoration: none;">Mornington</a></li>
+    <li aria-hidden="true">→</li>
+    <li aria-current="page" style="color: var(--ink, #1a1a1a); font-weight: 500;">Roof Repairs</li>
+  </ol>
+</nav>
+
 <section class="hero wrap">
   <div class="media">
     <img src="/img/hero-main-image-new.png"
