@@ -58,10 +58,33 @@
 /* dropdown (desktop) */
 .mpr-dropdown{ position:relative; }
 .mpr-drop-menu{
-  position:absolute; top:110%; left:0; background:var(--nav-bg-dark); border:1px solid var(--border);
-  border-radius:12px; min-width:220px; padding:6px; display:none; box-shadow:0 8px 28px rgba(0,0,0,.35);
+  position:absolute; top:100%; left:0; background:var(--nav-bg-dark); border:1px solid var(--border);
+  border-radius:12px; min-width:220px; padding:6px; box-shadow:0 8px 28px rgba(0,0,0,.35);
+  /* Visibility/opacity for smooth transition with delay */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s linear 0.3s;
+  /* Add padding-top to create invisible hover bridge */
+  padding-top: 14px;
+  margin-top: 0;
 }
-.mpr-dropdown:hover .mpr-drop-menu{ display:block; }
+/* Invisible bridge to prevent gap between button and menu */
+.mpr-drop-menu::before{
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: transparent;
+}
+.mpr-dropdown:hover .mpr-drop-menu{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s linear 0s;
+}
 .mpr-drop-link{
   display:block; padding:10px 12px; border-radius:8px; color:#e7eff6; text-decoration:none; font:500 14px Roboto;
 }
